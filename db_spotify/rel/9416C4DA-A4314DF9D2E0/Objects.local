@@ -1,4 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
    <object objectType="Table" objectID="9D53F17D-1155-E6A1-589B-0CDACEB4F840" name="TB_ESTUDIANTES" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="9416C4DA-F74F-C10D-D69C-A4314DF9D2E0" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="5A27854F-2D81-A60B-D962-EB8217C2920D" name="TBL_CANCIONES" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="9416C4DA-F74F-C10D-D69C-A4314DF9D2E0" propertySourceId="" propertyTargetId=""/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>
