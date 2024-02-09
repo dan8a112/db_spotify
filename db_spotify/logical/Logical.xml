@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0C8F7DDB-2EB6-A30E-B258-032E510F871C" mainViewID="B6368B43-D460-314E-54A2-64F06AEAE70C">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-07 20:24:17 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

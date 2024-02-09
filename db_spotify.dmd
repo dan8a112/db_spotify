@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="db_spotify" id="3EF2EBAB-EE7B-8BBB-E11C-92E53D83FA4C" version="3.5">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-07 20:24:17 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3EF2EBAB-EE7B-8BBB-E11C-92E53D83FA4C</designId>
+</OSDM_Design>
