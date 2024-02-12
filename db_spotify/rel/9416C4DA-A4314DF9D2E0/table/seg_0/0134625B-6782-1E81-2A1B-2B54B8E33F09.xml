@@ -72,11 +72,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4AAC6EFE-3AE9-7FFA-8231-BCA186D9A419" referredColumn="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -89,16 +85,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FDD87D36-9F52-036F-7797-3678049DC5C7" name="TBL_CANCIONES_TBL_CANCIONES_FK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:22:19 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="4AD9B9CA-9899-284D-50D8-A412E9545B58"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
