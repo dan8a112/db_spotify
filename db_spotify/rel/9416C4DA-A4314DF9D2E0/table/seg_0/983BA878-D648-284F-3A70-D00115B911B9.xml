@@ -22,6 +22,20 @@
 <colAssociation fkAssociation="B8619C8E-9115-BD74-2166-92AEAB48E076" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
 </associations>
 </Column>
+<Column name="ID_PLAN" id="AD57DE40-1026-92CE-3C8B-38453008D4E1">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 21:53:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="766005CF-E3D0-A31F-DE56-543B6FC17435" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E603F1A6-9868-5131-302F-66CEF3BF622D" name="TBL_USUARIO_ESTANDAR_PK">
@@ -43,6 +57,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0A1ACA0-8B11-1CFE-F4F3-D16BD7A1AFA1" name="TBL_USUARIO_ESTANDAR_TBL_PLANES_FK">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 21:53:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD57DE40-1026-92CE-3C8B-38453008D4E1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

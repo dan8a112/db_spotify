@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FBAFC0BF-BC75-900E-BC89-BF1B27F46232" containerWithKeyObject="5A01385D-0286-C29E-ED19-0DFC100AD26A" localFKIndex="EB284E08-BD65-AA04-D5F7-4AD5B1D6029D" name="TBL_USUARIOS_TBL_PAISES_FK">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 21:39:42 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_PAISES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>299D9B11-E840-2CCE-774B-7CCC52BFA291</referredTableID>
+<keyObject>C366B7BB-DDDA-6DF6-C2E8-24F754BAD5FA</keyObject>
+<referredKeyID>C366B7BB-DDDA-6DF6-C2E8-24F754BAD5FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PAIS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
