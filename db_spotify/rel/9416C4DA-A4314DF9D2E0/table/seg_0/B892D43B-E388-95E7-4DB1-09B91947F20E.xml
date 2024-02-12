@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B892D43B-E388-95E7-4DB1-09B91947F20E" name="TBL_GENEROS_MUSICALES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:01:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_NOMBRE" id="84F874FF-5039-3994-BAA2-D8DD8887C045">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_GENERO_MUSICAL" id="62319495-7052-523D-5CF9-7C6C0AFBED70">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5286D16C-9932-593C-F79B-76B114CCD899" name="TBL_GENEROS_MUSICALES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

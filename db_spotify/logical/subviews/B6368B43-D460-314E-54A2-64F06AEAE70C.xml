@@ -13,4 +13,12 @@
 <diagramColor>-1</diagramColor>
 <display>false</display>
 <notation>1</notation>
+<diagramViews>
+<DiagramView class="oracle.dbtools.crest.swingui.TVDiagramView" oid="3E62D7FC-A766-E2E1-84D2-1DE14493846F" dpv_id="E8E4A7CE-D74B-710C-52D1-EF2BA1F064AF" vid="81F34088-AB5F-9B03-DC00-D13E18CBA485">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="77" y="92" width="140" height="100"/>
+<rdiagramName>Relational_1</rdiagramName>
+<rdiagramID>E8E4A7CE-D74B-710C-52D1-EF2BA1F064AF</rdiagramID>
+</DiagramView>
+</diagramViews>
 </Diagram>

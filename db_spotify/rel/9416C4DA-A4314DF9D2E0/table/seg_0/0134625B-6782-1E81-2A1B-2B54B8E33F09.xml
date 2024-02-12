@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0134625B-6782-1E81-2A1B-2B54B8E33F09" name="TBL_CANCIONES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:43:35 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CANCION" id="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CANCION" id="39574386-2A27-E3A3-638F-2D54100AED18">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LETRA_CANCION" id="311A15BF-AD79-1114-8503-D45CE8AF6B71">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPRODUCCIONES" id="F9A0C8B1-EF7D-9F3A-69CB-FC0A29E18881">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_LANZAMIENTO" id="D1E59A87-9F84-0ABF-5E12-06AD8DAC7D23">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_CANCIONES_ID_CANCION" id="4AD9B9CA-9899-284D-50D8-A412E9545B58">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:22:19 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AAC6EFE-3AE9-7FFA-8231-BCA186D9A419" referredColumn="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F6D6975-56E9-F50A-0D6A-297FFB88F3A0" name="TBL_CANCIONES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDD87D36-9F52-036F-7797-3678049DC5C7" name="TBL_CANCIONES_TBL_CANCIONES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-12 21:22:19 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD9B9CA-9899-284D-50D8-A412E9545B58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
