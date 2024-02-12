@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="983BA878-D648-284F-3A70-D00115B911B9" name="TBL_USUARIO_ESTANDAR">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 20:46:53 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="39C19B57-F9F6-1575-4C7B-530F40CFB66C">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 20:52:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8619C8E-9115-BD74-2166-92AEAB48E076" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E603F1A6-9868-5131-302F-66CEF3BF622D" name="TBL_USUARIO_ESTANDAR_PK">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 20:52:33 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E1A0132-49FF-EDF1-8582-40B82A4D38A2" name="TBL_USUARIO_ESTANDAR_TBL_USUARIOS_FK">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 20:52:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
