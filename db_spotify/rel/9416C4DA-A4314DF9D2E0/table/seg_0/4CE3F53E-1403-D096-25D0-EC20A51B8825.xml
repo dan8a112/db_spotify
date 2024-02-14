@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CE3F53E-1403-D096-25D0-EC20A51B8825" name="TBL_CREDITOS">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:29:54 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CREDITOS_MUSICALES" id="089AE51D-227F-9746-961E-0980CFA4021A">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:30:52 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_ESCRITORES_ID_ESCRITOR" id="7B59C815-C36F-E382-6360-F5878BED3433">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:58:42 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A85C109-86B8-FB7C-D895-A7E7D6DDE215" referredColumn="0DE260D2-DD66-90C9-D326-E91E907B2F8A"/>
+</associations>
+</Column>
+<Column name="TBL_PRODUCTORES_ID_PRODUCTOR" id="D485A742-5017-1255-A65D-017FEE1EB096">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:58:52 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F14B1A9B-27BD-A562-6B8E-F8B593CDC427" referredColumn="C7882AB3-73F2-0133-2033-FDC0595AE2ED"/>
+</associations>
+</Column>
+<Column name="FIRMA_DISCOGRAFICA" id="C26F6EA4-C90F-D903-E633-4CCBB63F889C">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 21:00:30 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5648A43-B422-AB05-C8B9-E9DE757CE4B0" name="TBL_CREDITOS_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:30:52 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="089AE51D-227F-9746-961E-0980CFA4021A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC7581E2-7188-E71F-147B-044F80833CBF" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:58:42 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B59C815-C36F-E382-6360-F5878BED3433"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19D24B77-D530-32FE-5D02-9D43C067DB99" name="TBL_CREDITOS_TBL_PRODUCTORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:58:52 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D485A742-5017-1255-A65D-017FEE1EB096"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

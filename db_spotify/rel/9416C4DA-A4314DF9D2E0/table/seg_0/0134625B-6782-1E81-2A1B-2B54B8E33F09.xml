@@ -74,6 +74,46 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_ALBUM" id="C2644434-419B-36B7-710F-E7143476E9B7">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:27:02 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53AB7C92-D377-DAA0-D575-524D078EE1C2" referredColumn="260F3CD0-7621-367A-E05E-B8FA6AA15EE1"/>
+</associations>
+</Column>
+<Column name="ID_GENERO_MUSICAL" id="CF99964B-6524-4D7F-64B0-A0FC2DE3B36D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:27:40 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A98715A3-777F-2F03-A970-75E0B159C7DE" referredColumn="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
+</associations>
+</Column>
+<Column name="ID_CREDITOS_MUSICALES" id="6579869F-E1C5-C0D5-33CF-BA08057BD015">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:31:02 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C7D1EB4-6997-793D-4301-5BAEF803DA26" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6F6D6975-56E9-F50A-0D6A-297FFB88F3A0" name="TBL_CANCIONES_PK">
@@ -85,6 +125,36 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AC71078-A5DF-8432-28A9-55CB0601D1B0" name="TBL_CANCIONES_TBL_ALBUMES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:27:02 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2644434-419B-36B7-710F-E7143476E9B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F87514FB-BBC1-C027-C67E-1E540305FEF0" name="TBL_CANCIONES_TBL_GENEROS_MUSICALES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:27:40 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF99964B-6524-4D7F-64B0-A0FC2DE3B36D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDC50D06-7114-6FA5-C041-2F72E8279F2D" name="TBL_CANCIONES_TBL_CREDITOS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:31:02 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6579869F-E1C5-C0D5-33CF-BA08057BD015"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

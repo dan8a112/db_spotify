@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1A85C109-86B8-FB7C-D895-A7E7D6DDE215" containerWithKeyObject="4CE3F53E-1403-D096-25D0-EC20A51B8825" localFKIndex="EC7581E2-7188-E71F-147B-044F80833CBF" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-14 20:58:42 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_ESCRITORES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A7ABD1F0-D699-A5AF-FA36-9B9FA98C972A</referredTableID>
+<keyObject>12CF89AB-1AB4-FA57-2EA5-79865960E0DA</keyObject>
+<referredKeyID>12CF89AB-1AB4-FA57-2EA5-79865960E0DA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESCRITOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
