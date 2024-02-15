@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B2A3E03-5FE7-0EA5-2E06-30DCDC62CEF8" name="TBL_EPISODIOS">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:36:13 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EPISODIO" id="F1A90BBE-54DE-9F5A-8FCC-85D188116A8B">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_EPISODIO" id="34501F13-90ED-1FCA-2217-053AB1BC9353">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION_EPISODIO" id="6C370BFD-0BCE-AF23-3B9E-FB417F6949D3">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_EPISODIO" id="5A838330-B844-4B31-808E-9BC955BC5D43">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPRODUCCIONES_EPISODIO" id="3B8B72E1-708A-0D7F-9D84-0DC0B3CD801A">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_PUBLICACION_EPISODIO" id="0DB949CF-E5E2-7D7C-DD49-1DCC970832AF">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1737D83-9CFA-FAF5-ACA8-8A83E69B7038" name="TBL_EPISODIOS_PK">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A90BBE-54DE-9F5A-8FCC-85D188116A8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
