@@ -28,9 +28,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="1A85C109-86B8-FB7C-D895-A7E7D6DDE215" referredColumn="0DE260D2-DD66-90C9-D326-E91E907B2F8A"/>
-</associations>
 </Column>
 <Column name="TBL_PRODUCTORES_ID_PRODUCTOR" id="D485A742-5017-1255-A65D-017FEE1EB096">
 <createdBy>casti</createdBy>
@@ -42,9 +39,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F14B1A9B-27BD-A562-6B8E-F8B593CDC427" referredColumn="C7882AB3-73F2-0133-2033-FDC0595AE2ED"/>
-</associations>
 </Column>
 <Column name="FIRMA_DISCOGRAFICA" id="C26F6EA4-C90F-D903-E633-4CCBB63F889C">
 <createdBy>casti</createdBy>
@@ -57,6 +51,53 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESCRITORES" id="0EAC591E-C54E-CE24-C2C5-0D1FB83404AE">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:10:14 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPOSITOR" id="CAB390F7-0353-8066-7A03-BC4009138E5F">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:10:14 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTORES" id="16D2F61F-F626-361E-E50B-52688600EAAB">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:10:14 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_ARTISTAS_ID_USUARIO" id="F3515D87-4318-2AD0-AEFD-C113C06D3D85">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:23:11 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="708F7296-2F36-2513-A555-9B7878950E3B" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -71,24 +112,14 @@
 <colUsage columnID="089AE51D-227F-9746-961E-0980CFA4021A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EC7581E2-7188-E71F-147B-044F80833CBF" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
+<ind_PK_UK id="FF00F0D4-D84C-6C40-8E3B-8AA527DE67FA" name="TBL_CREDITOS_TBL_ARTISTAS_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:58:42 UTC</createdTime>
+<createdTime>2024-02-15 20:23:11 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7B59C815-C36F-E382-6360-F5878BED3433"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="19D24B77-D530-32FE-5D02-9D43C067DB99" name="TBL_CREDITOS_TBL_PRODUCTORES_FK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:58:52 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D485A742-5017-1255-A65D-017FEE1EB096"/>
+<colUsage columnID="F3515D87-4318-2AD0-AEFD-C113C06D3D85"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

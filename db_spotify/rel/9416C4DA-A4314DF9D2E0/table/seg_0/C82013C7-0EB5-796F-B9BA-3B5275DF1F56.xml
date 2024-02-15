@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C82013C7-0EB5-796F-B9BA-3B5275DF1F56" name="TBL_HISTORIAL_DE_REPRODUCCION">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:14:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HISTORIAL_DE_REPRODUCCION" id="CFADC93D-81B6-19A3-3BD0-34D81F941CB0">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:15:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_USUARIO_ESTANDAR_ID_USUARIO" id="52444F4E-6C11-A94A-14F8-9001124E3236">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:22:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1D8DAE6-D7FC-0D9E-78A4-CFAF09172B6E" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D747ECCE-7DA8-3CD4-9090-C08DAF9BBA8E" name="TBL_HISTORIAL_DE_REPRODUCCION_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:15:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFADC93D-81B6-19A3-3BD0-34D81F941CB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6D2FBFF-C2B8-E014-DE1C-40B7FFC06AE1" name="TBL_HISTORIAL_DE_REPRODUCCION_TBL_USUARIO_ESTANDAR_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:22:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52444F4E-6C11-A94A-14F8-9001124E3236"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
