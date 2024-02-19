@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FEDA483C-3B89-6688-4E3E-D982450AD8AE" containerWithKeyObject="9FEF4B0D-1719-ECF1-474C-32ECAE989451" localFKIndex="1BE56332-1161-A846-5D81-8D30ECDBAAAE" name="TBL_LISTAS_Y_CANCIONES_TBL_CANCIONES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:43:56 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_CANCIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0134625B-6782-1E81-2A1B-2B54B8E33F09</referredTableID>
+<keyObject>6F6D6975-56E9-F50A-0D6A-297FFB88F3A0</keyObject>
+<referredKeyID>6F6D6975-56E9-F50A-0D6A-297FFB88F3A0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CANCION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -8,38 +8,19 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_EPISODIO" id="F1A90BBE-54DE-9F5A-8FCC-85D188116A8B">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<Column name="ID_MEDIA" id="38D7417A-59E1-949D-E5C5-89A80D7F6E96">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:02:50 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NOMBRE_EPISODIO" id="34501F13-90ED-1FCA-2217-053AB1BC9353">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-15 20:43:59 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DURACION_EPISODIO" id="6C370BFD-0BCE-AF23-3B9E-FB417F6949D3">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-15 20:43:59 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="994B1196-FC75-5AA0-85FD-E81106894FAC" referredColumn="D5842DBA-FAA5-EA17-A61D-FB44F3D83226"/>
+</associations>
 </Column>
 <Column name="DESCRIPCION_EPISODIO" id="5A838330-B844-4B31-808E-9BC955BC5D43">
 <createdBy>daniel</createdBy>
@@ -52,27 +33,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="REPRODUCCIONES_EPISODIO" id="3B8B72E1-708A-0D7F-9D84-0DC0B3CD801A">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-15 20:43:59 UTC</createdTime>
+<Column name="PODCASTS_ID_PODCAST" id="51A381DD-FA3E-7F5C-33E6-400A56738D8B">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:08:40 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FECHA_PUBLICACION_EPISODIO" id="0DB949CF-E5E2-7D7C-DD49-1DCC970832AF">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-15 20:43:59 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E275FC2D-13C0-3AC5-3E85-415A4E5DDD22" referredColumn="9E3D787D-E527-1AEE-8602-779638C0ADAB"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -84,7 +57,27 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1A90BBE-54DE-9F5A-8FCC-85D188116A8B"/>
+<colUsage columnID="38D7417A-59E1-949D-E5C5-89A80D7F6E96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C304305-1EF8-1CAE-FA09-296BE57CAF23" name="TBL_EPISODIOS_TBL_MEDIA_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:02:50 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38D7417A-59E1-949D-E5C5-89A80D7F6E96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9156907E-872F-2037-D928-59FFDF79BBDA" name="TBL_EPISODIOS_PODCASTS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:08:40 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51A381DD-FA3E-7F5C-33E6-400A56738D8B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

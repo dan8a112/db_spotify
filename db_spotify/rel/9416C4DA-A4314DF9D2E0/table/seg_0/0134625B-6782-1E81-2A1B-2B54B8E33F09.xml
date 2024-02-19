@@ -8,27 +8,19 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_CANCION" id="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0">
+<Column name="ID_MEDIA" id="97091350-C172-18B6-E102-1814CA25BE8D">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-12 20:50:47 UTC</createdTime>
+<createdTime>2024-02-15 21:05:54 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NOMBRE_CANCION" id="39574386-2A27-E3A3-638F-2D54100AED18">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 20:50:47 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33AFB847-325B-4663-F29D-B0A06DB61C26" referredColumn="D5842DBA-FAA5-EA17-A61D-FB44F3D83226"/>
+</associations>
 </Column>
 <Column name="LETRA_CANCION" id="311A15BF-AD79-1114-8503-D45CE8AF6B71">
 <createdBy>casti</createdBy>
@@ -38,39 +30,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="REPRODUCCIONES" id="F9A0C8B1-EF7D-9F3A-69CB-FC0A29E18881">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 20:50:47 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FECHA_LANZAMIENTO" id="D1E59A87-9F84-0ABF-5E12-06AD8DAC7D23">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 20:50:47 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_CANCIONES_ID_CANCION" id="4AD9B9CA-9899-284D-50D8-A412E9545B58">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:22:19 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -114,6 +73,20 @@
 <colAssociation fkAssociation="2C7D1EB4-6997-793D-4301-5BAEF803DA26" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
 </associations>
 </Column>
+<Column name="TBL_ARTISTAS_ID_USUARIO" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:10:38 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72979ABD-E382-6EAC-FD8D-FC3C85ED7E5B" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6F6D6975-56E9-F50A-0D6A-297FFB88F3A0" name="TBL_CANCIONES_PK">
@@ -124,7 +97,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
+<colUsage columnID="97091350-C172-18B6-E102-1814CA25BE8D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4AC71078-A5DF-8432-28A9-55CB0601D1B0" name="TBL_CANCIONES_TBL_ALBUMES_FK">
@@ -155,6 +128,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6579869F-E1C5-C0D5-33CF-BA08057BD015"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0D191D9-B261-ABB0-CFA9-24AE688CAB6E" name="TBL_CANCIONES_TBL_MEDIA_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:05:54 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97091350-C172-18B6-E102-1814CA25BE8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D1750F8-573D-E0CB-402E-978B20F9E726" name="TBL_CANCIONES_TBL_ARTISTAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:10:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05A87E54-A6C7-2AEB-7D6F-C45542B377BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

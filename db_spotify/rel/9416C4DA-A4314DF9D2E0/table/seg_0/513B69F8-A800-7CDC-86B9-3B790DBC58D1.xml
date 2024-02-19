@@ -21,20 +21,6 @@
 <colAssociation fkAssociation="A7148CD8-B35D-E805-A1F9-346C66C5C7F5" referredColumn="CFADC93D-81B6-19A3-3BD0-34D81F941CB0"/>
 </associations>
 </Column>
-<Column name="ID_CANCION" id="DFF396C3-E531-C8AB-8D52-E1F04C43F544">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:18:34 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C0626965-3FA5-D68F-94B8-29F6E3739748" referredColumn="5CE9B4ED-D8D1-486A-1B3C-EBBF1FC0F7D0"/>
-</associations>
-</Column>
 <Column name="FECHA_REPRODUCCION" id="9D589E7F-03E0-9B4A-9222-D72476BAFB5C">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:19:07 UTC</createdTime>
@@ -45,6 +31,20 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_CANCIONES_ID_MEDIA" id="596B34BB-901B-88EF-8A57-ED918BB6A73D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:06:42 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0626965-3FA5-D68F-94B8-29F6E3739748" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -65,7 +65,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DFF396C3-E531-C8AB-8D52-E1F04C43F544"/>
+<colUsage columnID="596B34BB-901B-88EF-8A57-ED918BB6A73D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

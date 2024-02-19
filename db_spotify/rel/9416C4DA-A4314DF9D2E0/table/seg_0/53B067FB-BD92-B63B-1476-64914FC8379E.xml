@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE74753B-787D-FEE2-E600-A240FA52B21F" name="PODCASTS">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:55:19 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="53B067FB-BD92-B63B-1476-64914FC8379E" name="TBL_LISTAS_REPRODUCCION">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:33:19 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<ordsAlias>table_12</ordsAlias>
+<ordsAlias>table_15</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PODCAST" id="9E3D787D-E527-1AEE-8602-779638C0ADAB">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
+<Column name="ID_LISTA_REPRODUCCION" id="54AA38E8-AC00-85C6-4071-694B520F586B">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:39:41 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,52 +18,51 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE_PODCAST" id="63772755-8E04-7C59-82A7-D55E98BEB6C5">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300</dataTypeSize>
-<ownDataTypeParameters>300,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="URL_PORTADA_PODCAST" id="5E0EB258-6845-57C0-3A9F-85CE3461CFB9">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300</dataTypeSize>
-<ownDataTypeParameters>300,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DESCRIPCION_PODCAST" id="846D1C7C-39FC-430B-8BCF-636E5ECD0E66">
+<Column name="NOMBRE_LISTA_REPRODUCCION" id="151E36F3-9D8C-8B4F-AAC6-DF6F66EB4C0B">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-15 21:09:20 UTC</createdTime>
+<createdTime>2024-02-15 20:39:41 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_CANCIONES" id="51344198-3FFF-55B7-DBA1-76009F3DE566">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:39:41 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURARION_LISTA_REPRODUCCION" id="FB02C688-691D-C0FB-938A-4C374A8C0F5F">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:39:41 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B2D33698-D1D3-B6B5-5413-5D09CDDF7A1A" name="PODCASTS_PK">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
+<ind_PK_UK id="D043BEF8-DBFF-ADF8-50BA-731CC9D50333" name="TBL_LISTAS_REPRODUCCION_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 20:39:41 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9E3D787D-E527-1AEE-8602-779638C0ADAB"/>
+<colUsage columnID="54AA38E8-AC00-85C6-4071-694B520F586B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

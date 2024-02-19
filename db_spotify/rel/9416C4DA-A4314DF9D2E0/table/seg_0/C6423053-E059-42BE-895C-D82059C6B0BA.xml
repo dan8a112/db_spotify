@@ -75,6 +75,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TBL_ARTISTAS_ID_USUARIO" id="AA736DE3-2065-7EFD-3014-F39B150A214C">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:13:07 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F89DA5B-395F-708F-EDF1-AD04F27FD2F0" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DAD5BA9A-9549-F2F8-9103-A68DD17FEBED" name="TBL_ALBUMES_PK">
@@ -86,6 +100,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="260F3CD0-7621-367A-E05E-B8FA6AA15EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AE79303-84A4-47CA-E994-E4955F26C18B" name="TBL_ALBUMES_TBL_ARTISTAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:13:07 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA736DE3-2065-7EFD-3014-F39B150A214C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
