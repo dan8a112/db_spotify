@@ -114,6 +114,16 @@
 <colUsage columnID="97091350-C172-18B6-E102-1814CA25BE8D"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="6BBFC0A2-6B1D-8A6A-56DC-65D364A2EAFF" name="TBL_CANCIONES__IDX">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:04:52 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6579869F-E1C5-C0D5-33CF-BA08057BD015"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="4AC71078-A5DF-8432-28A9-55CB0601D1B0" name="TBL_CANCIONES_TBL_ALBUMES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 20:27:02 UTC</createdTime>

@@ -110,7 +110,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_PAISES_ID_PAIS" id="2203176C-CEB6-683E-BE6E-AE252AE562D8">
+<Column name="ID_PAIS" id="2203176C-CEB6-683E-BE6E-AE252AE562D8">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 23:30:08 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

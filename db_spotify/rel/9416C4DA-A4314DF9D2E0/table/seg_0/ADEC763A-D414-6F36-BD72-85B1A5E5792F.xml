@@ -8,41 +8,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PODCASTER" id="00FC7DCE-23D2-1C8D-B9A6-DCEC526CE7E3">
+<Column name="ID_USUARIO" id="57F53110-B9E8-D4F3-A34C-D742E8E38767">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:29:58 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NOMBRE" id="1824A3F7-3347-602A-61A5-BD039AA47256">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:29:58 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="APELLIDO" id="FA21FDBF-777C-35CF-BF7D-D0B6D638964A">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:29:58 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PODCASTS_ID_PODCAST" id="2FC9640F-08C0-E118-9CD3-DFC225E37295">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:30:14 UTC</createdTime>
+<createdTime>2024-02-23 16:51:07 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,7 +19,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1DE550AD-B9EE-54C3-4BC6-031D7474727D" referredColumn="67F29315-6657-3B26-1B7E-E0F51B1FF320"/>
+<colAssociation fkAssociation="959AB323-D17B-5BD9-D25A-EBCA9157A84F" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
 </associations>
 </Column>
 </columns>
@@ -64,17 +32,17 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="00FC7DCE-23D2-1C8D-B9A6-DCEC526CE7E3"/>
+<colUsage columnID="57F53110-B9E8-D4F3-A34C-D742E8E38767"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F3A78172-2C38-2ADF-116C-04947B0EC145" name="TBL_PODCASTERS_PODCASTS_FK">
+<ind_PK_UK id="D25F3DC2-F22D-E819-4BF4-496A10985A23" name="TBL_PODCASTERS_TBL_USUARIOS_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:30:14 UTC</createdTime>
+<createdTime>2024-02-23 16:51:07 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2FC9640F-08C0-E118-9CD3-DFC225E37295"/>
+<colUsage columnID="57F53110-B9E8-D4F3-A34C-D742E8E38767"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

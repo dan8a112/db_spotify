@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A317E3A4-3762-E0D3-A215-2B3FB9029F06" containerWithKeyObject="983BA878-D648-284F-3A70-D00115B911B9" localFKIndex="29B9A00A-17DC-D207-68CC-E8D1A5F2E275" name="TBL_USUARIO_ESTANDAR_TBL_PAGO_PLANES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:38:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_PAGO_PLANES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E022F826-8921-0F56-2330-A98B306A2517</referredTableID>
+<keyObject>7887E787-78CD-17A0-A5C9-BEA39AF89F8F</keyObject>
+<referredKeyID>7887E787-78CD-17A0-A5C9-BEA39AF89F8F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PLAN_PAGADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -33,7 +33,7 @@
 <colAssociation fkAssociation="93BD99D4-F0C4-DAEA-E601-912B6076631A" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
 </associations>
 </Column>
-<Column name="LISTA_R_ID_ROL" id="604E9903-D0A4-127C-E355-2FF6B8B9D387">
+<Column name="ID_ROL" id="604E9903-D0A4-127C-E355-2FF6B8B9D387">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:18:23 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

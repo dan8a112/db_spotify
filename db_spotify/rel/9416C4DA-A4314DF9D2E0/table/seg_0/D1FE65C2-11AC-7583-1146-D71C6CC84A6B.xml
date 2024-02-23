@@ -1,30 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A25A6C7E-C7EE-0803-851C-7577E6D92FE3" name="TBL_GENEROS_CANCIONES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1FE65C2-11AC-7583-1146-D71C6CC84A6B" name="TBL_ESCRITORES_Y_CANCIONES">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:40:34 UTC</createdTime>
+<createdTime>2024-02-23 19:12:21 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<ordsAlias>table_26</ordsAlias>
+<ordsAlias>table_35</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_MEDIA" id="94AAD942-0EE2-005D-08B5-D2352B8B46B2">
+<Column name="ID_ESCRITOR" id="C32D571D-3F55-5BF8-AE97-B6EB39948DB7">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:42:56 UTC</createdTime>
+<createdTime>2024-02-23 19:13:09 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8C98CAA9-D445-AFA9-0F22-D9D44D779041" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
+<colAssociation fkAssociation="73ED9600-84C3-6F73-E0B2-764DFBD4C7E8" referredColumn="615E6623-7644-2CD0-6302-C5F245CEBA6D"/>
 </associations>
 </Column>
-<Column name="ID_GENERO" id="EA6BE628-9FB4-2F88-F0E6-BC007E81CD43">
+<Column name="ID_CREDITOS_MUSICALES" id="152FE868-4571-1625-F197-E32048CF7F38">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:43:04 UTC</createdTime>
+<createdTime>2024-02-23 19:13:15 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,29 +31,29 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="39770BE6-8711-8EA1-7B63-8C975C8E4FE4" referredColumn="430EE893-612A-FC41-383C-34A33DF14B6A"/>
+<colAssociation fkAssociation="9B953620-E3CD-0DD4-D1D5-9F0EBBF177A0" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="94D4F84C-F5C0-9818-D013-7F2160AD0A70" name="TBL_GENEROS_CANCIONES_TBL_CANCIONES_FK">
+<ind_PK_UK id="B461843C-5961-9F89-BEED-EABC6E5109A2" name="TBL_ESCRITORES_Y_CANCIONES_TBL_ESCRITORES_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:42:56 UTC</createdTime>
+<createdTime>2024-02-23 19:13:09 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="94AAD942-0EE2-005D-08B5-D2352B8B46B2"/>
+<colUsage columnID="C32D571D-3F55-5BF8-AE97-B6EB39948DB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="81CD6367-CBDA-6D43-54F3-3FEB1C0B175A" name="TBL_GENEROS_CANCIONES_TBL_GENEROS_FK">
+<ind_PK_UK id="F43BF505-FD18-7DBB-1097-EF3B77776D0A" name="TBL_ESCRITORES_Y_CANCIONES_TBL_CREDITOS_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:43:04 UTC</createdTime>
+<createdTime>2024-02-23 19:13:15 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="EA6BE628-9FB4-2F88-F0E6-BC007E81CD43"/>
+<colUsage columnID="152FE868-4571-1625-F197-E32048CF7F38"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

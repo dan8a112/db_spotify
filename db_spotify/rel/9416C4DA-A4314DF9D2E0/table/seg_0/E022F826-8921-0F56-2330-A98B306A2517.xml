@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLAN_PAGADO" id="F1DFCE22-DE80-C699-2EDE-0057BC8E4469">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:36:01 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="FECHA_INICIO_PLAN" id="DB9825F4-6AB2-CFE3-999B-1F531C583C15">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:37 UTC</createdTime>
@@ -58,8 +68,40 @@
 <colAssociation fkAssociation="D526D6BD-1E64-2BD4-032A-5AD70019305E" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
 </associations>
 </Column>
+<Column name="REFERENCIA_BANCARIA" id="1E632D3C-DFAD-6B71-84D4-11DA09B6F65A">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 20:06:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7887E787-78CD-17A0-A5C9-BEA39AF89F8F" name="TBL_PAGO_PLANES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:36:01 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1DFCE22-DE80-C699-2EDE-0057BC8E4469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F0C29AA-A104-3AA5-EBB9-6D106D31B439" name="TBL_PAGO_PLANES__IDX">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:43:20 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60705CCB-2DB1-6AB6-C700-89E48D9AF20B"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="2D51E524-EE98-60BE-768B-75FCD42E1184" name="TBL_PAGO_PLANES_TBL_USUARIO_ESTANDAR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:51 UTC</createdTime>

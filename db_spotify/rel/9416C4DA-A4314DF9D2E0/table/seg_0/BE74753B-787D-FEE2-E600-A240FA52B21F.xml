@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE74753B-787D-FEE2-E600-A240FA52B21F" name="PODCASTS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE74753B-787D-FEE2-E600-A240FA52B21F" name="TBL_PODCASTS">
 <createdBy>daniel</createdBy>
 <createdTime>2024-02-12 21:55:19 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -17,6 +17,32 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_IDIOMA" id="CB26D0EF-89A8-9719-5A59-31EB92D1DA87">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:29:46 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4D4A708-398A-099F-CB91-8CF92A736B25" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PODCAST" id="A64F022A-B6EE-D719-5786-97F2D106937E">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 17:00:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="URL_PORTADA_PODCAST" id="5E0EB258-6845-57C0-3A9F-85CE3461CFB9">
@@ -42,9 +68,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_IDIOMA" id="CB26D0EF-89A8-9719-5A59-31EB92D1DA87">
+<Column name="TBL_PODCASTERS_ID_USUARIO" id="C0D09EDB-90A2-2CBA-E039-F53DDA08C118">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-21 20:29:46 UTC</createdTime>
+<createdTime>2024-02-23 16:51:56 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,7 +79,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D4D4A708-398A-099F-CB91-8CF92A736B25" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
+<colAssociation fkAssociation="09AEFC71-FF9E-7C51-3DFA-2DE5652B721E" referredColumn="57F53110-B9E8-D4F3-A34C-D742E8E38767"/>
 </associations>
 </Column>
 </columns>
@@ -77,6 +103,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CB26D0EF-89A8-9719-5A59-31EB92D1DA87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF786DB2-9F9A-8CB0-40AE-549EF0210793" name="TBL_PODCASTS_TBL_PODCASTERS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 16:45:34 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0D09EDB-90A2-2CBA-E039-F53DDA08C118"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

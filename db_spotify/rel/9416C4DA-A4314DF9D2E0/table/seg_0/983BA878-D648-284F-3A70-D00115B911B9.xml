@@ -22,9 +22,9 @@
 <colAssociation fkAssociation="B8619C8E-9115-BD74-2166-92AEAB48E076" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
 </associations>
 </Column>
-<Column name="ID_PLAN" id="AD57DE40-1026-92CE-3C8B-38453008D4E1">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:53:16 UTC</createdTime>
+<Column name="ID_PLAN_PAGADO" id="B505E9DF-8A73-01AE-8034-604359051C6E">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:38:16 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="766005CF-E3D0-A31F-DE56-543B6FC17435" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
+<colAssociation fkAssociation="A317E3A4-3762-E0D3-A215-2B3FB9029F06" referredColumn="F1DFCE22-DE80-C699-2EDE-0057BC8E4469"/>
 </associations>
 </Column>
 <Column name="ID_HISTORIAL_DE_REPRODUCCION" id="906D1647-52AD-5399-7318-211FE144B6C4">
@@ -70,6 +70,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="906D1647-52AD-5399-7318-211FE144B6C4"/>
+<colUsage columnID="B505E9DF-8A73-01AE-8034-604359051C6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="8E1A0132-49FF-EDF1-8582-40B82A4D38A2" name="TBL_USUARIO_ESTANDAR_TBL_USUARIOS_FK">
@@ -82,16 +83,6 @@
 <colUsage columnID="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B0A1ACA0-8B11-1CFE-F4F3-D16BD7A1AFA1" name="TBL_USUARIO_ESTANDAR_TBL_PLANES_FK">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:53:16 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="AD57DE40-1026-92CE-3C8B-38453008D4E1"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="AF3DD8D6-6291-8843-1897-0CA34CF5047E" name="TBL_USUARIO_ESTANDAR_TBL_HISTORIAL_DE_REPRODUCCION_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:58:07 UTC</createdTime>
@@ -100,6 +91,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="906D1647-52AD-5399-7318-211FE144B6C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29B9A00A-17DC-D207-68CC-E8D1A5F2E275" name="TBL_USUARIO_ESTANDAR_TBL_PAGO_PLANES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 19:38:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B505E9DF-8A73-01AE-8034-604359051C6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

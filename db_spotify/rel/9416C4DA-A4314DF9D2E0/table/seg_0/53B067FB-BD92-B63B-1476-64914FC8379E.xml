@@ -55,7 +55,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURARION_LISTA_REPRODUCCION" id="FB02C688-691D-C0FB-938A-4C374A8C0F5F">
+<Column name="DURACION_LISTA_REPRODUCCION" id="FB02C688-691D-C0FB-938A-4C374A8C0F5F">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:39:41 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
