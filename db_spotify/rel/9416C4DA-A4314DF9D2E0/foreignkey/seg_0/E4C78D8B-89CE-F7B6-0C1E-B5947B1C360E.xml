@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FBAFC0BF-BC75-900E-BC89-BF1B27F46232" containerWithKeyObject="5A01385D-0286-C29E-ED19-0DFC100AD26A" localFKIndex="EB284E08-BD65-AA04-D5F7-4AD5B1D6029D" name="TBL_USUARIOS_TBL_PAISES_FK">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:39:42 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E4C78D8B-89CE-F7B6-0C1E-B5947B1C360E" containerWithKeyObject="5A01385D-0286-C29E-ED19-0DFC100AD26A" localFKIndex="88F06CE7-D77B-256C-CC84-FA5FBA569EDC" name="TBL_USUARIOS_TBL_PAISES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:30:08 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <referredTableLongName>TBL_PAISES</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

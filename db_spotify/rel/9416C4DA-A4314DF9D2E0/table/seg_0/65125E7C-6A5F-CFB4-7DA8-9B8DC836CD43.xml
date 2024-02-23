@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65125E7C-6A5F-CFB4-7DA8-9B8DC836CD43" name="TBL_ROL_LISTA_R">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:15:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROL" id="5B24FBC3-FA98-13F1-9506-FE9589629B9D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:18:05 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_ROL" id="AF952FEE-F439-2C2B-9BB4-454F54A6F357">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:18:05 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12C56C2F-9A96-BAED-8FA5-4DFBC039AB16" name="TBL_ROL_LISTA_R_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:18:05 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B24FBC3-FA98-13F1-9506-FE9589629B9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

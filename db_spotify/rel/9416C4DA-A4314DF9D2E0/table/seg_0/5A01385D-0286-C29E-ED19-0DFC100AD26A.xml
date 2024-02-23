@@ -32,20 +32,6 @@
 <colAssociation fkAssociation="289AA7AD-AA72-AFE9-BC1A-8269CCDA7B8B" referredColumn="E30414C5-9F0D-C956-2652-71B1621A8395"/>
 </associations>
 </Column>
-<Column name="ID_PAIS" id="459CF32B-5300-327D-8C79-DE014B6DD468">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:39:42 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="FBAFC0BF-BC75-900E-BC89-BF1B27F46232" referredColumn="BF93C9D7-E6A1-F992-2CB5-944CA01E5BB8"/>
-</associations>
-</Column>
 <Column name="CORREO" id="081DA466-C46E-4BCF-0CA3-A20055F9BD05">
 <createdBy>daniel</createdBy>
 <createdTime>2024-02-12 20:19:18 UTC</createdTime>
@@ -124,6 +110,20 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TBL_PAISES_ID_PAIS" id="2203176C-CEB6-683E-BE6E-AE252AE562D8">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:30:08 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4C78D8B-89CE-F7B6-0C1E-B5947B1C360E" referredColumn="BF93C9D7-E6A1-F992-2CB5-944CA01E5BB8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FF9F8E83-4F9A-C0D3-308F-ADCB1AC6F3DA" name="TBL_USUARIOS_PK">
@@ -147,14 +147,14 @@
 <colUsage columnID="0AF703D9-53E0-DF3B-8245-72E2119CD6F9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EB284E08-BD65-AA04-D5F7-4AD5B1D6029D" name="TBL_USUARIOS_TBL_PAISES_FK">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:39:42 UTC</createdTime>
+<ind_PK_UK id="88F06CE7-D77B-256C-CC84-FA5FBA569EDC" name="TBL_USUARIOS_TBL_PAISES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:30:08 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="459CF32B-5300-327D-8C79-DE014B6DD468"/>
+<colUsage columnID="2203176C-CEB6-683E-BE6E-AE252AE562D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

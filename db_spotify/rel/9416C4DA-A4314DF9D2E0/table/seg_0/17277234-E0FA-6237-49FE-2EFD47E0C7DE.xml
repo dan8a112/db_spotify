@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17277234-E0FA-6237-49FE-2EFD47E0C7DE" name="TBL_ESCRITORES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:06:06 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESCRITOR" id="615E6623-7644-2CD0-6302-C5F245CEBA6D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:18:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="54AD37C9-AFE7-2986-D592-7E7BF034B113">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:18:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="4167B04E-DD58-7FC8-9568-337212BB6CC4">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:18:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDO" id="EC104FCA-B4C7-0D33-2FE9-35AD4C906FA9">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:18:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74EE881D-77A0-F29C-7CBA-E527838F457E" name="TBL_ESCRITORES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:19:15 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="615E6623-7644-2CD0-6302-C5F245CEBA6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

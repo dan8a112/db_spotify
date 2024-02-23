@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A25A6C7E-C7EE-0803-851C-7577E6D92FE3" name="TBL_GENEROS_CANCIONES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:40:34 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MEDIA" id="94AAD942-0EE2-005D-08B5-D2352B8B46B2">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:42:56 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C98CAA9-D445-AFA9-0F22-D9D44D779041" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
+</associations>
+</Column>
+<Column name="ID_GENERO" id="EA6BE628-9FB4-2F88-F0E6-BC007E81CD43">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:43:04 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39770BE6-8711-8EA1-7B63-8C975C8E4FE4" referredColumn="430EE893-612A-FC41-383C-34A33DF14B6A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94D4F84C-F5C0-9818-D013-7F2160AD0A70" name="TBL_GENEROS_CANCIONES_TBL_CANCIONES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:42:56 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94AAD942-0EE2-005D-08B5-D2352B8B46B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81CD6367-CBDA-6D43-54F3-3FEB1C0B175A" name="TBL_GENEROS_CANCIONES_TBL_GENEROS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:43:04 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA6BE628-9FB4-2F88-F0E6-BC007E81CD43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

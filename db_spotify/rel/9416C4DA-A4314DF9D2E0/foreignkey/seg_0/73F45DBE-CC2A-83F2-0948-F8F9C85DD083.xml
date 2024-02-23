@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="73F45DBE-CC2A-83F2-0948-F8F9C85DD083" containerWithKeyObject="BE3186A3-9538-CF6A-67C9-943B431CD1F3" localFKIndex="9EE5A31A-9581-B5D1-20C4-1CB579D237FE" name="TBL_FACTURAS_TBL_USUARIO_ESTANDAR_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:50:20 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_USUARIO_ESTANDAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>983BA878-D648-284F-3A70-D00115B911B9</referredTableID>
+<keyObject>E603F1A6-9868-5131-302F-66CEF3BF622D</keyObject>
+<referredKeyID>E603F1A6-9868-5131-302F-66CEF3BF622D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_USUARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

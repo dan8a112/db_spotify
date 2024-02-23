@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E022F826-8921-0F56-2330-A98B306A2517" name="TBL_PAGO_PLANES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:51:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FECHA_INICIO_PLAN" id="DB9825F4-6AB2-CFE3-999B-1F531C583C15">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN_PLAN" id="80696E4C-4686-2637-6703-4CCE3EFAB75B">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USUARIO" id="60705CCB-2DB1-6AB6-C700-89E48D9AF20B">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4A322BE-BF37-7038-9C2E-77A2EB7C6702" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</associations>
+</Column>
+<Column name="ID_PLAN" id="A27A68A1-F5A6-5411-7352-40473761EF4D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D526D6BD-1E64-2BD4-032A-5AD70019305E" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D51E524-EE98-60BE-768B-75FCD42E1184" name="TBL_PAGO_PLANES_TBL_USUARIO_ESTANDAR_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60705CCB-2DB1-6AB6-C700-89E48D9AF20B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BEEAF48-DDA3-9659-E2D9-C3D5F6BFEFE1" name="TBL_PAGO_PLANES_TBL_PLANES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A27A68A1-F5A6-5411-7352-40473761EF4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

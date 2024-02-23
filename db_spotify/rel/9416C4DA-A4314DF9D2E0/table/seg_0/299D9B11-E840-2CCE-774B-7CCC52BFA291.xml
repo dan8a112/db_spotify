@@ -30,6 +30,40 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ABREBIACION_PAIS" id="F08EC5FA-2B9A-A9AF-DB64-4AE3FD84E38E">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:27:56 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ICONO_PAIS" id="0D1D05DC-1456-EF0E-BFC1-04926BDC9E49">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:25:38 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_IDIOMA" id="4B0D3EE4-7623-F072-BDBA-AEEA903AEC76">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:29:03 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2651A0FA-C76D-2F2D-0396-695789970E5D" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C366B7BB-DDDA-6DF6-C2E8-24F754BAD5FA" name="TBL_PAISES_PK">
@@ -41,6 +75,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BF93C9D7-E6A1-F992-2CB5-944CA01E5BB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DE6670A-B3D7-16A0-2FEA-FF4D322CD884" name="TBL_PAISES_TBL_IDIOMAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:29:03 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B0D3EE4-7623-F072-BDBA-AEEA903AEC76"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

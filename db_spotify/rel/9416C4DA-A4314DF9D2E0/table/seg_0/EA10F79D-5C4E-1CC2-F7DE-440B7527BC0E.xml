@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA10F79D-5C4E-1CC2-F7DE-440B7527BC0E" name="TBL_LISTAS_SEGUIDAS">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:36:31 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FECHA_SEGUIMIENTO" id="8825C952-05AE-D783-A134-E6EC7BC76458">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:40:32 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USUARIO" id="1B141A57-20E4-21B8-EC75-A3F66C75CEDF">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:41:04 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93BD99D4-F0C4-DAEA-E601-912B6076631A" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</associations>
+</Column>
+<Column name="LISTA_R_ID_ROL" id="604E9903-D0A4-127C-E355-2FF6B8B9D387">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:18:23 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F31024AF-EC9E-CD1C-DD49-7AB81C78F70F" referredColumn="5B24FBC3-FA98-13F1-9506-FE9589629B9D"/>
+</associations>
+</Column>
+<Column name="ID_LISTA_REPRODUCCION" id="D94F4C24-9DE9-0E7D-29A8-8B7F1A5DA9B5">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:41:10 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F42EF9F-43DA-5755-8B36-5B752087DCC2" referredColumn="54AA38E8-AC00-85C6-4071-694B520F586B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C752F6D-77AC-141E-872D-DC8741EB57BA" name="TBL_LISTAS_SEGUIDAS_TBL_USUARIO_ESTANDAR_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:41:04 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B141A57-20E4-21B8-EC75-A3F66C75CEDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88327D06-8BBD-44E5-3858-416B337F509C" name="TBL_LISTAS_SEGUIDAS_TBL_LISTAS_REPRODUCCION_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:41:10 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D94F4C24-9DE9-0E7D-29A8-8B7F1A5DA9B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B012ECBF-C230-69CD-AA65-E0B7E3ACB669" name="TBL_LISTAS_SEGUIDAS_TBL_ROL_LISTA_R_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:18:23 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="604E9903-D0A4-127C-E355-2FF6B8B9D387"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CFB2466C-750B-CC5D-07E3-CF82E61C7B08" containerWithKeyObject="A53BF800-D10A-D3FF-BA9E-CF97AA14591A" localFKIndex="4C9839B9-5562-3610-2071-A9FE3C7D4CBE" name="TBL_EVENTOS_TBL_LUGARES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:27:24 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_LUGARES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>782F1AFC-7B7C-1063-1BE5-88EC5F5A4CF6</referredTableID>
+<keyObject>64099D4A-8F03-9CA4-D46F-02E210E3EDC4</keyObject>
+<referredKeyID>64099D4A-8F03-9CA4-D46F-02E210E3EDC4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LUGAR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

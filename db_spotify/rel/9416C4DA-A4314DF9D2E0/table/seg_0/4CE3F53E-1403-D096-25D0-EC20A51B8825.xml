@@ -18,28 +18,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_ESCRITORES_ID_ESCRITOR" id="7B59C815-C36F-E382-6360-F5878BED3433">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:58:42 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_PRODUCTORES_ID_PRODUCTOR" id="D485A742-5017-1255-A65D-017FEE1EB096">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:58:52 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="FIRMA_DISCOGRAFICA" id="C26F6EA4-C90F-D903-E633-4CCBB63F889C">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 21:00:30 UTC</createdTime>
@@ -52,40 +30,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ESCRITORES" id="0EAC591E-C54E-CE24-C2C5-0D1FB83404AE">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:10:14 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COMPOSITOR" id="CAB390F7-0353-8066-7A03-BC4009138E5F">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:10:14 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PRODUCTORES" id="16D2F61F-F626-361E-E50B-52688600EAAB">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:10:14 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_ARTISTAS_ID_USUARIO" id="F3515D87-4318-2AD0-AEFD-C113C06D3D85">
+<Column name="ID_ARTISTA" id="F3515D87-4318-2AD0-AEFD-C113C06D3D85">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:23:11 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -97,6 +42,30 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="708F7296-2F36-2513-A555-9B7878950E3B" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
+<Column name="ID_ESCRITOR" id="95BBB1D1-3D8F-E9C7-3D87-3930E8A2800F">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:19:22 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6748DBF2-F127-DEB2-154D-1CE6485D47BB" referredColumn="615E6623-7644-2CD0-6302-C5F245CEBA6D"/>
+</associations>
+</Column>
+<Column name="ID_PRODUCTOR" id="BA5B45B3-B1B9-367B-4A5B-CC21233F653C">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:21:31 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17144763-1A87-6CF6-B1BA-2B2B44D3CA11" referredColumn="22F82625-C5F6-0F42-9663-736B3BCDD74F"/>
 </associations>
 </Column>
 </columns>
@@ -120,6 +89,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F3515D87-4318-2AD0-AEFD-C113C06D3D85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7E412BE-C959-A3D9-4C62-6188BA50B32E" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:19:22 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95BBB1D1-3D8F-E9C7-3D87-3930E8A2800F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="485DDCF5-B0DA-4935-396D-21EB4DA9287F" name="TBL_CREDITOS_TBL_PRODUCTORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 20:21:31 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA5B45B3-B1B9-367B-4A5B-CC21233F653C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08B65D28-96E4-9A2D-FEF5-8C61E681DEDD" name="TBL_IDIOMAS">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:22:15 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_IDIOMA" id="FF0CC9FE-F079-390A-DF4E-03C02B7BE918">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:24:53 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_IDIOMA" id="7521F194-2DF7-6D80-C405-D2AD0F0AD229">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:24:53 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EF93046-400A-4970-B8A3-E2244E0973C3" name="TBL_IDIOMAS_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:24:53 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

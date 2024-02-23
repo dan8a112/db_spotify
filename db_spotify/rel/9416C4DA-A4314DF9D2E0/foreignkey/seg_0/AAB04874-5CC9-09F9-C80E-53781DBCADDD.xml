@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="994B1196-FC75-5AA0-85FD-E81106894FAC" containerWithKeyObject="4B2A3E03-5FE7-0EA5-2E06-30DCDC62CEF8" localFKIndex="5C304305-1EF8-1CAE-FA09-296BE57CAF23" name="TBL_EPISODIOS_TBL_MEDIA_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AAB04874-5CC9-09F9-C80E-53781DBCADDD" containerWithKeyObject="8DF7F2DD-E441-C424-1AD2-252312CA4844" localFKIndex="EFB6CF56-9262-5C94-C8EB-EEDC8A4B05A0" name="TBL_EPISODIO_TBL_MEDIA_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-15 21:02:50 UTC</createdTime>
+<createdTime>2024-02-20 22:20:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <referredTableLongName>TBL_MEDIA</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

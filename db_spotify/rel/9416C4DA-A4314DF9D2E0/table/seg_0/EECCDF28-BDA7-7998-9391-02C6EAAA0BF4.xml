@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EECCDF28-BDA7-7998-9391-02C6EAAA0BF4" name="REDES_SOCIALES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:24:11 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RED_SOCIAL" id="E01F126F-9798-0255-CF8F-96E6E26DA2E1">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:27:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_RED_SOCIAL" id="010F38B8-EAFD-204A-516C-809E3C67F54A">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:27:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ICONO_RED_SOCIAL" id="F1118487-148C-7A05-186E-64866C3BBF9D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:27:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1333DE19-8BCB-DC99-5053-8B3E267706D5" name="REDER_SOCIALES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:27:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E01F126F-9798-0255-CF8F-96E6E26DA2E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

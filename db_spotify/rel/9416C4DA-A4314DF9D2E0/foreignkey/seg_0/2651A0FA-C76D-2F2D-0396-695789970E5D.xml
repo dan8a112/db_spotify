@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2651A0FA-C76D-2F2D-0396-695789970E5D" containerWithKeyObject="299D9B11-E840-2CCE-774B-7CCC52BFA291" localFKIndex="8DE6670A-B3D7-16A0-2FEA-FF4D322CD884" name="TBL_PAISES_TBL_IDIOMAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:29:03 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_IDIOMAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>08B65D28-96E4-9A2D-FEF5-8C61E681DEDD</referredTableID>
+<keyObject>9EF93046-400A-4970-B8A3-E2244E0973C3</keyObject>
+<referredKeyID>9EF93046-400A-4970-B8A3-E2244E0973C3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_IDIOMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

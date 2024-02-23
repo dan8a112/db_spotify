@@ -1,50 +1,60 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE74753B-787D-FEE2-E600-A240FA52B21F" name="PODCASTS">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:55:19 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="782F1AFC-7B7C-1063-1BE5-88EC5F5A4CF6" name="TBL_LUGARES">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:10:47 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<ordsAlias>table_12</ordsAlias>
+<ordsAlias>table_30</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PODCAST" id="67F29315-6657-3B26-1B7E-E0F51B1FF320">
+<Column name="ID_LUGAR" id="A5227F8A-E2E8-5D34-2C42-4D5D0D423B50">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:26:28 UTC</createdTime>
+<createdTime>2024-02-20 23:16:07 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="URL_PORTADA_PODCAST" id="5E0EB258-6845-57C0-3A9F-85CE3461CFB9">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
+<Column name="NOMBRE_LUGAR" id="B6E95CA7-A6DF-7A0B-EC76-5A5390049454">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:16:07 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300</dataTypeSize>
-<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESCRIPCION_PODCAST" id="846D1C7C-39FC-430B-8BCF-636E5ECD0E66">
+<Column name="LATITUD" id="1DABE69A-4BD1-DC34-9A78-7DC3EF451F07">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-15 21:09:20 UTC</createdTime>
+<createdTime>2024-02-20 23:18:11 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
+<logicalDatatype>LOGDT020</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_IDIOMA" id="CB26D0EF-89A8-9719-5A59-31EB92D1DA87">
+<Column name="LONGITUD" id="E2E05002-7B63-9E9E-2338-8C4DF3484733">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-21 20:29:46 UTC</createdTime>
+<createdTime>2024-02-20 23:18:11 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PAIS" id="94C5F1F0-0120-82F3-D925-D989FFBC2BB5">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:28:52 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,30 +63,30 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D4D4A708-398A-099F-CB91-8CF92A736B25" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
+<colAssociation fkAssociation="839B3B15-D27D-C3AE-2A26-7556A8211396" referredColumn="BF93C9D7-E6A1-F992-2CB5-944CA01E5BB8"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B2D33698-D1D3-B6B5-5413-5D09CDDF7A1A" name="PODCASTS_PK">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
+<ind_PK_UK id="64099D4A-8F03-9CA4-D46F-02E210E3EDC4" name="TBL_LUGARES_PK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:16:07 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="67F29315-6657-3B26-1B7E-E0F51B1FF320"/>
+<colUsage columnID="A5227F8A-E2E8-5D34-2C42-4D5D0D423B50"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B32E23FD-E8E3-766C-5781-8EE2BBEE2255" name="PODCASTS_TBL_IDIOMAS_FK">
+<ind_PK_UK id="FCE47630-B053-4903-DC46-067250F64F99" name="TBL_LUGARES_TBL_PAISES_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-21 20:29:46 UTC</createdTime>
+<createdTime>2024-02-20 23:28:52 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CB26D0EF-89A8-9719-5A59-31EB92D1DA87"/>
+<colUsage columnID="94C5F1F0-0120-82F3-D925-D989FFBC2BB5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

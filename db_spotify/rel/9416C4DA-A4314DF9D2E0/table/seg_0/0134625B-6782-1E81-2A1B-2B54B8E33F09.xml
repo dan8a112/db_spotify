@@ -73,7 +73,7 @@
 <colAssociation fkAssociation="2C7D1EB4-6997-793D-4301-5BAEF803DA26" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
 </associations>
 </Column>
-<Column name="TBL_ARTISTAS_ID_USUARIO" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
+<Column name="ID_USUARIO" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:10:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -85,6 +85,20 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="72979ABD-E382-6EAC-FD8D-FC3C85ED7E5B" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
+<Column name="ID_IDIOMA" id="D3063F11-9551-EB04-C997-D56CBD6568FE">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:34:12 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CFE94F7-5F97-C098-8A1A-163E6E76F19F" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
 </associations>
 </Column>
 </columns>
@@ -148,6 +162,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="05A87E54-A6C7-2AEB-7D6F-C45542B377BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7860A540-F60A-0271-14B7-F0741E270D4C" name="TBL_CANCIONES_TBL_IDIOMAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:34:11 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3063F11-9551-EB04-C997-D56CBD6568FE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
