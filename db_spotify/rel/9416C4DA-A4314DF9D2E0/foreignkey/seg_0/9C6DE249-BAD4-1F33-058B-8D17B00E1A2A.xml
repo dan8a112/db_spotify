@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9C6DE249-BAD4-1F33-058B-8D17B00E1A2A" containerWithKeyObject="5E193936-A7F5-D5CF-C8FC-7D080CE8F994" localFKIndex="C0AD35B2-992B-16FE-E6E0-83C2FBAB132F" name="TBL_MERCH_TBL_TALLAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 04:06:25 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_TALLAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>524F8DCE-FC75-75C3-7EEC-0E900D48DDBE</referredTableID>
+<keyObject>F60EB696-8776-6278-FA0C-07A5A368E0DB</keyObject>
+<referredKeyID>F60EB696-8776-6278-FA0C-07A5A368E0DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TALLA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

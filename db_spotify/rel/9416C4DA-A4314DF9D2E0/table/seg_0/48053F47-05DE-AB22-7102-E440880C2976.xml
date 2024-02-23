@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="TBL_ARTISTAS_ID_USUARIO" id="94E10515-3EB9-F6C9-17A2-024598D16234">
+<Column name="ID_USUARIO" id="94E10515-3EB9-F6C9-17A2-024598D16234">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:03:44 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -22,7 +22,7 @@
 <colAssociation fkAssociation="B7DCE44A-311F-2ECE-00BC-A19C0923D5B8" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
 </associations>
 </Column>
-<Column name="TBL_CANCIONES_ID_MEDIA" id="CF681FCD-5743-81C7-9B5E-F49784EB062A">
+<Column name="ID_MEDIA" id="CF681FCD-5743-81C7-9B5E-F49784EB062A">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:03:51 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

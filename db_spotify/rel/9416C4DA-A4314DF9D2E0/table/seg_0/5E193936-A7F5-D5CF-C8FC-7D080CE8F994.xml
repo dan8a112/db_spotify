@@ -18,6 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_TALLA" id="025EED74-4501-3EF6-ABFB-E29BB2D53167">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 04:06:25 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C6DE249-BAD4-1F33-058B-8D17B00E1A2A" referredColumn="6B733334-64B9-5234-1BFF-2E1A6DC26412"/>
+</associations>
+</Column>
 <Column name="NOMBRE_MERCH" id="77018DB0-5B2F-3E46-1367-86B46001675A">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-22 00:12:28 UTC</createdTime>
@@ -71,6 +85,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="05AA3899-1856-1A35-C8A1-7A790CD57B9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0AD35B2-992B-16FE-E6E0-83C2FBAB132F" name="TBL_MERCH_TBL_TALLAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 04:06:25 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="025EED74-4501-3EF6-ABFB-E29BB2D53167"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

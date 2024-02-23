@@ -8,17 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="USER_NAME" id="382F97D8-6F6E-E5EA-03F2-60E3FB005599">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-19 21:29:43 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ID_RED_SOCIAL" id="BA869196-2F74-BC0B-9D15-CFBD65BAE6C5">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 21:29:48 UTC</createdTime>
@@ -46,6 +35,17 @@
 <associations>
 <colAssociation fkAssociation="0DB35779-58B5-A739-DE61-CD05259727C5" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
 </associations>
+</Column>
+<Column name="USER_NAME" id="382F97D8-6F6E-E5EA-03F2-60E3FB005599">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:29:43 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

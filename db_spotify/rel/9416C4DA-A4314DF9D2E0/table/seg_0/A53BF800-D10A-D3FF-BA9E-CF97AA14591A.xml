@@ -18,6 +18,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_USUARIO" id="AC063893-6D76-C28D-8B19-DDE81B42EEEB">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-19 21:21:02 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAACF4BF-758C-41A2-6AA6-CCA6AC187135" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
+<Column name="ID_LUGAR" id="795C77F6-E56E-4EED-6FEA-073A814B9681">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 23:27:24 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFB2466C-750B-CC5D-07E3-CF82E61C7B08" referredColumn="A5227F8A-E2E8-5D34-2C42-4D5D0D423B50"/>
+</associations>
+</Column>
 <Column name="NOMBRE_EVENTO" id="C41C984F-9225-7ACC-F6F3-5667DC1E4665">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:53:46 UTC</createdTime>
@@ -50,34 +78,6 @@
 <logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_ARTISTAS_ID_USUARIO" id="AC063893-6D76-C28D-8B19-DDE81B42EEEB">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-19 21:21:02 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AAACF4BF-758C-41A2-6AA6-CCA6AC187135" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
-</associations>
-</Column>
-<Column name="TBL_LUGARES_ID_LUGAR" id="795C77F6-E56E-4EED-6FEA-073A814B9681">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-20 23:27:24 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="CFB2466C-750B-CC5D-07E3-CF82E61C7B08" referredColumn="A5227F8A-E2E8-5D34-2C42-4D5D0D423B50"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
