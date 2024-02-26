@@ -12,7 +12,9 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:20:37 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

@@ -35,8 +35,11 @@
 <createdTime>2024-02-20 23:27:56 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ICONO_PAIS" id="0D1D05DC-1456-EF0E-BFC1-04926BDC9E49">
