@@ -25,14 +25,14 @@ CREATE TABLE tbl_artistas (
     id_usuario        INTEGER NOT NULL,
     id_merch          INTEGER NOT NULL,
     oyentes_mensuales INTEGER,
-    biografia         CLOB
+    biografia         varchar(4000)
 );
 
 ALTER TABLE tbl_artistas ADD CONSTRAINT tbl_artistas_pk PRIMARY KEY ( id_usuario );
 
 CREATE TABLE tbl_canciones (
     id_media              INTEGER NOT NULL,
-    letra_cancion         CLOB,
+    letra_cancion         varchar(4000),
     id_album              INTEGER NOT NULL,
     id_genero_musical     INTEGER NOT NULL,
     id_creditos_musicales INTEGER NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE tbl_creditos (
 ALTER TABLE tbl_creditos ADD CONSTRAINT tbl_creditos_pk PRIMARY KEY ( id_creditos_musicales );
 
 CREATE TABLE tbl_episodio (
-    descripcion_episodio CLOB,
+    descripcion_episodio varchar(4000),
     id_media             INTEGER NOT NULL,
     id_podcast           INTEGER NOT NULL
 );
@@ -87,7 +87,7 @@ CREATE TABLE tbl_eventos (
     id_lugar      INTEGER NOT NULL,
     nombre_evento VARCHAR2(500),
     fecha_evento  DATE,
-    url_tickets   CLOB
+    url_tickets   varchar(4000)
 );
 
 ALTER TABLE tbl_eventos ADD CONSTRAINT tbl_eventos_pk PRIMARY KEY ( id_evento );
@@ -179,7 +179,7 @@ CREATE TABLE tbl_merch (
     id_merch         INTEGER NOT NULL,
     id_talla         INTEGER NOT NULL,
     nombre_merch     VARCHAR2(500),
-    decripcion_merch CLOB,
+    decripcion_merch varchar(4000),
     precio_merch     NUMBER,
     stock_merch      INTEGER NOT NULL
 );
@@ -206,7 +206,7 @@ CREATE TABLE tbl_paises (
     id_pais          INTEGER NOT NULL,
     nombre_pais      VARCHAR2(1000),
     abreviacion_pais VARCHAR2(10),
-    icono_pais       CLOB,
+    icono_pais       varchar(4000),
     id_idioma        INTEGER NOT NULL
 );
 
@@ -235,7 +235,7 @@ CREATE TABLE tbl_podcasts (
     id_idioma           INTEGER NOT NULL,
     nombre_podcast      VARCHAR2(300),
     url_portada_podcast VARCHAR2(300),
-    descripcion_podcast CLOB,
+    descripcion_podcast varchar(4000),
     id_usuario          INTEGER NOT NULL
 );
 
@@ -267,7 +267,7 @@ ALTER TABLE tbl_tallas ADD CONSTRAINT tbl_tallas_pk PRIMARY KEY ( id_talla );
 CREATE TABLE tbl_tipo_redes_sociales (
     id_red_social     INTEGER NOT NULL,
     nombre_red_social VARCHAR2(500),
-    icono_red_social  CLOB
+    icono_red_social  varchar(4000)
 );
 
 ALTER TABLE tbl_tipo_redes_sociales ADD CONSTRAINT reder_sociales_pk PRIMARY KEY ( id_red_social );
