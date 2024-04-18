@@ -42,17 +42,6 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION" id="886B3B57-18D7-AD10-95AE-F7DC644B3192">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:25:57 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="FECHA_LANZAMIENTO" id="F461D080-A9D8-4F68-A4DF-D5A9A5DEFA20">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 20:25:57 UTC</createdTime>
@@ -61,17 +50,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CANTIDAD_CANCIONES" id="7800D8FE-26A4-384C-680B-A91F63287D43">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:25:57 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

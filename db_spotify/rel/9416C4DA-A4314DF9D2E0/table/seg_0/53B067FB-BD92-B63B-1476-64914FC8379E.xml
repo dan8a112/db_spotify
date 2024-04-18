@@ -55,17 +55,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION_LISTA_REPRODUCCION" id="FB02C688-691D-C0FB-938A-4C374A8C0F5F">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:39:41 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D043BEF8-DBFF-ADF8-50BA-731CC9D50333" name="TBL_LISTAS_REPRODUCCION_PK">

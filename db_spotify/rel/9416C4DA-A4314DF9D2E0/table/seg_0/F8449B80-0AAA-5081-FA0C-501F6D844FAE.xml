@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8449B80-0AAA-5081-FA0C-501F6D844FAE" name="TBL_SEGUIDORES">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:53:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_38</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO_SEGUIDOR" id="1BB6372A-178E-91E0-C3FF-41DF5D70B599">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:54:19 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19495B2A-BABC-3994-C08E-09102F45036F" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO_SEGUIDO" id="B4C7545A-5296-117B-EDE7-58A832EC4E27">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:54:25 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C6C6814-1471-EEA2-96F8-F2306DC437D3" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
+</associations>
+</Column>
+<Column name="FECHA_SEGUIMIENTO" id="7D53C49B-8D5F-384A-B3AE-86DEDCCFAD95">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:55:54 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F4584E2-4081-FAD1-F1C2-C946CFFA5784" name="USUARIOS_SEGUIDOR_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:54:19 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BB6372A-178E-91E0-C3FF-41DF5D70B599"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A627472-3721-0D47-E26D-308A45D753AE" name="TBL_SEGUIDORES_FKv2">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 19:54:25 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4C7545A-5296-117B-EDE7-58A832EC4E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

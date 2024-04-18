@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-17 18:13:49 CST
+--   en:        2024-04-18 14:01:32 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -10,13 +10,11 @@
 -- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE tbl_albumes (
-    id_album           INTEGER NOT NULL,
-    nombre_album       VARCHAR2(150),
-    portada            VARCHAR2(1000),
-    duracion           INTEGER,
-    fecha_lanzamiento  DATE,
-    cantidad_canciones INTEGER,
-    id_usuario         INTEGER NOT NULL
+    id_album          INTEGER NOT NULL,
+    nombre_album      VARCHAR2(150),
+    portada           VARCHAR2(1000),
+    fecha_lanzamiento DATE,
+    id_usuario        INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_albumes ADD CONSTRAINT tbl_albumes_pk PRIMARY KEY ( id_album );
@@ -145,11 +143,10 @@ CREATE TABLE tbl_idiomas (
 ALTER TABLE tbl_idiomas ADD CONSTRAINT tbl_idiomas_pk PRIMARY KEY ( id_idioma );
 
 CREATE TABLE tbl_listas_reproduccion (
-    id_lista_reproduccion       INTEGER NOT NULL,
-    id_usuario_propietario      INTEGER NOT NULL,
-    nombre_lista_reproduccion   VARCHAR2(300),
-    cantidad_canciones          INTEGER,
-    duracion_lista_reproduccion INTEGER
+    id_lista_reproduccion     INTEGER NOT NULL,
+    id_usuario_propietario    INTEGER NOT NULL,
+    nombre_lista_reproduccion VARCHAR2(300),
+    cantidad_canciones        INTEGER
 );
 
 ALTER TABLE tbl_listas_reproduccion ADD CONSTRAINT tbl_listas_reproduccion_pk PRIMARY KEY ( id_lista_reproduccion );
@@ -268,6 +265,12 @@ CREATE TABLE tbl_rol_lista_r (
 );
 
 ALTER TABLE tbl_rol_lista_r ADD CONSTRAINT tbl_rol_lista_r_pk PRIMARY KEY ( id_rol );
+
+CREATE TABLE tbl_seguidores (
+    id_usuario_seguidor INTEGER NOT NULL,
+    id_usuario_seguido  INTEGER NOT NULL,
+    fecha_seguimiento   DATE
+);
 
 CREATE TABLE tbl_tallas (
     id_talla     INTEGER NOT NULL,
@@ -505,6 +508,10 @@ ALTER TABLE tbl_podcasts
     ADD CONSTRAINT tbl_podcasts_tbl_podcasters_fk FOREIGN KEY ( id_podcaster )
         REFERENCES tbl_podcasters ( id_usuario );
 
+ALTER TABLE tbl_seguidores
+    ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
+        REFERENCES tbl_usuarios ( id_usuario );
+
 ALTER TABLE tbl_usuario_estandar
     ADD CONSTRAINT tbl_ue_tbl_hc_fk FOREIGN KEY ( id_historial_de_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
@@ -537,13 +544,17 @@ ALTER TABLE tbl_usuarios
     ADD CONSTRAINT tbl_usuarios_tbl_tp_fk FOREIGN KEY ( id_tipo_usuario )
         REFERENCES tbl_tipo_usuario ( id_tipo_usuario );
 
+ALTER TABLE tbl_seguidores
+    ADD CONSTRAINT usuarios_seguidor_fk FOREIGN KEY ( id_usuario_seguidor )
+        REFERENCES tbl_usuarios ( id_usuario );
+
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            37
+-- CREATE TABLE                            38
 -- CREATE INDEX                             3
--- ALTER TABLE                             79
+-- ALTER TABLE                             81
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
