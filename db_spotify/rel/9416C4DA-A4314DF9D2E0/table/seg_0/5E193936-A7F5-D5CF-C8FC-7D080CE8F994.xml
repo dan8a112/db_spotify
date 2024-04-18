@@ -32,6 +32,20 @@
 <colAssociation fkAssociation="9C6DE249-BAD4-1F33-058B-8D17B00E1A2A" referredColumn="6B733334-64B9-5234-1BFF-2E1A6DC26412"/>
 </associations>
 </Column>
+<Column name="ID_ARTISTA" id="CA3F5239-F68C-6BAC-253A-4A0B363FF584">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 21:09:28 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B8D44DD-05C2-46CE-0526-1B8B68D00D8F" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
+</associations>
+</Column>
 <Column name="NOMBRE_MERCH" id="77018DB0-5B2F-3E46-1367-86B46001675A">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-22 00:12:28 UTC</createdTime>
@@ -99,6 +113,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="025EED74-4501-3EF6-ABFB-E29BB2D53167"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFC1AF6E-0A26-F60C-6506-08B97BEDE299" name="TBL_ARTISTAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 21:09:28 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA3F5239-F68C-6BAC-253A-4A0B363FF584"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

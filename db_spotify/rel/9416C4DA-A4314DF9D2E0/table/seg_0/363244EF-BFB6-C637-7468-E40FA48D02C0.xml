@@ -22,31 +22,6 @@
 <colAssociation fkAssociation="5DCDB9E1-6EAD-C275-E058-372818D31C50" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
 </associations>
 </Column>
-<Column name="ID_MERCH" id="D009D475-ABA9-8F9C-8161-565D11C824D4">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-23 04:09:26 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D382EFD7-335C-59B4-2EED-13D798F935FC" referredColumn="05AA3899-1856-1A35-C8A1-7A790CD57B9C"/>
-</associations>
-</Column>
-<Column name="OYENTES_MENSUALES" id="23576E1D-7EDF-B49D-DF70-5D484C6B0F6C">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 20:44:03 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="BIOGRAFIA" id="74800303-6A35-834D-1699-3E9938173376">
 <createdBy>daniel</createdBy>
 <createdTime>2024-02-12 20:44:03 UTC</createdTime>
@@ -57,6 +32,18 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1000</dataTypeSize>
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLOR" id="32B10F25-6D2D-125A-C395-9C2EBB84D94D">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 22:43:10 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -80,16 +67,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="48C9E49F-B6F8-5563-0200-92E257D927B9" name="TBL_ARTISTAS_TBL_MERCH_FK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-23 04:09:26 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D009D475-ABA9-8F9C-8161-565D11C824D4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

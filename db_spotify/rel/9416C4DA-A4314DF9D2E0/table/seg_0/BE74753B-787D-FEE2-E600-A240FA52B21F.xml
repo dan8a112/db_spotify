@@ -97,6 +97,18 @@
 <colAssociation fkAssociation="25CB9153-5285-5C5A-4128-A5677D108C9C" referredColumn="F5564287-A2BC-52B1-8103-187F70CFBFEF"/>
 </associations>
 </Column>
+<Column name="COLOR" id="701CB60C-FCB2-D2F4-480E-790099ED628F">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 22:42:28 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B2D33698-D1D3-B6B5-5413-5D09CDDF7A1A" name="PODCASTS_PK">

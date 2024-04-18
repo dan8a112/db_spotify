@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-18 14:01:32 CST
+--   en:        2024-04-18 16:44:16 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -14,16 +14,16 @@ CREATE TABLE tbl_albumes (
     nombre_album      VARCHAR2(150),
     portada           VARCHAR2(1000),
     fecha_lanzamiento DATE,
-    id_usuario        INTEGER NOT NULL
+    id_usuario        INTEGER NOT NULL,
+    color             VARCHAR2(10)
 );
 
 ALTER TABLE tbl_albumes ADD CONSTRAINT tbl_albumes_pk PRIMARY KEY ( id_album );
 
 CREATE TABLE tbl_artistas (
-    id_usuario        INTEGER NOT NULL,
-    id_merch          INTEGER NOT NULL,
-    oyentes_mensuales INTEGER,
-    biografia         VARCHAR2(1000)
+    id_usuario INTEGER NOT NULL,
+    biografia  VARCHAR2(1000),
+    color      VARCHAR2(10)
 );
 
 ALTER TABLE tbl_artistas ADD CONSTRAINT tbl_artistas_pk PRIMARY KEY ( id_usuario );
@@ -35,7 +35,8 @@ CREATE TABLE tbl_canciones (
     id_genero_musical     INTEGER NOT NULL,
     id_creditos_musicales INTEGER NOT NULL,
     id_usuario            INTEGER NOT NULL,
-    id_idioma             INTEGER NOT NULL
+    id_idioma             INTEGER NOT NULL,
+    color                 VARCHAR2(10)
 );
 
 CREATE UNIQUE INDEX tbl_canciones__idx ON
@@ -188,6 +189,7 @@ ALTER TABLE tbl_media ADD CONSTRAINT tbl_media_pk PRIMARY KEY ( id_media );
 CREATE TABLE tbl_merch (
     id_merch         INTEGER NOT NULL,
     id_talla         INTEGER NOT NULL,
+    id_artista       INTEGER NOT NULL,
     nombre_merch     VARCHAR2(100),
     decripcion_merch VARCHAR2(500),
     precio_merch     NUMBER,
@@ -200,7 +202,7 @@ CREATE TABLE tbl_pago_planes (
     id_plan_pagado    INTEGER NOT NULL,
     id_plan           INTEGER NOT NULL,
     id_usuario        INTEGER NOT NULL,
-    id_tarjeta        INTEGER NOT NULL,
+    id_tarjeta        INTEGER,
     fecha_inicio_plan DATE,
     fecha_fin_plan    DATE
 );
@@ -245,7 +247,8 @@ CREATE TABLE tbl_podcasts (
     nombre_podcast      VARCHAR2(100),
     url_portada_podcast VARCHAR2(1000),
     descripcion_podcast VARCHAR2(500),
-    id_genero_podcast   INTEGER NOT NULL
+    id_genero_podcast   INTEGER NOT NULL,
+    color               VARCHAR2(10)
 );
 
 ALTER TABLE tbl_podcasts ADD CONSTRAINT podcasts_pk PRIMARY KEY ( id_podcast );
@@ -313,15 +316,12 @@ ALTER TABLE tbl_tipo_usuario ADD CONSTRAINT tbl_tipo_usuario_pk PRIMARY KEY ( id
 
 CREATE TABLE tbl_usuario_estandar (
     id_usuario                   INTEGER NOT NULL,
-    id_plan                      INTEGER NOT NULL,
     id_historial_de_reproduccion INTEGER NOT NULL
 );
 
 CREATE UNIQUE INDEX tbl_usuario_estandar__idx ON
     tbl_usuario_estandar (
         id_historial_de_reproduccion
-    ASC,
-        id_plan
     ASC );
 
 ALTER TABLE tbl_usuario_estandar ADD CONSTRAINT tbl_usuario_estandar_pk PRIMARY KEY ( id_usuario );
@@ -340,7 +340,6 @@ CREATE TABLE tbl_usuarios (
     nombre_usuario   VARCHAR2(150) NOT NULL,
     fecha_nacimiento DATE NOT NULL,
     fecha_registro   DATE,
-    genero           VARCHAR2(100),
     url_foto_perfil  VARCHAR2(1000),
     contrasenia      VARCHAR2(100) NOT NULL,
     id_pais          INTEGER NOT NULL
@@ -356,9 +355,9 @@ ALTER TABLE tbl_albumes
     ADD CONSTRAINT tbl_albumes_tbl_artistas_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_artistas ( id_usuario );
 
-ALTER TABLE tbl_artistas
-    ADD CONSTRAINT tbl_artistas_tbl_merch_fk FOREIGN KEY ( id_merch )
-        REFERENCES tbl_merch ( id_merch );
+ALTER TABLE tbl_merch
+    ADD CONSTRAINT tbl_artistas_fk FOREIGN KEY ( id_artista )
+        REFERENCES tbl_artistas ( id_usuario );
 
 ALTER TABLE tbl_artistas
     ADD CONSTRAINT tbl_artistas_tbl_usuarios_fk FOREIGN KEY ( id_usuario )
@@ -528,10 +527,6 @@ ALTER TABLE tbl_usuario_red_social
     ADD CONSTRAINT tbl_ursl_tbl_artistas_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_artistas ( id_usuario );
 
-ALTER TABLE tbl_usuario_estandar
-    ADD CONSTRAINT tbl_usuario_estandar_tbl_pp_fk FOREIGN KEY ( id_plan )
-        REFERENCES tbl_pago_planes ( id_plan_pagado );
-
 ALTER TABLE tbl_usuarios
     ADD CONSTRAINT tbl_usuarios_tbl_genero_fk FOREIGN KEY ( id_genero )
         REFERENCES tbl_genero ( id_genero );
@@ -554,7 +549,7 @@ ALTER TABLE tbl_seguidores
 -- 
 -- CREATE TABLE                            38
 -- CREATE INDEX                             3
--- ALTER TABLE                             81
+-- ALTER TABLE                             80
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

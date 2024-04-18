@@ -67,6 +67,18 @@
 <colAssociation fkAssociation="2F89DA5B-395F-708F-EDF1-AD04F27FD2F0" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
 </associations>
 </Column>
+<Column name="COLOR" id="CCBAA010-7551-7019-F26F-9E68DC6DD31C">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-18 22:40:45 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DAD5BA9A-9549-F2F8-9103-A68DD17FEBED" name="TBL_ALBUMES_PK">

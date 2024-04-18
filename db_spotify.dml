@@ -1,0 +1,16 @@
+-- Insertar idiomas
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(1, 'Inglés');
+
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(2, 'Español');
+
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(3, 'Portugués');
+
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(4, 'Francés');
+
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(5, 'Chino');
+
