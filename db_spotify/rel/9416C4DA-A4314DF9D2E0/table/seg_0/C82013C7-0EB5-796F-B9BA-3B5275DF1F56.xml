@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_HISTORIAL_DE_REPRODUCCION" id="CFADC93D-81B6-19A3-3BD0-34D81F941CB0">
+<Column name="ID_HISTORIAL_REPRODUCCION" id="CFADC93D-81B6-19A3-3BD0-34D81F941CB0">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:15:29 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -20,7 +20,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D747ECCE-7DA8-3CD4-9090-C08DAF9BBA8E" name="TBL_HISTORIAL_DE_REPRODUCCION_PK">
+<ind_PK_UK id="D747ECCE-7DA8-3CD4-9090-C08DAF9BBA8E" name="TBL_HR_PK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:15:29 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

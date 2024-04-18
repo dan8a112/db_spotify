@@ -12,7 +12,8 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:13:09 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<use>0</use>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -36,7 +37,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B461843C-5961-9F89-BEED-EABC6E5109A2" name="TBL_ESCRITORES_Y_CANCIONES_TBL_ESCRITORES_FK">
+<ind_PK_UK id="B461843C-5961-9F89-BEED-EABC6E5109A2" name="TBL_EYC_TBL_ESCRITORES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:13:09 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -46,7 +47,7 @@
 <colUsage columnID="C32D571D-3F55-5BF8-AE97-B6EB39948DB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F43BF505-FD18-7DBB-1097-EF3B77776D0A" name="TBL_ESCRITORES_Y_CANCIONES_TBL_CREDITOS_FK">
+<ind_PK_UK id="F43BF505-FD18-7DBB-1097-EF3B77776D0A" name="TBL_EYC_TBL_CREDITOS_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:13:15 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

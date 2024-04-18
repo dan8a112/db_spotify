@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A7148CD8-B35D-E805-A1F9-346C66C5C7F5" containerWithKeyObject="513B69F8-A800-7CDC-86B9-3B790DBC58D1" localFKIndex="1379A89F-C023-7A77-B84C-5666C1D34062" name="TBL_HISTORIAL_CANCIONES_TBL_HISTORIAL_DE_REPRODUCCION_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A7148CD8-B35D-E805-A1F9-346C66C5C7F5" containerWithKeyObject="513B69F8-A800-7CDC-86B9-3B790DBC58D1" localFKIndex="1379A89F-C023-7A77-B84C-5666C1D34062" name="TBL_HC_TBL_HR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:18:26 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>D747ECCE-7DA8-3CD4-9090-C08DAF9BBA8E</keyObject>
 <referredKeyID>D747ECCE-7DA8-3CD4-9090-C08DAF9BBA8E</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID_HISTORIAL_DE_REPRODUCCION</refColNames>
+<refColNames>ID_HISTORIAL_REPRODUCCION</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

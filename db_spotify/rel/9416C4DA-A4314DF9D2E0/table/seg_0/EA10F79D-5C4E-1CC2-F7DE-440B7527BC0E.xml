@@ -63,7 +63,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2C752F6D-77AC-141E-872D-DC8741EB57BA" name="TBL_LISTAS_SEGUIDAS_TBL_USUARIO_ESTANDAR_FK">
+<ind_PK_UK id="2C752F6D-77AC-141E-872D-DC8741EB57BA" name="TBL_LISTAS_SEGUIDAS_TBL_UE_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:41:04 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -73,7 +73,7 @@
 <colUsage columnID="1B141A57-20E4-21B8-EC75-A3F66C75CEDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="88327D06-8BBD-44E5-3858-416B337F509C" name="TBL_LISTAS_SEGUIDAS_TBL_LISTAS_REPRODUCCION_FK">
+<ind_PK_UK id="88327D06-8BBD-44E5-3858-416B337F509C" name="TBL_LISTAS_SEGUIDAS_TBL_LR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:41:10 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -83,7 +83,7 @@
 <colUsage columnID="D94F4C24-9DE9-0E7D-29A8-8B7F1A5DA9B5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B012ECBF-C230-69CD-AA65-E0B7E3ACB669" name="TBL_LISTAS_SEGUIDAS_TBL_ROL_LISTA_R_FK">
+<ind_PK_UK id="B012ECBF-C230-69CD-AA65-E0B7E3ACB669" name="TBL_LS_TBL_ROL_LISTA_R_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:18:23 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

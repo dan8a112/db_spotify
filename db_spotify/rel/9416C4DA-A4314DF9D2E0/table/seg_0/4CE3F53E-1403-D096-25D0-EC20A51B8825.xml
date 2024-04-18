@@ -48,7 +48,9 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:21:31 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -79,7 +81,7 @@
 <colUsage columnID="F3515D87-4318-2AD0-AEFD-C113C06D3D85"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="485DDCF5-B0DA-4935-396D-21EB4DA9287F" name="TBL_CREDITOS_TBL_PRODUCTORES_FK">
+<ind_PK_UK id="485DDCF5-B0DA-4935-396D-21EB4DA9287F" name="TBL_CRE_TBL_PRO_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:21:31 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="TBL_LISTAS_REPRODUCCION_ID_LISTA_REPRODUCCION" id="A84459EF-1B76-A7E0-DE63-A9C081B75EF9">
+<Column name="ID_LISTA_REPRODUCCION" id="A84459EF-1B76-A7E0-DE63-A9C081B75EF9">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:43:51 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -22,7 +22,7 @@
 <colAssociation fkAssociation="52F4A9C3-5E6D-AE0F-2A40-611913E848AA" referredColumn="54AA38E8-AC00-85C6-4071-694B520F586B"/>
 </associations>
 </Column>
-<Column name="TBL_CANCIONES_ID_MEDIA" id="33FAE596-D8E6-CEDD-329E-BDFD26757D69">
+<Column name="ID_CANCION" id="33FAE596-D8E6-CEDD-329E-BDFD26757D69">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:06:42 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -38,7 +38,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="93BA10CA-2637-730C-8B81-EF10C4C2E2AD" name="TBL_LISTAS_Y_CANCIONES_TBL_LISTAS_REPRODUCCION_FK">
+<ind_PK_UK id="93BA10CA-2637-730C-8B81-EF10C4C2E2AD" name="TBL_LYC_TBL_LR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:43:51 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -48,7 +48,7 @@
 <colUsage columnID="A84459EF-1B76-A7E0-DE63-A9C081B75EF9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1BE56332-1161-A846-5D81-8D30ECDBAAAE" name="TBL_LISTAS_Y_CANCIONES_TBL_CANCIONES_FK">
+<ind_PK_UK id="1BE56332-1161-A846-5D81-8D30ECDBAAAE" name="TBL_LYC_TBL_CANCIONES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:43:56 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

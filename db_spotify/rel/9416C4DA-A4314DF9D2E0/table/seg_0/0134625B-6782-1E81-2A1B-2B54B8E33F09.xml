@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_MEDIA" id="97091350-C172-18B6-E102-1814CA25BE8D">
+<Column name="ID_CANCION" id="97091350-C172-18B6-E102-1814CA25BE8D">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:05:54 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -29,8 +29,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_ALBUM" id="C2644434-419B-36B7-710F-E7143476E9B7">
@@ -51,7 +52,9 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 20:27:40 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -134,7 +137,7 @@
 <colUsage columnID="C2644434-419B-36B7-710F-E7143476E9B7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F87514FB-BBC1-C027-C67E-1E540305FEF0" name="TBL_CANCIONES_TBL_GENEROS_MUSICALES_FK">
+<ind_PK_UK id="F87514FB-BBC1-C027-C67E-1E540305FEF0" name="TBL_CANCIONES_TBL_GM_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 20:27:40 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

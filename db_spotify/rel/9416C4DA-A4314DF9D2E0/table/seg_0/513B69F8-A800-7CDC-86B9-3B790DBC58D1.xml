@@ -8,12 +8,13 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_HISTORIAL_DE_REPRODUCCION" id="32969413-9E9C-2DF3-5BDD-A7EA4C16B69B">
+<Column name="ID_HISTORIAL_REPRODUCCION" id="32969413-9E9C-2DF3-5BDD-A7EA4C16B69B">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:18:26 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -48,7 +49,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1379A89F-C023-7A77-B84C-5666C1D34062" name="TBL_HISTORIAL_CANCIONES_TBL_HISTORIAL_DE_REPRODUCCION_FK">
+<ind_PK_UK id="1379A89F-C023-7A77-B84C-5666C1D34062" name="TBL_HC_TBL_HR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:18:26 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -58,7 +59,7 @@
 <colUsage columnID="32969413-9E9C-2DF3-5BDD-A7EA4C16B69B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="40A25EB8-25BC-E7B4-8CC6-989B8280761C" name="TBL_HISTORIAL_CANCIONES_TBL_CANCIONES_FK">
+<ind_PK_UK id="40A25EB8-25BC-E7B4-8CC6-989B8280761C" name="TBL_HC_TBL_CANCIONES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 20:18:34 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

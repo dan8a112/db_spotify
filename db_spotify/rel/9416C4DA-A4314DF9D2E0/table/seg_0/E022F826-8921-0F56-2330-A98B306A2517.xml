@@ -18,6 +18,48 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_PLAN" id="A27A68A1-F5A6-5411-7352-40473761EF4D">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:58 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D526D6BD-1E64-2BD4-032A-5AD70019305E" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="60705CCB-2DB1-6AB6-C700-89E48D9AF20B">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-21 20:53:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4A322BE-BF37-7038-9C2E-77A2EB7C6702" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</associations>
+</Column>
+<Column name="ID_TARJETA" id="8A35A0A6-9D90-418C-4030-CBE1D94A44C2">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:42:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADF9CE28-3B83-A51B-6CCB-0F89636B40DF" referredColumn="548A083A-7378-00E7-16C3-3CC8C8DE9CAE"/>
+</associations>
+</Column>
 <Column name="FECHA_INICIO_PLAN" id="DB9825F4-6AB2-CFE3-999B-1F531C583C15">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:37 UTC</createdTime>
@@ -37,45 +79,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_USUARIO" id="60705CCB-2DB1-6AB6-C700-89E48D9AF20B">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-21 20:53:51 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D4A322BE-BF37-7038-9C2E-77A2EB7C6702" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
-</associations>
-</Column>
-<Column name="ID_PLAN" id="A27A68A1-F5A6-5411-7352-40473761EF4D">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-21 20:53:58 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D526D6BD-1E64-2BD4-032A-5AD70019305E" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
-</associations>
-</Column>
-<Column name="REFERENCIA_BANCARIA" id="1E632D3C-DFAD-6B71-84D4-11DA09B6F65A">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-23 20:06:29 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -102,7 +105,7 @@
 <colUsage columnID="60705CCB-2DB1-6AB6-C700-89E48D9AF20B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2D51E524-EE98-60BE-768B-75FCD42E1184" name="TBL_PAGO_PLANES_TBL_USUARIO_ESTANDAR_FK">
+<ind_PK_UK id="2D51E524-EE98-60BE-768B-75FCD42E1184" name="TBL_PAGO_PLANES_TBL_UE_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:51 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -120,6 +123,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A27A68A1-F5A6-5411-7352-40473761EF4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87155D84-3CA5-7FE5-2399-913571824725" name="TBL_PL_PLANES_TBL_TAR_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:42:51 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A35A0A6-9D90-418C-4030-CBE1D94A44C2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

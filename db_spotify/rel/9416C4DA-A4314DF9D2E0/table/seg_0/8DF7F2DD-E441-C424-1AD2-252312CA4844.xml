@@ -8,18 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="DESCRIPCION_EPISODIO" id="70881010-531C-2AF7-3FEA-74027F729342">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-20 22:20:13 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_MEDIA" id="3B9AF9D5-505A-988E-9FA0-226B0F6BF175">
+<Column name="ID_EPISODIO" id="3B9AF9D5-505A-988E-9FA0-226B0F6BF175">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:20:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -33,7 +22,7 @@
 <colAssociation fkAssociation="AAB04874-5CC9-09F9-C80E-53781DBCADDD" referredColumn="D5842DBA-FAA5-EA17-A61D-FB44F3D83226"/>
 </associations>
 </Column>
-<Column name="PODCASTS_ID_PODCAST" id="08756CD1-7DEF-DCB5-907F-D336574423CF">
+<Column name="ID_PODCAST" id="08756CD1-7DEF-DCB5-907F-D336574423CF">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:21:59 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -46,6 +35,18 @@
 <associations>
 <colAssociation fkAssociation="E8A8F961-9838-A229-21E5-E4CF20B765E5" referredColumn="67F29315-6657-3B26-1B7E-E0F51B1FF320"/>
 </associations>
+</Column>
+<Column name="DESCRIPCION_EPISODIO" id="70881010-531C-2AF7-3FEA-74027F729342">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-20 22:20:13 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

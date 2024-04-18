@@ -49,7 +49,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="39AFA8A1-F7CE-B8AC-61D7-2F2539A56EBC" name="TBL_USUARIO_RED_SOCIAL_REDER_SOCIALES_FK">
+<ind_PK_UK id="39AFA8A1-F7CE-B8AC-61D7-2F2539A56EBC" name="TBL_URS_REDER_SOCIALES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 21:29:48 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -59,7 +59,7 @@
 <colUsage columnID="BA869196-2F74-BC0B-9D15-CFBD65BAE6C5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="93B89875-27D2-859A-E9CD-A6217062F3C2" name="TBL_USUARIO_RED_SOCIAL_TBL_ARTISTAS_FK">
+<ind_PK_UK id="93B89875-27D2-859A-E9CD-A6217062F3C2" name="TBL_URSL_TBL_ARTISTAS_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 21:29:53 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

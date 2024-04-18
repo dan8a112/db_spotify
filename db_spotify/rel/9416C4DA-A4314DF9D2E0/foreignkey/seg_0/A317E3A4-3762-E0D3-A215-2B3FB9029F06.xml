@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A317E3A4-3762-E0D3-A215-2B3FB9029F06" containerWithKeyObject="983BA878-D648-284F-3A70-D00115B911B9" localFKIndex="29B9A00A-17DC-D207-68CC-E8D1A5F2E275" name="TBL_USUARIO_ESTANDAR_TBL_PAGO_PLANES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A317E3A4-3762-E0D3-A215-2B3FB9029F06" containerWithKeyObject="983BA878-D648-284F-3A70-D00115B911B9" localFKIndex="29B9A00A-17DC-D207-68CC-E8D1A5F2E275" name="TBL_USUARIO_ESTANDAR_TBL_PP_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:38:16 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

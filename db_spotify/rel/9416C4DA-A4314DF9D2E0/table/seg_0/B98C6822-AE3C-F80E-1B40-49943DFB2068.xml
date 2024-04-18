@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B892D43B-E388-95E7-4DB1-09B91947F20E" name="TBL_GENEROS_MUSICALES">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:01:47 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B98C6822-AE3C-F80E-1B40-49943DFB2068" name="TBL_TIPO_MEDIA">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:32:39 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<ordsAlias>table_5</ordsAlias>
+<ordsAlias>table_36</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_GENERO_MUSICAL" id="84F874FF-5039-3994-BAA2-D8DD8887C045">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<Column name="ID_TIPO_MEDIA" id="E3082D5D-8F3C-1838-C200-D74DD3082547">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:35:33 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,29 +18,29 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE_GENERO_MUSICAL" id="62319495-7052-523D-5CF9-7C6C0AFBED70">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<Column name="TIPO_MEDIA" id="64FC7233-7BF2-5C47-0F7F-7F10EA21AB84">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:35:33 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5286D16C-9932-593C-F79B-76B114CCD899" name="TBL_GENEROS_MUSICALES_PK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<ind_PK_UK id="66F8E673-56CE-24F2-1595-3BE51BF6C75C" name="TBL_TIPO_MEDIA_PK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 21:35:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
+<colUsage columnID="E3082D5D-8F3C-1838-C200-D74DD3082547"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

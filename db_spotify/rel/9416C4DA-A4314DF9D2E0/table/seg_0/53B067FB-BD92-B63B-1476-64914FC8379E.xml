@@ -40,8 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CANTIDAD_CANCIONES" id="51344198-3FFF-55B7-DBA1-76009F3DE566">
@@ -79,7 +79,7 @@
 <colUsage columnID="54AA38E8-AC00-85C6-4071-694B520F586B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8C90EC48-CF1C-C55F-17EE-AB19F861D017" name="TBL_LISTAS_REPRODUCCION_TBL_USUARIO_ESTANDAR_FK">
+<ind_PK_UK id="8C90EC48-CF1C-C55F-17EE-AB19F861D017" name="TBL_LR_TBL_UE_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:35:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

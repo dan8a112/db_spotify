@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B892D43B-E388-95E7-4DB1-09B91947F20E" name="TBL_GENEROS_MUSICALES">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:01:47 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDE0988D-D3E7-27CA-AE49-1FF900A9CA70" name="TBL_GENERO_PODCAST">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:38:03 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
-<ordsAlias>table_5</ordsAlias>
+<ordsAlias>table_37</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_GENERO_MUSICAL" id="84F874FF-5039-3994-BAA2-D8DD8887C045">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<Column name="ID_GENERO_PODCAST" id="F5564287-A2BC-52B1-8103-187F70CFBFEF">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:42:27 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE_GENERO_MUSICAL" id="62319495-7052-523D-5CF9-7C6C0AFBED70">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<Column name="GENERO_PODCAST" id="92078B0D-F88B-DB99-C0D6-9E627D8BB318">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:42:27 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,15 +32,15 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5286D16C-9932-593C-F79B-76B114CCD899" name="TBL_GENEROS_MUSICALES_PK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-12 21:03:58 UTC</createdTime>
+<ind_PK_UK id="CF732E0D-C42D-29BC-9D82-20C56471540F" name="TBL_GENERO_PODCAST_PK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:42:51 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
+<colUsage columnID="F5564287-A2BC-52B1-8103-187F70CFBFEF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

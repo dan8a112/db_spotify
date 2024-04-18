@@ -33,42 +33,7 @@
 <colAssociation fkAssociation="D4D4A708-398A-099F-CB91-8CF92A736B25" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
 </associations>
 </Column>
-<Column name="NOMBRE_PODCAST" id="A64F022A-B6EE-D719-5786-97F2D106937E">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-23 17:00:37 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300</dataTypeSize>
-<ownDataTypeParameters>300,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="URL_PORTADA_PODCAST" id="5E0EB258-6845-57C0-3A9F-85CE3461CFB9">
-<createdBy>daniel</createdBy>
-<createdTime>2024-02-12 21:56:33 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300</dataTypeSize>
-<ownDataTypeParameters>300,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DESCRIPCION_PODCAST" id="846D1C7C-39FC-430B-8BCF-636E5ECD0E66">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-15 21:09:20 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_PODCASTERS_ID_USUARIO" id="C0D09EDB-90A2-2CBA-E039-F53DDA08C118">
+<Column name="ID_PODCASTER" id="C0D09EDB-90A2-2CBA-E039-F53DDA08C118">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 16:51:56 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -80,6 +45,56 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="09AEFC71-FF9E-7C51-3DFA-2DE5652B721E" referredColumn="57F53110-B9E8-D4F3-A34C-D742E8E38767"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PODCAST" id="A64F022A-B6EE-D719-5786-97F2D106937E">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-23 17:00:37 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL_PORTADA_PODCAST" id="5E0EB258-6845-57C0-3A9F-85CE3461CFB9">
+<createdBy>daniel</createdBy>
+<createdTime>2024-02-12 21:56:33 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_PODCAST" id="846D1C7C-39FC-430B-8BCF-636E5ECD0E66">
+<createdBy>casti</createdBy>
+<createdTime>2024-02-15 21:09:20 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_GENERO_PODCAST" id="7F831510-86EE-A573-0271-9595E0DA0F9B">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:43:01 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25CB9153-5285-5C5A-4128-A5677D108C9C" referredColumn="F5564287-A2BC-52B1-8103-187F70CFBFEF"/>
 </associations>
 </Column>
 </columns>
@@ -113,6 +128,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C0D09EDB-90A2-2CBA-E039-F53DDA08C118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39978757-261D-C7AD-B4F2-1E4F362E44CB" name="TBL_PODCASTS_TBL_GP_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-17 22:43:01 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F831510-86EE-A573-0271-9595E0DA0F9B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
