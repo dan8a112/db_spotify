@@ -8,7 +8,7 @@
 <referredTableID>4CE3F53E-1403-D096-25D0-EC20A51B8825</referredTableID>
 <keyObject>E5648A43-B422-AB05-C8B9-E9DE757CE4B0</keyObject>
 <referredKeyID>E5648A43-B422-AB05-C8B9-E9DE757CE4B0</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>ID_CREDITOS_MUSICALES</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

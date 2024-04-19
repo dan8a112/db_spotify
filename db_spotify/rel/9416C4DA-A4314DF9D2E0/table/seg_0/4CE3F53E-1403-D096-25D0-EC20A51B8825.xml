@@ -48,6 +48,7 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-19 20:21:31 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -56,6 +57,20 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="17144763-1A87-6CF6-B1BA-2B2B44D3CA11" referredColumn="22F82625-C5F6-0F42-9663-736B3BCDD74F"/>
+</associations>
+</Column>
+<Column name="ID_CANCION" id="C6A06496-C136-64B5-EA8C-E870366C6517">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 22:01:17 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04311F6E-4580-083C-287E-59EA7719247B" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
 </associations>
 </Column>
 </columns>
@@ -69,6 +84,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="089AE51D-227F-9746-961E-0980CFA4021A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA8B0425-B2BD-5962-7BC8-8B555BB220AA" name="TBL_CREDITOS__IDX">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 22:02:05 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A06496-C136-64B5-EA8C-E870366C6517"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="FF00F0D4-D84C-6C40-8E3B-8AA527DE67FA" name="TBL_CREDITOS_TBL_ARTISTAS_FK">
@@ -89,6 +114,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BA5B45B3-B1B9-367B-4A5B-CC21233F653C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B263A31C-52A6-0D1B-F085-613FE329FCEE" name="TBL_CREDITOS_TBL_CANCIONES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 22:01:17 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A06496-C136-64B5-EA8C-E870366C6517"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

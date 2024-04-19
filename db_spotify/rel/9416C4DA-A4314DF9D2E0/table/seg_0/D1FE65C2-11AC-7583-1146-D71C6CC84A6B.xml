@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1FE65C2-11AC-7583-1146-D71C6CC84A6B" name="TBL_ESCRITORES_Y_CANCIONES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1FE65C2-11AC-7583-1146-D71C6CC84A6B" name="TBL_ESCRITORES_Y_CREDITOS">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:12:21 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -12,6 +12,7 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:13:09 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -25,6 +26,7 @@
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:13:15 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

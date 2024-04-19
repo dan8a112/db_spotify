@@ -62,20 +62,6 @@
 <colAssociation fkAssociation="A98715A3-777F-2F03-A970-75E0B159C7DE" referredColumn="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
 </associations>
 </Column>
-<Column name="ID_CREDITOS_MUSICALES" id="6579869F-E1C5-C0D5-33CF-BA08057BD015">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:31:02 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="2C7D1EB4-6997-793D-4301-5BAEF803DA26" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
-</associations>
-</Column>
 <Column name="ID_USUARIO" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:10:38 UTC</createdTime>
@@ -135,9 +121,6 @@
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6579869F-E1C5-C0D5-33CF-BA08057BD015"/>
-</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4AC71078-A5DF-8432-28A9-55CB0601D1B0" name="TBL_CANCIONES_TBL_ALBUMES_FK">
 <createdBy>casti</createdBy>
@@ -157,16 +140,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CF99964B-6524-4D7F-64B0-A0FC2DE3B36D"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FDC50D06-7114-6FA5-C041-2F72E8279F2D" name="TBL_CANCIONES_TBL_CREDITOS_FK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-14 20:31:02 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6579869F-E1C5-C0D5-33CF-BA08057BD015"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="F0D191D9-B261-ABB0-CFA9-24AE688CAB6E" name="TBL_CANCIONES_TBL_MEDIA_FK">

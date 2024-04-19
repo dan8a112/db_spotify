@@ -8,7 +8,7 @@
 <referredTableID>72FDBA05-D61F-2083-7DB2-0145E4FA3AD3</referredTableID>
 <keyObject>29E63850-B77F-591F-ECFE-6E3A32D33E00</keyObject>
 <referredKeyID>29E63850-B77F-591F-ECFE-6E3A32D33E00</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>ID_PRODUCTOR</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
