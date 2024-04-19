@@ -79,6 +79,20 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_TIPO_LANZAMIENTO" id="5F8AB633-4713-F520-C51D-16AC1ACC4823">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:31:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CF7A970-3EE4-8081-556D-1CA93BCAED3B" referredColumn="493D27B5-E409-B20F-EDC4-72DED22DAD8A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DAD5BA9A-9549-F2F8-9103-A68DD17FEBED" name="TBL_ALBUMES_PK">
@@ -100,6 +114,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AA736DE3-2065-7EFD-3014-F39B150A214C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="815C51C7-86A3-B3A5-263E-6BAA0B54299F" name="LANZAMIENTO_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:31:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F8AB633-4713-F520-C51D-16AC1ACC4823"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

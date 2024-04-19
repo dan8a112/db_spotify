@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2799D734-1D84-601C-48CC-88549F27D391" containerWithKeyObject="1EAB8522-034D-538E-B8DD-6995FCB71172" localFKIndex="4B9F5DF8-CC76-4652-7B63-D7F40B677031" name="PODCASTS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:45:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_PODCASTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BE74753B-787D-FEE2-E600-A240FA52B21F</referredTableID>
+<keyObject>B2D33698-D1D3-B6B5-5413-5D09CDDF7A1A</keyObject>
+<referredKeyID>B2D33698-D1D3-B6B5-5413-5D09CDDF7A1A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PODCAST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

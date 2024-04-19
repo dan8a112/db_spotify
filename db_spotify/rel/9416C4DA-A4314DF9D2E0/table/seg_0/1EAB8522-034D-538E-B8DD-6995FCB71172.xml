@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EAB8522-034D-538E-B8DD-6995FCB71172" name="TBL_PODCAST_X_GENEROS">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:44:38 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PODCAST" id="DF2B5BE5-C776-6EF2-9B20-971205009FD1">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:45:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2799D734-1D84-601C-48CC-88549F27D391" referredColumn="67F29315-6657-3B26-1B7E-E0F51B1FF320"/>
+</associations>
+</Column>
+<Column name="ID_GENERO_PODCAST" id="A59F3307-AAF5-BED0-734D-DA45074168EC">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:45:36 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA7A4D3E-A567-22F1-6E16-798727BCF82D" referredColumn="F5564287-A2BC-52B1-8103-187F70CFBFEF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B9F5DF8-CC76-4652-7B63-D7F40B677031" name="PODCASTS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:45:29 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF2B5BE5-C776-6EF2-9B20-971205009FD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CAA5920-113B-C287-5B7D-8C79B43B105F" name="GENERO_PODCAST_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-19 06:45:36 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A59F3307-AAF5-BED0-734D-DA45074168EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

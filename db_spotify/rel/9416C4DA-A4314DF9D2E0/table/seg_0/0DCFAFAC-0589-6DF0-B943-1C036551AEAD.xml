@@ -55,18 +55,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="URL_PORTADA" id="4076C46F-E59B-D7CC-8803-D7DDC1B734EC">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-17 21:50:16 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="REPRODUCCIONES_MEDIA" id="1F01A99B-6796-4DDC-7DB0-10289750B7E9">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:00:31 UTC</createdTime>

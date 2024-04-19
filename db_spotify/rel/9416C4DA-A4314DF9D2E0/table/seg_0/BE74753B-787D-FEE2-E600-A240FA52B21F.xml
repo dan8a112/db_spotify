@@ -83,20 +83,6 @@
 <ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_GENERO_PODCAST" id="7F831510-86EE-A573-0271-9595E0DA0F9B">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-17 22:43:01 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="25CB9153-5285-5C5A-4128-A5677D108C9C" referredColumn="F5564287-A2BC-52B1-8103-187F70CFBFEF"/>
-</associations>
-</Column>
 <Column name="COLOR" id="701CB60C-FCB2-D2F4-480E-790099ED628F">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-18 22:42:28 UTC</createdTime>
@@ -140,16 +126,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C0D09EDB-90A2-2CBA-E039-F53DDA08C118"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="39978757-261D-C7AD-B4F2-1E4F362E44CB" name="TBL_PODCASTS_TBL_GP_FK">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-17 22:43:01 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="7F831510-86EE-A573-0271-9595E0DA0F9B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
