@@ -587,50 +587,50 @@ INSERT INTO tbl_tipo_media (id_tipo_media, tipo_media) VALUES (2, 'Podcast');
 
 
 -- Insertar podcasts
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(1, 1, 'Oppenheimer, el proyecto Manhattan y la Bomba Atómica',2000, 'Media/oppenheimer.jpg', 500, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(1, 1, 'Oppenheimer, el proyecto Manhattan y la Bomba Atómica',2000, 500, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(2, 1, 'Océano, Biodiversidad y Cambio Climático', 3000, 'Media/oceano.jpg', 700, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(2, 1, 'Océano, Biodiversidad y Cambio Climático', 3000, 700, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(3, 1, 'Teoría de Cuerdas', 30, 'Media/teoria.jpg',10000, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(3, 1, 'Teoría de Cuerdas', 30,10000, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(4, 1, 'Fusión Nuclear', 50, 'Media/fusion.jpg', 7000, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(4, 1, 'Fusión Nuclear', 50, 7000, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(7, 1, 'The wild Project #48: Ser padre', 10500, 'Media/thewildproject.jpg', 300, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(7, 1, 'The wild Project #48: Ser padre', 10500, 300, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(8, 1, 'The wild Project #42: La polémica de los NFTs', 15040, 'Media/thewildproject.jpg', 400, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(8, 1, 'The wild Project #42: La polémica de los NFTs', 15040, 400, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(9, 1, 'The wild Project #43: Aguantar el hate', 13902, 'Media/thewildproject.jpg', 350, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(9, 1, 'The wild Project #43: Aguantar el hate', 13902, 350, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(10, 1, 'The wild Project #45: Andorra', 12345, 'Media/thewildproject.jpg', 200, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(10, 1, 'The wild Project #45: Andorra', 12345, 200, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 60, 'Media/thewildproject.jpg.jpg', 1000, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 60, 1000, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 13456, 'Media/thewildproject.jpg.jpg', 800, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 13456, 800, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(13, 1, 'T1E1: La historia con la que crecí', 20, 'Media/caso63.jpg', 12783, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(13, 1, 'T1E1: La historia con la que crecí', 20, 12783, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(14, 1, 'T1E2: De Lorean', 1000, 'Media/caso63.jpg', 450, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(14, 1, 'T1E2: De Lorean', 1000, 450, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(15, 1, 'T1E3: Pegaso', 1200, 'Media/caso63.jpg', 400, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(15, 1, 'T1E3: Pegaso', 1200, 400, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(16, 1, 'T1E4: Efecto Garnier Malet', 927, 'Media/caso63.jpg', 350, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(16, 1, 'T1E4: Efecto Garnier Malet', 927, 350, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(17, 1, 'T1E5: Sopa de Letras', 1293, 'Media/caso63.jpg', 300, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(17, 1, 'T1E5: Sopa de Letras', 1293, 300, SYSDATE);
 
 
 -- Insertar canciones
@@ -684,19 +684,6 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (12, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
 
--- Canciones de Indigo la end - Kanna
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(13, 2, 'Shizuku', 230, 4300, TO_DATE('29-DIC-19', 'DD-MON-RR'));
-
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(14, 2, 'I Am', 210,  4600, TO_DATE('29-DIC-19', 'DD-MON-RR'));
-
--- Canciones de Indigo la end - Crying End Roll
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(15, 2, 'Aoi Haru', 240, 5000, TO_DATE('27-OCT-22', 'DD-MON-RR'));
-
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(16, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
 -- Canciones de Vance Joy - Dream Your Life Away
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
@@ -712,26 +699,6 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (20, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
--- Canciones de Vaundy - Odoriko
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(7, 2, 'Come Home', 200, 3800, TO_DATE('4-ENE-22', 'DD-MON-RR'));
-
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(8, 2, 'Midnight', 240, 4500, TO_DATE('4-ENE-22', 'DD-MON-RR'));
-
--- Canciones de Cardellino - Chistes Malos
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(9, 2, 'René', 270, 5800, TO_DATE('25-ABR-21', 'DD-MON-RR'));
-
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(10, 2, 'Espejismos', 220, 4900, TO_DATE('25-ABR-21', 'DD-MON-RR'));
-
--- Canciones de Cardellino - Love Dealer
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(11, 2, 'Derrámate', 210, 5200, TO_DATE('09-FEB-20', 'DD-MON-RR'));
-
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(12, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
 
 -- Canciones de Indigo la end - Kanna
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
@@ -747,19 +714,153 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (16, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
--- Canciones de Vance Joy - Dream Your Life Away
+
+-- Canciones de Arctic Monkeys - AM
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(17, 2, 'Riptide', 190, 5500, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(21, 2, 'Do I Wanna Know?', 270, 6200, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(18, 2, 'Mess Is Mine', 220, 5100, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(22, 2, 'R U Mine?', 200, 5800, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
 
--- Canciones de Vance Joy - Nation Of Two
+-- Canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(19, 2, 'Saturday Sun', 200, 5800, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(23, 2, 'Four Out of Five', 220, 5400, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(20, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(24, 2, 'Star Treatment', 240, 5800, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
+
+-- Canciones de Wallows - Nothing Happens
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(25, 2, 'Scrawny', 200, 5000, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(26, 2, 'Are You Bored Yet? (feat. Clairo)', 240, 5300, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
+
+-- Canciones de Wallows - Remote
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(27, 2, 'Nobody Gets Me (Like You)', 210, 4900, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(28, 2, 'Virtual Aerobics', 190, 4600, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
+
+-- Canciones de The Strokes - Is This It
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(29, 2, 'Last Nite', 210, 5200, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(30, 2, 'Someday', 200, 4800, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
+
+-- Canciones de The Strokes - Room on Fire
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(31, 2, 'Reptilia', 190, 5400, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(32, 2, '12:51', 180, 5100, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
+
+-- Canciones de Radiohead - OK Computer
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(33, 2, 'Paranoid Android', 380, 7800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(34, 2, 'Karma Police', 250, 6800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
+
+-- Canciones de Radiohead - In Rainbows
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(35, 2, '15 Step', 230, 6200, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(36, 2, 'Weird Fishes/Arpeggi', 300, 6900, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
+
+
+-- Canciones de Radwimps - Ningen Kaika
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(37, 2, 'Zenzenzense', 240, 6500, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(38, 2, 'Sparkle', 290, 7200, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
+
+-- Canciones de Radwimps - Weathering With You
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(39, 2, 'Is There Still Anything That Love Can Do?', 220, 6100, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(40, 2, 'Grand Escape (feat. Toko Miura)', 280, 6900, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
+
+-- Canciones de El Kuelgue - Beatriz
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(41, 2, 'Ruli', 210, 4800, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(42, 2, 'A Mi Gatito le Gusta el Reggaeton', 180, 5200, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
+
+-- Canciones de El Kuelgue - Cariño Reptil
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(43, 2, 'Jaguares', 190, 4600, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(44, 2, 'Cariño Reptil', 220, 5000, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
+
+-- Canciones de Jorge Drexler - Eco
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(45, 2, 'Al Otro Lado del Río', 230, 5100, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(46, 2, 'Eco', 240, 5300, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
+
+-- Canciones de Jorge Drexler - Salvavidas de Hielo
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(47, 2, 'Asilo', 200, 4900, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(48, 2, 'Salvavidas de Hielo', 210, 4800, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
+
+-- Canciones de Hozier - Hozier
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(49, 2, 'Take Me to Church', 240, 7000, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(50, 2, 'From Eden', 230, 6700, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
+
+-- Canciones de Hozier - Wasteland, Baby!
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(51, 2, 'Movement', 200, 6200, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(52, 2, 'Almost (Sweet Music)', 240, 5800, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
+
+-- Canciones de Guns N' Roses - Appetite for Destruction
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(53, 2, 'Sweet Child o Mine', 350, 7400, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(54, 2, 'Welcome to the Jungle', 260, 6800, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
+
+-- Canciones de Guns N' Roses - Use Your Illusion II
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(55, 2, 'November Rain', 530, 8500, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(56, 2, 'Dont Cry', 270, 7200, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
+
+-- Canciones de Bring Me The Horizon - Sempiternal
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(57, 2, 'Can You Feel My Heart', 220, 6300, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(58, 2, 'Sleepwalking', 250, 6800, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
+
+-- Canciones de Bring Me The Horizon - That's the Spirit
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(59, 2, 'Throne', 200, 5900, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(60, 2, 'Drown', 220, 6300, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
+
+
+
+
+
+
 
 
 
