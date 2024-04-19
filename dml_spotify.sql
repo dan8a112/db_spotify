@@ -462,8 +462,6 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, ur
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
 (4, 1, 'Fusión Nuclear', 50, 'Media/fusion.jpg', 7000, SYSDATE);
 
-
--- Insertar los registros adicionales
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
 (7, 1, 'The wild Project #48: Ser padre', 10500, 'Media/thewildproject.jpg', 300, SYSDATE);
 
@@ -480,22 +478,22 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, ur
 (11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 60, 'Media/thewildproject.jpg.jpg', 1000, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 55, 'Media/thewildproject.jpg.jpg', 800, SYSDATE);
+(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 13456, 'Media/thewildproject.jpg.jpg', 800, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(13, 1, 'T1E1: La historia con la que crecí', 20, 'Media/caso63.jpg', 500, SYSDATE);
+(13, 1, 'T1E1: La historia con la que crecí', 20, 'Media/caso63.jpg', 12783, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(14, 1, 'T1E2: De Lorean', 25, 'Media/caso63.jpg', 450, SYSDATE);
+(14, 1, 'T1E2: De Lorean', 1000, 'Media/caso63.jpg', 450, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(15, 1, 'T1E3: Pegaso', 30, 'Media/caso63.jpg', 400, SYSDATE);
+(15, 1, 'T1E3: Pegaso', 1200, 'Media/caso63.jpg', 400, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(16, 1, 'T1E4: Efecto Garnier Malet', 35, 'Media/caso63.jpg', 350, SYSDATE);
+(16, 1, 'T1E4: Efecto Garnier Malet', 927, 'Media/caso63.jpg', 350, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(17, 1, 'T1E5: Sopa de Letras', 40, 'Media/caso63.jpg', 300, SYSDATE);
+(17, 1, 'T1E5: Sopa de Letras', 1293, 'Media/caso63.jpg', 300, SYSDATE);
 
 
 -- Insertar canciones
