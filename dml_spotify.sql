@@ -87,61 +87,35 @@ INSERT INTO tbl_tipo_usuario (id_tipo_usuario, tipo_usuario) VALUES
 
 -- Insertar usuarios podcasters
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(35, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/jordiwild.jpeg', 'password', 5);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(36, 1, 3, 'quantumfracture@example.com', 'QuantumFracture', TO_DATE('1985-05-23', 'YYYY-MM-DD'), SYSDATE, 'M', 'Podcasters/quantumfracture.jpeg', 'password', 10);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(37, 3, 3, 'spotifystudios@example.com', 'Spotify Studios', TO_DATE('1978-12-01', 'YYYY-MM-DD'), SYSDATE, 'Otro', 'Podcasters/spotifystudios.jpeg', 'password', 12);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(38, 3, 3, 'ldhm@example.com', 'LDHM', TO_DATE('1992-03-07', 'YYYY-MM-DD'), SYSDATE, 'Trans Genero', 'Podcasters/ldhm.jpeg', 'password', 7);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(39, 3, 3, 'lacotorrisapodcast@example.com', 'La Cotorrisa Podcast', TO_DATE('1986-08-28', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/lacotorrisapodcast.jpeg', 'password', 11);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(40, 2, 3, 'graceibarra@example.com', 'Grace Ibarra', TO_DATE('1990-11-12', 'YYYY-MM-DD'), SYSDATE, 'Femenino', 'Podcasters/graceibarra.jpeg', 'password', 1);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(41, 3, 3, 'mentepresocratica@example.com', 'Mente_Presocratica', TO_DATE('1983-04-05', 'YYYY-MM-DD'), SYSDATE, 'Otro', 'Podcasters/mentepresocratica.jpeg', 'password', 15);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(42, 3, 3, 'cuentosyleyendasdehonduras@example.com', 'Cuentos y Leyendas de Honduras', TO_DATE('1975-10-18', 'YYYY-MM-DD'), SYSDATE, 'Trans Genero', 'Podcasters/cuentosyleyendasdehonduras.jpeg', 'password', 5);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(43, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/dantegebel.jpeg', 'password', 14);
 
 
 -- Insertar podcast
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(35, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/jordiwild.jpeg', 'password', 5);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(35, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/jordiwild.jpeg', 'password', 5);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(36, 1, 3, 'quantumfracture@example.com', 'QuantumFracture', TO_DATE('1985-05-23', 'YYYY-MM-DD'), SYSDATE, 'M', 'Podcasters/quantumfracture.jpeg', 'password', 10);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(36, 1, 3, 'quantumfracture@example.com', 'QuantumFracture', TO_DATE('1985-05-23', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/quantumfracture.jpeg', 'password', 10);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(37, 3, 3, 'spotifystudios@example.com', 'Spotify Studios', TO_DATE('1978-12-01', 'YYYY-MM-DD'), SYSDATE, 'Otro', 'Podcasters/spotifystudios.jpeg', 'password', 12);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(37, 3, 3, 'spotifystudios@example.com', 'Spotify Studios', TO_DATE('1978-12-01', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/spotifystudios.jpeg', 'password', 12);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(38, 3, 3, 'ldhm@example.com', 'LDHM', TO_DATE('1992-03-07', 'YYYY-MM-DD'), SYSDATE, 'Trans Genero', 'Podcasters/ldhm.jpeg', 'password', 7);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(38, 3, 3, 'ldhm@example.com', 'LDHM', TO_DATE('1992-03-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/ldhm.jpeg', 'password', 7);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(39, 3, 3, 'lacotorrisapodcast@example.com', 'La Cotorrisa Podcast', TO_DATE('1986-08-28', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/lacotorrisapodcast.jpeg', 'password', 11);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(39, 3, 3, 'lacotorrisapodcast@example.com', 'La Cotorrisa Podcast', TO_DATE('1986-08-28', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/lacotorrisapodcast.jpeg', 'password', 11);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(40, 2, 3, 'graceibarra@example.com', 'Grace Ibarra', TO_DATE('1990-11-12', 'YYYY-MM-DD'), SYSDATE, 'Femenino', 'Podcasters/graceibarra.jpeg', 'password', 1);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(40, 2, 3, 'graceibarra@example.com', 'Grace Ibarra', TO_DATE('1990-11-12', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/graceibarra.jpeg', 'password', 1);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(41, 3, 3, 'mentepresocratica@example.com', 'Mente_Presocratica', TO_DATE('1983-04-05', 'YYYY-MM-DD'), SYSDATE, 'Otro', 'Podcasters/mentepresocratica.jpeg', 'password', 15);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(41, 3, 3, 'mentepresocratica@example.com', 'Mente_Presocratica', TO_DATE('1983-04-05', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/mentepresocratica.jpeg', 'password', 15);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(42, 3, 3, 'cuentosyleyendasdehonduras@example.com', 'Cuentos y Leyendas de Honduras', TO_DATE('1975-10-18', 'YYYY-MM-DD'), SYSDATE, 'Trans Genero', 'Podcasters/cuentosyleyendasdehonduras.jpeg', 'password', 5);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(42, 3, 3, 'cuentosyleyendasdehonduras@example.com', 'Cuentos y Leyendas de Honduras', TO_DATE('1975-10-18', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/cuentosyleyendasdehonduras.jpeg', 'password', 5);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, genero, url_foto_perfil, contrasenia, id_pais) VALUES
-(43, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Masculino', 'Podcasters/dantegebel.jpeg', 'password', 14);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(43, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/dantegebel.jpeg', 'password', 14);
 
 
 

@@ -33,9 +33,9 @@
 <colAssociation fkAssociation="D4D4A708-398A-099F-CB91-8CF92A736B25" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
 </associations>
 </Column>
-<Column name="ID_PODCASTER" id="C0D09EDB-90A2-2CBA-E039-F53DDA08C118">
+<Column name="ID_PODCASTER" id="8DC0BE51-E32A-8489-70B0-F1B43E0F92F9">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-23 16:51:56 UTC</createdTime>
+<createdTime>2024-04-19 19:16:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,7 +44,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="09AEFC71-FF9E-7C51-3DFA-2DE5652B721E" referredColumn="57F53110-B9E8-D4F3-A34C-D742E8E38767"/>
+<colAssociation fkAssociation="EBE4BE15-5923-86BE-ABAA-E4A472C020A0" referredColumn="8227ECBF-7A32-5962-8009-9842B027BA3E"/>
 </associations>
 </Column>
 <Column name="NOMBRE_PODCAST" id="A64F022A-B6EE-D719-5786-97F2D106937E">
@@ -118,14 +118,14 @@
 <colUsage columnID="CB26D0EF-89A8-9719-5A59-31EB92D1DA87"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AF786DB2-9F9A-8CB0-40AE-549EF0210793" name="TBL_PODCASTS_TBL_PODCASTERS_FK">
+<ind_PK_UK id="DFAC3EAA-A173-1C39-A82C-27E2C7BA4AFE" name="TBL_USUARIOS_FK">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-23 16:45:34 UTC</createdTime>
+<createdTime>2024-04-19 19:16:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C0D09EDB-90A2-2CBA-E039-F53DDA08C118"/>
+<colUsage columnID="8DC0BE51-E32A-8489-70B0-F1B43E0F92F9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

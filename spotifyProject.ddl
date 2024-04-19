@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-19 00:50:24 CST
+--   en:        2024-04-19 13:20:04 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -194,7 +194,8 @@ CREATE TABLE tbl_merch (
     nombre_merch     VARCHAR2(100),
     decripcion_merch VARCHAR2(500),
     precio_merch     NUMBER,
-    stock_merch      INTEGER
+    stock_merch      INTEGER,
+    url_imagen_merch VARCHAR2(100)
 );
 
 ALTER TABLE tbl_merch ADD CONSTRAINT tbl_merch_pk PRIMARY KEY ( id_merch );
@@ -239,12 +240,6 @@ CREATE TABLE tbl_podcast_x_generos (
     id_podcast        INTEGER NOT NULL,
     id_genero_podcast INTEGER NOT NULL
 );
-
-CREATE TABLE tbl_podcasters (
-    id_usuario INTEGER NOT NULL
-);
-
-ALTER TABLE tbl_podcasters ADD CONSTRAINT tbl_podcasters_pk PRIMARY KEY ( id_usuario );
 
 CREATE TABLE tbl_podcasts (
     id_podcast          INTEGER NOT NULL,
@@ -519,14 +514,6 @@ ALTER TABLE tbl_pago_planes
     ADD CONSTRAINT tbl_pl_planes_tbl_tar_fk FOREIGN KEY ( id_tarjeta )
         REFERENCES tbl_tarjetas ( id_tarjeta );
 
-ALTER TABLE tbl_podcasters
-    ADD CONSTRAINT tbl_podcasters_tbl_usuarios_fk FOREIGN KEY ( id_usuario )
-        REFERENCES tbl_usuarios ( id_usuario );
-
-ALTER TABLE tbl_podcasts
-    ADD CONSTRAINT tbl_podcasts_tbl_podcasters_fk FOREIGN KEY ( id_podcaster )
-        REFERENCES tbl_podcasters ( id_usuario );
-
 ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
@@ -546,6 +533,10 @@ ALTER TABLE tbl_usuario_red_social
 ALTER TABLE tbl_usuario_red_social
     ADD CONSTRAINT tbl_ursl_tbl_artistas_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_artistas ( id_usuario );
+
+ALTER TABLE tbl_podcasts
+    ADD CONSTRAINT tbl_usuarios_fk FOREIGN KEY ( id_podcaster )
+        REFERENCES tbl_usuarios ( id_usuario );
 
 ALTER TABLE tbl_usuarios
     ADD CONSTRAINT tbl_usuarios_tbl_genero_fk FOREIGN KEY ( id_genero )
@@ -567,9 +558,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            40
+-- CREATE TABLE                            39
 -- CREATE INDEX                             3
--- ALTER TABLE                             83
+-- ALTER TABLE                             81
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
