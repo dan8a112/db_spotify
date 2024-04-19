@@ -634,11 +634,136 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, ur
 
 
 -- Insertar canciones
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(5, 2, 'Next Semester', 180, 'url_portada_next_semester.jpg', 200, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(5, 2, 'Next Semester', 180, 200, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, url_portada, reproducciones_media, fecha_publicacion) VALUES
-(6, 2, 'Overcompensate', 240, 'url_portada_overcompensate.jpg', 230, SYSDATE);
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(6, 2, 'Overcompensate', 240, 230, SYSDATE);
+
+
+
+-- Canciones de Twenty One Pilots - Clancy
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(1, 2, 'Holding on to You', 5000, TO_DATE('17-MAY-24', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(2, 2, 'Migraine', 210, 4800, TO_DATE('17-MAY-24', 'DD-MON-RR'));
+
+-- Canciones de Twenty One Pilots - Vessel
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(3, 2, 'Ode To Sleep', 310, 5200, TO_DATE('8-ENE-15', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(4, 2, 'Holding on to You', 240, 5000, TO_DATE('8-ENE-15', 'DD-MON-RR'));
+
+-- Canciones de Vaundy - Strobo
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(5, 2, 'Bachi', 230, 4300, TO_DATE('18-MAY-21', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(6, 2, 'Shonen', 220, 4100, TO_DATE('18-MAY-21', 'DD-MON-RR'));
+
+-- Canciones de Vaundy - Odoriko
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(7, 2, 'Come Home', 200, 3800, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(8, 2, 'Midnight', 240, 4500, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+
+-- Canciones de Cardellino - Chistes Malos
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(9, 2, 'René', 270, 5800, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(10, 2, 'Espejismos', 220, 4900, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+
+-- Canciones de Cardellino - Love Dealer
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(11, 2, 'Derrámate', 210, 5200, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(12, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+
+-- Canciones de Indigo la end - Kanna
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(13, 2, 'Shizuku', 230, 4300, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(14, 2, 'I Am', 210,  4600, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+-- Canciones de Indigo la end - Crying End Roll
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(15, 2, 'Aoi Haru', 240, 5000, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(16, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+-- Canciones de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(17, 2, 'Riptide', 190, 5500, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(18, 2, 'Mess Is Mine', 220, 5100, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+-- Canciones de Vance Joy - Nation Of Two
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(19, 2, 'Saturday Sun', 200, 5800, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(20, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+-- Canciones de Vaundy - Odoriko
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(7, 2, 'Come Home', 200, 3800, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(8, 2, 'Midnight', 240, 4500, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+
+-- Canciones de Cardellino - Chistes Malos
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(9, 2, 'René', 270, 5800, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(10, 2, 'Espejismos', 220, 4900, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+
+-- Canciones de Cardellino - Love Dealer
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(11, 2, 'Derrámate', 210, 5200, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(12, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+
+-- Canciones de Indigo la end - Kanna
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(13, 2, 'Shizuku', 230, 4300, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(14, 2, 'I Am', 210,  4600, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+-- Canciones de Indigo la end - Crying End Roll
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(15, 2, 'Aoi Haru', 240, 5000, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(16, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+-- Canciones de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(17, 2, 'Riptide', 190, 5500, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(18, 2, 'Mess Is Mine', 220, 5100, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+
+-- Canciones de Vance Joy - Nation Of Two
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(19, 2, 'Saturday Sun', 200, 5800, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(20, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+
+
+
+
 
 
 

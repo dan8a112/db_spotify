@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-18 16:44:16 CST
+--   en:        2024-04-19 00:50:24 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -10,12 +10,13 @@
 -- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE tbl_albumes (
-    id_album          INTEGER NOT NULL,
-    nombre_album      VARCHAR2(150),
-    portada           VARCHAR2(1000),
-    fecha_lanzamiento DATE,
-    id_usuario        INTEGER NOT NULL,
-    color             VARCHAR2(10)
+    id_album            INTEGER NOT NULL,
+    nombre_album        VARCHAR2(150),
+    portada             VARCHAR2(1000),
+    fecha_lanzamiento   DATE,
+    id_usuario          INTEGER NOT NULL,
+    color               VARCHAR2(10),
+    id_tipo_lanzamiento INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_albumes ADD CONSTRAINT tbl_albumes_pk PRIMARY KEY ( id_album );
@@ -63,7 +64,8 @@ ALTER TABLE tbl_creditos ADD CONSTRAINT tbl_creditos_pk PRIMARY KEY ( id_credito
 CREATE TABLE tbl_episodio (
     id_episodio          INTEGER NOT NULL,
     id_podcast           INTEGER NOT NULL,
-    descripcion_episodio VARCHAR2(1000)
+    descripcion_episodio VARCHAR2(1000),
+    url_portada          VARCHAR2(1000)
 );
 
 ALTER TABLE tbl_episodio ADD CONSTRAINT tbl_episodio_pk PRIMARY KEY ( id_episodio );
@@ -179,7 +181,6 @@ CREATE TABLE tbl_media (
     id_tipo_media        INTEGER NOT NULL,
     nombre_media         VARCHAR2(200),
     duracion_media       INTEGER,
-    url_portada          VARCHAR2(1000),
     reproducciones_media INTEGER,
     fecha_publicacion    DATE
 );
@@ -234,6 +235,11 @@ CREATE TABLE tbl_planes (
 
 ALTER TABLE tbl_planes ADD CONSTRAINT tbl_planes_pk PRIMARY KEY ( id_plan );
 
+CREATE TABLE tbl_podcast_x_generos (
+    id_podcast        INTEGER NOT NULL,
+    id_genero_podcast INTEGER NOT NULL
+);
+
 CREATE TABLE tbl_podcasters (
     id_usuario INTEGER NOT NULL
 );
@@ -247,7 +253,6 @@ CREATE TABLE tbl_podcasts (
     nombre_podcast      VARCHAR2(100),
     url_portada_podcast VARCHAR2(1000),
     descripcion_podcast VARCHAR2(500),
-    id_genero_podcast   INTEGER NOT NULL,
     color               VARCHAR2(10)
 );
 
@@ -291,6 +296,13 @@ CREATE TABLE tbl_tarjetas (
 );
 
 ALTER TABLE tbl_tarjetas ADD CONSTRAINT tbl_tarjetas_pk PRIMARY KEY ( id_tarjeta );
+
+CREATE TABLE tbl_tipo_lanzamiento (
+    id_tipo_lanzamiento INTEGER NOT NULL,
+    nombre_lanzamiento  VARCHAR2(100)
+);
+
+ALTER TABLE tbl_tipo_lanzamiento ADD CONSTRAINT tbl_tipo_lanzamiento_pk PRIMARY KEY ( id_tipo_lanzamiento );
 
 CREATE TABLE tbl_tipo_media (
     id_tipo_media INTEGER NOT NULL,
@@ -346,6 +358,18 @@ CREATE TABLE tbl_usuarios (
 );
 
 ALTER TABLE tbl_usuarios ADD CONSTRAINT tbl_usuarios_pk PRIMARY KEY ( id_usuario );
+
+ALTER TABLE tbl_podcast_x_generos
+    ADD CONSTRAINT genero_podcast_fk FOREIGN KEY ( id_genero_podcast )
+        REFERENCES tbl_genero_podcast ( id_genero_podcast );
+
+ALTER TABLE tbl_albumes
+    ADD CONSTRAINT lanzamiento_fk FOREIGN KEY ( id_tipo_lanzamiento )
+        REFERENCES tbl_tipo_lanzamiento ( id_tipo_lanzamiento );
+
+ALTER TABLE tbl_podcast_x_generos
+    ADD CONSTRAINT podcasts_fk FOREIGN KEY ( id_podcast )
+        REFERENCES tbl_podcasts ( id_podcast );
 
 ALTER TABLE tbl_podcasts
     ADD CONSTRAINT podcasts_tbl_idiomas_fk FOREIGN KEY ( id_idioma )
@@ -500,10 +524,6 @@ ALTER TABLE tbl_podcasters
         REFERENCES tbl_usuarios ( id_usuario );
 
 ALTER TABLE tbl_podcasts
-    ADD CONSTRAINT tbl_podcasts_tbl_gp_fk FOREIGN KEY ( id_genero_podcast )
-        REFERENCES tbl_genero_podcast ( id_genero_podcast );
-
-ALTER TABLE tbl_podcasts
     ADD CONSTRAINT tbl_podcasts_tbl_podcasters_fk FOREIGN KEY ( id_podcaster )
         REFERENCES tbl_podcasters ( id_usuario );
 
@@ -547,9 +567,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            38
+-- CREATE TABLE                            40
 -- CREATE INDEX                             3
--- ALTER TABLE                             80
+-- ALTER TABLE                             83
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
