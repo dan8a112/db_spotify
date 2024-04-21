@@ -8,7 +8,7 @@
 <referredTableID>02A15070-A06C-3CD3-7DB1-FC6758B0FB6A</referredTableID>
 <keyObject>15B7F060-C690-AE90-54A8-C66C47027C1C</keyObject>
 <referredKeyID>15B7F060-C690-AE90-54A8-C66C47027C1C</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>ID_TARJETA</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
