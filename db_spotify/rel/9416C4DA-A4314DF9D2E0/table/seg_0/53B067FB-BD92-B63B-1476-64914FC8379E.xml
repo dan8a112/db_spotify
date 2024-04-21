@@ -56,6 +56,20 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_TIPO_LISTA" id="CF76303C-B620-FBFF-5AC4-A5CD10C1FC6C">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-21 20:56:03 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88558026-F47C-8EF9-DE33-AFAF71842D77" referredColumn="E37FC80D-BB7F-53E5-7301-0056A94AC7B7"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D043BEF8-DBFF-ADF8-50BA-731CC9D50333" name="TBL_LISTAS_REPRODUCCION_PK">
@@ -77,6 +91,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E17C3689-F6F5-5702-1529-CBD6FD2CC149"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFF01EE1-44AA-4ABA-C647-CCB019862E32" name="TBL_LISTAS_REPRODUCCION_TBL_TIPOS_LISTAS_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-21 20:56:03 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF76303C-B620-FBFF-5AC4-A5CD10C1FC6C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
