@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-21 14:49:13 CST
+--   en:        2024-04-21 15:00:00 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -144,7 +144,8 @@ CREATE TABLE tbl_listas_reproduccion (
     id_lista_reproduccion     INTEGER NOT NULL,
     id_usuario_propietario    INTEGER NOT NULL,
     nombre_lista_reproduccion VARCHAR2(300),
-    url_portada_lista         VARCHAR2(100)
+    url_portada_lista         VARCHAR2(100),
+    id_tipo_lista             INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_listas_reproduccion ADD CONSTRAINT tbl_listas_reproduccion_pk PRIMARY KEY ( id_lista_reproduccion );
@@ -320,6 +321,13 @@ CREATE TABLE tbl_tipo_usuario (
 );
 
 ALTER TABLE tbl_tipo_usuario ADD CONSTRAINT tbl_tipo_usuario_pk PRIMARY KEY ( id_tipo_usuario );
+
+CREATE TABLE tbl_tipos_listas (
+    id_tipo_lista     INTEGER NOT NULL,
+    nombre_tipo_lista VARCHAR2(50)
+);
+
+ALTER TABLE tbl_tipos_listas ADD CONSTRAINT tbl_tipos_listas_pk PRIMARY KEY ( id_tipo_lista );
 
 CREATE TABLE tbl_usuario_estandar (
     id_usuario                   INTEGER NOT NULL,
@@ -514,6 +522,10 @@ ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
 
+ALTER TABLE tbl_listas_reproduccion
+    ADD CONSTRAINT tbl_tipos_listas_fk FOREIGN KEY ( id_tipo_lista )
+        REFERENCES tbl_tipos_listas ( id_tipo_lista );
+
 ALTER TABLE tbl_usuario_estandar
     ADD CONSTRAINT tbl_ue_tbl_hc_fk FOREIGN KEY ( id_historial_de_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
@@ -554,9 +566,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            38
+-- CREATE TABLE                            39
 -- CREATE INDEX                             4
--- ALTER TABLE                             80
+-- ALTER TABLE                             82
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
