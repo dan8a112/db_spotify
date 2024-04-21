@@ -44,15 +44,16 @@
 <ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CANTIDAD_CANCIONES" id="51344198-3FFF-55B7-DBA1-76009F3DE566">
+<Column name="URL_PORTADA_LISTA" id="F2B53A41-9A08-4793-E517-5E655324C1ED">
 <createdBy>casti</createdBy>
-<createdTime>2024-02-15 20:39:41 UTC</createdTime>
+<createdTime>2024-04-21 18:07:06 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
