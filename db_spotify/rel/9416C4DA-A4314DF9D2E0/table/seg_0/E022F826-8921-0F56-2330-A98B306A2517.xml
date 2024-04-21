@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PLAN_PAGADO" id="F1DFCE22-DE80-C699-2EDE-0057BC8E4469">
+<Column name="ID_PLAN_PAGO" id="F1DFCE22-DE80-C699-2EDE-0057BC8E4469">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-23 19:36:01 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -32,6 +32,20 @@
 <colAssociation fkAssociation="D526D6BD-1E64-2BD4-032A-5AD70019305E" referredColumn="BA674278-2A2C-E1E4-EEE3-EC8E9C0A7296"/>
 </associations>
 </Column>
+<Column name="ID_TARJETA" id="872E7C30-790C-00A5-B328-965F7D71E482">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-21 20:32:00 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10754C67-BCC2-D65A-1EFD-6AB6013E27D6" referredColumn="548A083A-7378-00E7-16C3-3CC8C8DE9CAE"/>
+</associations>
+</Column>
 <Column name="ID_USUARIO" id="60705CCB-2DB1-6AB6-C700-89E48D9AF20B">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:51 UTC</createdTime>
@@ -44,21 +58,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="D4A322BE-BF37-7038-9C2E-77A2EB7C6702" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
-</associations>
-</Column>
-<Column name="ID_TARJETA" id="8A35A0A6-9D90-418C-4030-CBE1D94A44C2">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-17 21:42:51 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="ADF9CE28-3B83-A51B-6CCB-0F89636B40DF" referredColumn="548A083A-7378-00E7-16C3-3CC8C8DE9CAE"/>
 </associations>
 </Column>
 <Column name="FECHA_INICIO_PLAN" id="DB9825F4-6AB2-CFE3-999B-1F531C583C15">
@@ -106,6 +105,16 @@
 <colUsage columnID="60705CCB-2DB1-6AB6-C700-89E48D9AF20B"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="1ED5F782-FA4C-BD8A-4271-DC07DCAD9BEE" name="TBL_PAGO_PLANES__TAR">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-21 20:32:13 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="872E7C30-790C-00A5-B328-965F7D71E482"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="2D51E524-EE98-60BE-768B-75FCD42E1184" name="TBL_PAGO_PLANES_TBL_UE_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-21 20:53:51 UTC</createdTime>
@@ -126,14 +135,14 @@
 <colUsage columnID="A27A68A1-F5A6-5411-7352-40473761EF4D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="87155D84-3CA5-7FE5-2399-913571824725" name="TBL_PL_PLANES_TBL_TAR_FK">
+<ind_PK_UK id="088A28F3-54C3-ED77-32A5-6BC3D0A50254" name="TBL_PAGO_PLANES_TBL_TARJETAS_FK">
 <createdBy>danyo</createdBy>
-<createdTime>2024-04-17 21:42:51 UTC</createdTime>
+<createdTime>2024-04-21 20:32:00 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8A35A0A6-9D90-418C-4030-CBE1D94A44C2"/>
+<colUsage columnID="872E7C30-790C-00A5-B328-965F7D71E482"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

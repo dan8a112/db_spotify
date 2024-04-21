@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10754C67-BCC2-D65A-1EFD-6AB6013E27D6" containerWithKeyObject="E022F826-8921-0F56-2330-A98B306A2517" localFKIndex="088A28F3-54C3-ED77-32A5-6BC3D0A50254" name="TBL_PAGO_PLANES_TBL_TARJETAS_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-21 20:32:00 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<referredTableLongName>TBL_TARJETAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>02A15070-A06C-3CD3-7DB1-FC6758B0FB6A</referredTableID>
+<keyObject>15B7F060-C690-AE90-54A8-C66C47027C1C</keyObject>
+<referredKeyID>15B7F060-C690-AE90-54A8-C66C47027C1C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TARJETA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
