@@ -63,6 +63,36 @@ INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_i
 INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
 (15, 'Rusia', 'RUS', 'rusia.png', 5);
 
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(16, 'India', 'IND', 'india.png', 1);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(17, 'Sudáfrica', 'ZAF', 'sudafrica.png', 2);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(18, 'Nigeria', 'NGA', 'nigeria.png', 2);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(19, 'Egipto', 'EGY', 'egipto.png', 2);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(20, 'Corea del Sur', 'KOR', 'corea.png', 6);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(21, 'Grecia', 'GRE', 'grecia.png', 4);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(22, 'Turquía', 'TUR', 'turquia.png', 4);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(23, 'Colombia', 'COL', 'colombia.png', 3);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(24, 'Perú', 'PER', 'peru.png', 3);
+
+INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+(25, 'Chile', 'CHL', 'chile.png', 3);
+
 
 -- Insertar géneros
 INSERT INTO tbl_genero (id_genero, nombre_genero) VALUES
@@ -92,31 +122,31 @@ INSERT INTO tbl_tipo_usuario (id_tipo_usuario, tipo_usuario) VALUES
 
 -- Insertar podcasters
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(35, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/jordiwild.jpeg', 'password', 5);
+(81, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/jordiwild.jpeg', 'password', 5);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(36, 1, 3, 'quantumfracture@example.com', 'QuantumFracture', TO_DATE('1985-05-23', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/quantumfracture.jpeg', 'password', 10);
+(82, 1, 3, 'quantumfracture@example.com', 'QuantumFracture', TO_DATE('1985-05-23', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/quantumfracture.jpeg', 'password', 10);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(37, 3, 3, 'spotifystudios@example.com', 'Spotify Studios', TO_DATE('1978-12-01', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/spotifystudios.jpeg', 'password', 12);
+(83, 3, 3, 'spotifystudios@example.com', 'Spotify Studios', TO_DATE('1978-12-01', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/spotifystudios.jpeg', 'password', 12);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(38, 3, 3, 'ldhm@example.com', 'LDHM', TO_DATE('1992-03-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/ldhm.jpeg', 'password', 7);
+(84, 3, 3, 'ldhm@example.com', 'LDHM', TO_DATE('1992-03-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/ldhm.jpeg', 'password', 7);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(39, 3, 3, 'lacotorrisapodcast@example.com', 'La Cotorrisa Podcast', TO_DATE('1986-08-28', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/lacotorrisapodcast.jpeg', 'password', 11);
+(85, 3, 3, 'lacotorrisapodcast@example.com', 'La Cotorrisa Podcast', TO_DATE('1986-08-28', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/lacotorrisapodcast.jpeg', 'password', 11);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(40, 2, 3, 'graceibarra@example.com', 'Grace Ibarra', TO_DATE('1990-11-12', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/graceibarra.jpeg', 'password', 1);
+(86, 2, 3, 'graceibarra@example.com', 'Grace Ibarra', TO_DATE('1990-11-12', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/graceibarra.jpeg', 'password', 1);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(41, 3, 3, 'mentepresocratica@example.com', 'Mente_Presocratica', TO_DATE('1983-04-05', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/mentepresocratica.jpeg', 'password', 15);
+(87, 3, 3, 'mentepresocratica@example.com', 'Mente_Presocratica', TO_DATE('1983-04-05', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/mentepresocratica.jpeg', 'password', 15);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(42, 3, 3, 'cuentosyleyendasdehonduras@example.com', 'Cuentos y Leyendas de Honduras', TO_DATE('1975-10-18', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/cuentosyleyendasdehonduras.jpeg', 'password', 5);
+(88, 3, 3, 'cuentosyleyendasdehonduras@example.com', 'Cuentos y Leyendas de Honduras', TO_DATE('1975-10-18', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/cuentosyleyendasdehonduras.jpeg', 'password', 5);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(43, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/dantegebel.jpeg', 'password', 14);
+(89, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/dantegebel.jpeg', 'password', 14);
 
 
 -- Podcast
@@ -184,70 +214,72 @@ INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
 INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
 (12, 'Ficcion');
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (1, 1);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (1, 2);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (1, 5);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (2, 5);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (2, 6);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (2, 11);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (3, 10);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (3, 12);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (3, 7);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (4, 10);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (4, 12);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (4, 7);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (5, 5);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (5, 11);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (5, 1);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (6, 4);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (6, 8);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (6, 3);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (7, 9);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (7, 2);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (7, 6);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (8, 1);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (8, 7);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (8, 12);
 
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (9, 2);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (9, 10);
-INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (9, 11);
-
 -- Insertar usuarios artistas
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(100, 3, 1, 'spotify@example.com', 'Spotify', TO_DATE('1988-12-01', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/spotify.png', 'password', 1);
+
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (1, 3, 1, 'twentyonepilots@example.com', 'Twenty One Pilots', TO_DATE('1988-12-01', 'YYYY-MM-DD'), SYSDATE, 'Artistas/twentyonepilots.jpeg', 'password', 1);
 
@@ -277,7 +309,7 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 (9, 3, 1, 'radiohead@example.com', 'Radiohead', TO_DATE('1985-10-02', 'YYYY-MM-DD'), SYSDATE, 'Artistas/radiohead.jpg', 'password', 6);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(10,31, 1, 'radwimps@example.com', 'Radwimps', TO_DATE('2001-01-04', 'YYYY-MM-DD'), SYSDATE, 'Artistas/radwimps.jpg', 'password', 5);
+(10,3, 1, 'radwimps@example.com', 'Radwimps', TO_DATE('2001-01-04', 'YYYY-MM-DD'), SYSDATE, 'Artistas/radwimps.jpg', 'password', 5);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (11, 1, 1, 'elkuelgue@example.com', 'El Kuelgue', TO_DATE('1989-11-11', 'YYYY-MM-DD'), SYSDATE, 'Artistas/elkuelgue.jpg', 'password', 13);
@@ -319,7 +351,7 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 (23, 1, 1, 'dayglow@example.com', 'Dayglow', TO_DATE('1999-11-05', 'YYYY-MM-DD'), SYSDATE, 'Artistas/dayglow.jpg', 'password', 14);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(24, 1, 1, 'badbunny@example.com', 'Bad Bunny', TO_DATE('1994-03-10', 'YYYY-MM-DD'), SYSDATE, 'Artistas/badbunny.jpg', 'password', 21);
+(24, 1, 1, 'badbunny@example.com', 'Bad Bunny', TO_DATE('1994-03-10', 'YYYY-MM-DD'), SYSDATE, 'Artistas/badbunny.jpg', 'password', 2);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (25, 3, 1, 'thesmiths@example.com', 'The Smiths', TO_DATE('1982-02-05', 'YYYY-MM-DD'), SYSDATE, 'Artistas/thesmiths.jpg', 'password', 11);
@@ -716,6 +748,8 @@ INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_
 INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
 (9, 3, 7, 'Gorra Wallows Striped', 'Gorra con diseño de rayas de Wallows', 18.99, 55);
 
+
+
 -- Crear usuarios estándar
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'angelcastillo.jpg', 'password', 1);
@@ -1004,7 +1038,11 @@ INSERT INTO tbl_tipo_media (id_tipo_media, tipo_media) VALUES (1, 'Canción');
 -- Insertar el tipo de medio "Podcast"
 INSERT INTO tbl_tipo_media (id_tipo_media, tipo_media) VALUES (2, 'Podcast');
 
+
+
 -- Insertar Episodios podcast
+
+-- Quantum Fracture
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (1, 1, 'Oppenheimer, el proyecto Manhattan y la Bomba Atómica',2000, 500, SYSDATE);
 
@@ -1017,475 +1055,711 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (4, 1, 'Fusión Nuclear', 50, 7000, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(7, 1, 'The wild Project #48: Ser padre', 10500, 300, SYSDATE);
+-- The wild project
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(8, 1, 'The wild Project #42: La polémica de los NFTs', 15040, 400, SYSDATE);
+(7, 1, 'The wild Project #48: Ser padre', 1500, 30770, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(9, 1, 'The wild Project #43: Aguantar el hate', 13902, 350, SYSDATE);
+(8, 1, 'The wild Project #42: La polémica de los NFTs', 1040, 45700, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(10, 1, 'The wild Project #45: Andorra', 12345, 200, SYSDATE);
+(9, 1, 'The wild Project #43: Aguantar el hate', 1902, 34650, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 60, 1000, SYSDATE);
+(10, 1, 'The wild Project #45: Andorra', 1345, 28800, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 13456, 800, SYSDATE);
+(11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 6056, 17000, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(13, 1, 'T1E1: La historia con la que crecí', 20, 12783, SYSDATE);
+(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 1456, 86700, SYSDATE);
+
+-- Caso 63
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(14, 1, 'T1E2: De Lorean', 1000, 450, SYSDATE);
+(13, 1, 'T1E1: La historia con la que crecí', 2000, 1783, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(15, 1, 'T1E3: Pegaso', 1200, 400, SYSDATE);
+(14, 1, 'T1E2: De Lorean', 1000, 43350, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(16, 1, 'T1E4: Efecto Garnier Malet', 927, 350, SYSDATE);
+(15, 1, 'T1E3: Pegaso', 1200, 44400, SYSDATE);
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(17, 1, 'T1E5: Sopa de Letras', 1293, 300, SYSDATE);
+(16, 1, 'T1E4: Efecto Garnier Malet', 927, 35550, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(17, 1, 'T1E5: Sopa de Letras', 1293, 36600, SYSDATE);
+
+-- Los hijos de morazan
+
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(65, 1, 'ME MALEA - LOS HIJOS DE MORAZAN', 3674, 1000, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(66, 1, 'SALIENDO DE LA PROBREZA - LOS HIJOS DE MORAZAN', 2489, 23777, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(67, 1, 'LO BONITO Y FEO DEL AMOR - LOS HIJOS DE MORAZAN', 4783, 2000, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(68, 1, 'COMO HAN PASADO LOS AÑOS - LOS HIJOS DE MORAZAN', 2783, 1300, SYSDATE);
+
+
+--la cotorrisa
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(69, 1, 'Anecdota 243 - Los retretes hablan en Benezuela ft Nacho Redondo', 4200, 43200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(70, 1, 'Anecdota 243 - Me dispararon en el transporte publico', 4200, 43200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(71, 1, 'Anecdota 243 - Si no fuera cantante, venderia bicis ft Caloncho', 4200, 45200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(72, 1, 'Anecdota 243 - Mama no te preocupes, estoy arrestado', 4200, 42200, SYSDATE);
+
+--Habitos Inteligentes
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(73, 1, '#238 - Pesas vs Pilates', 4200, 45200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(74, 1, '#237 - La dieta crudivegana', 4200, 42200, SYSDATE);
+
+-- Tu desarrollo personal
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(75, 1, '#118 - FORJA TU IDENTIDAD', 4200, 45200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(76, 1, '#117 - CAMBIA TUS CREENCIAS', 4200, 42200, SYSDATE);
+
+-- Cuentos y leyendas de honduras
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(77, 1, 'El Esposo Maldito', 4200, 45200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(78, 1, 'Las Coquetas', 4200, 42200, SYSDATE);
+
+-- Dante Gebel
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(79, 1, 'Hombres en extincion', 4200, 45200, SYSDATE);
+
+INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
+(80, 1, 'Rapidos y furiosos... pero agobiados', 4200, 42200, SYSDATE);
+
+
+--INSERTAR EPISODIOS
+
+-- Quantum Fracture
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(1, 2, 'Oppenheimer, el proyecto Manhattan y la Bomba Atómica', 'url_podcast1.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(2, 2, 'Océano, Biodiversidad y Cambio Climático', 'url_podcast2.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(3, 2, 'Teoría de Cuerdas', 'url_podcast3.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(4, 2, 'Fusión Nuclear', 'url_podcast4.jpg');
+
+-- The wild project
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(7, 1, 'The wild Project #48: Ser padre', 'url_podcast7.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(8, 1, 'The wild Project #42: La polémica de los NFTs', 'url_podcast8.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(9, 1, 'The wild Project #43: Aguantar el hate', 'url_podcast9.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(10, 1, 'The wild Project #45: Andorra', 'url_podcast10.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(11, 1, 'The wild Project #49 ft QuantumFracture & Javier Santaolalla | El podcast más esperado del mundo', 'url_podcast11.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(12, 1, 'The wild Project #46 ft Francisco Marco (Detective Privado) | Anécdotas', 'url_podcast12.jpg');
+
+-- Caso 63
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(13, 3, 'T1E1: La historia con la que crecí', 'url_podcast13.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(14, 3, 'T1E2: De Lorean', 'url_podcast14.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(15, 3, 'T1E3: Pegaso', 'url_podcast15.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(16, 3, 'T1E4: Efecto Garnier Malet', 'url_podcast16.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(17, 3, 'T1E5: Sopa de Letras', 'url_podcast17.jpg');
+
+-- Los hijos de morazan
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(65, 4, 'ME MALEA - LOS HIJOS DE MORAZAN', 'url_podcast65.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(66, 4, 'SALIENDO DE LA PROBREZA - LOS HIJOS DE MORAZAN', 'url_podcast66.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(67, 4, 'LO BONITO Y FEO DEL AMOR - LOS HIJOS DE MORAZAN', 'url_podcast67.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(68, 4, 'COMO HAN PASADO LOS AÑOS - LOS HIJOS DE MORAZAN', 'url_podcast68.jpg');
+
+-- La Cotorrisa
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(69, 5, 'Anecdota 243 - Los retretes hablan en Benezuela ft Nacho Redondo', 'url_podcast69.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(70, 5, 'Anecdota 243 - Me dispararon en el transporte publico', 'url_podcast70.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(71, 5, 'Anecdota 243 - Si no fuera cantante, venderia bicis ft Caloncho', 'url_podcast71.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(72, 5, 'Anecdota 243 - Mama no te preocupes, estoy arrestado', 'url_podcast72.jpg');
+
+-- Habitos Inteligentes
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(73, 6, '#238 - Pesas vs Pilates', 'url_podcast73.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(74, 6, '#237 - La dieta crudivegana', 'url_podcast74.jpg');
+
+-- Tu desarrollo personal
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(75, 7, '#118 - FORJA TU IDENTIDAD', 'url_podcast75.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(76, 7, '#117 - CAMBIA TUS CREENCIAS', 'url_podcast76.jpg');
+
+-- Cuentos y leyendas de Honduras
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(77, 8, 'El Esposo Maldito', 'url_podcast77.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(78, 8, 'Las Coquetas', 'url_podcast78.jpg');
+
+-- Dante Gebel
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(79, 9, 'Hombres en extincion', 'url_podcast79.jpg');
+
+INSERT INTO tbl_episodio (id_episodio, id_podcast, descripcion_episodio, url_portada) VALUES
+(80, 9, 'Rapidos y furiosos... pero agobiados', 'url_podcast80.jpg');
+
+
+
 
 
 -- Insertar canciones
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(5, 2, 'Next Semester', 180, 200, SYSDATE);
 
-INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(6, 2, 'Overcompensate', 240, 230, SYSDATE);
-
+--
 -- Canciones de Twenty One Pilots - Clancy
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(1, 2, 'Holding on to You', 5000, TO_DATE('17-MAY-24', 'DD-MON-RR'));
+(21, 2, 'Next Semester', 200, 5000, TO_DATE('17-MAY-24', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(2, 2, 'Migraine', 210, 4800, TO_DATE('17-MAY-24', 'DD-MON-RR'));
+(22, 2, 'Overcompensate', 210, 4800, TO_DATE('17-MAY-24', 'DD-MON-RR'));
 
 -- Canciones de Twenty One Pilots - Vessel
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(3, 2, 'Ode To Sleep', 310, 5200, TO_DATE('8-ENE-15', 'DD-MON-RR'));
+(23, 2, 'Ode To Sleep', 310, 5200, TO_DATE('8-ENE-15', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(4, 2, 'Holding on to You', 240, 5000, TO_DATE('8-ENE-15', 'DD-MON-RR'));
+(24, 2, 'Guns For Hands', 240, 5000, TO_DATE('8-ENE-15', 'DD-MON-RR'));
 
 -- Canciones de Vaundy - Strobo
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(5, 2, 'Bachi', 230, 4300, TO_DATE('18-MAY-21', 'DD-MON-RR'));
+(25, 2, 'Bachi', 230, 4300, TO_DATE('18-MAY-21', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(6, 2, 'Shonen', 220, 4100, TO_DATE('18-MAY-21', 'DD-MON-RR'));
+(26, 2, 'Shonen', 220, 4100, TO_DATE('18-MAY-21', 'DD-MON-RR'));
 
 -- Canciones de Vaundy - Odoriko
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(7, 2, 'Come Home', 200, 3800, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+(27, 2, 'Come Home', 200, 3800, TO_DATE('4-ENE-22', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(8, 2, 'Midnight', 240, 4500, TO_DATE('4-ENE-22', 'DD-MON-RR'));
+(28, 2, 'Midnight', 240, 4500, TO_DATE('4-ENE-22', 'DD-MON-RR'));
 
 -- Canciones de Cardellino - Chistes Malos
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(9, 2, 'René', 270, 5800, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+(29, 2, 'René', 270, 5800, TO_DATE('25-ABR-21', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(10, 2, 'Espejismos', 220, 4900, TO_DATE('25-ABR-21', 'DD-MON-RR'));
+(30, 2, 'Espejismos', 220, 4900, TO_DATE('25-ABR-21', 'DD-MON-RR'));
 
 -- Canciones de Cardellino - Love Dealer
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(11, 2, 'Derrámate', 210, 5200, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+(31, 2, 'Derrámate', 210, 5200, TO_DATE('09-FEB-20', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(12, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
+(32, 2, 'Desnudos', 250, 4700, TO_DATE('09-FEB-20', 'DD-MON-RR'));
 
 
 -- Canciones de Vance Joy - Dream Your Life Away
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(17, 2, 'Riptide', 190, 5500, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(33, 2, 'Riptide', 190, 5500, TO_DATE('29-DIC-19', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(18, 2, 'Mess Is Mine', 220, 5100, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(34, 2, 'Mess Is Mine', 220, 5100, TO_DATE('29-DIC-19', 'DD-MON-RR'));
 
 -- Canciones de Vance Joy - Nation Of Two
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(19, 2, 'Saturday Sun', 200, 5800, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(35, 2, 'Saturday Sun', 200, 5800, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(20, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(36, 2, 'Lay It On Me', 210, 5500, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
 
 -- Canciones de Indigo la end - Kanna
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(13, 2, 'Shizuku', 230, 4300, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(37, 2, 'Shizuku', 230, 4300, TO_DATE('29-DIC-19', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(14, 2, 'I Am', 210,  4600, TO_DATE('29-DIC-19', 'DD-MON-RR'));
+(38, 2, 'I Am', 210,  4600, TO_DATE('29-DIC-19', 'DD-MON-RR'));
 
 -- Canciones de Indigo la end - Crying End Roll
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(15, 2, 'Aoi Haru', 240, 5000, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(39, 2, 'Aoi Haru', 240, 5000, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(16, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
+(40, 2, 'Haruka', 220, 4100, TO_DATE('27-OCT-22', 'DD-MON-RR'));
 
 
 -- Canciones de Arctic Monkeys - AM
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(21, 2, 'Do I Wanna Know?', 270, 6200, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
+(41, 2, 'Do I Wanna Know?', 270, 6200, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(22, 2, 'R U Mine?', 200, 5800, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
+(42, 2, 'R U Mine?', 200, 5800, TO_DATE('2013-09-09', 'YYYY-MM-DD'));
 
 -- Canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(23, 2, 'Four Out of Five', 220, 5400, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
+(43, 2, 'Four Out of Five', 220, 5400, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(24, 2, 'Star Treatment', 240, 5800, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
+(44, 2, 'Star Treatment', 240, 5800, TO_DATE('2018-05-11', 'YYYY-MM-DD'));
 
 -- Canciones de Wallows - Nothing Happens
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(25, 2, 'Scrawny', 200, 5000, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
+(45, 2, 'Scrawny', 200, 5000, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(26, 2, 'Are You Bored Yet? (feat. Clairo)', 240, 5300, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
+(46, 2, 'Are You Bored Yet? (feat. Clairo)', 240, 5300, TO_DATE('2019-03-22', 'YYYY-MM-DD'));
 
 -- Canciones de Wallows - Remote
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(27, 2, 'Nobody Gets Me (Like You)', 210, 4900, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
+(47, 2, 'Nobody Gets Me (Like You)', 210, 4900, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(28, 2, 'Virtual Aerobics', 190, 4600, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
+(48, 2, 'Virtual Aerobics', 190, 4600, TO_DATE('2020-10-23', 'YYYY-MM-DD'));
 
 -- Canciones de The Strokes - Is This It
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(29, 2, 'Last Nite', 210, 5200, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
+(49, 2, 'Last Nite', 210, 5200, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(30, 2, 'Someday', 200, 4800, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
+(50, 2, 'Someday', 200, 4800, TO_DATE('2001-07-30', 'YYYY-MM-DD'));
 
 -- Canciones de The Strokes - Room on Fire
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(31, 2, 'Reptilia', 190, 5400, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
+(51, 2, 'Reptilia', 190, 5400, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(32, 2, '12:51', 180, 5100, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
+(52, 2, '12:51', 180, 5100, TO_DATE('2003-10-28', 'YYYY-MM-DD'));
 
 -- Canciones de Radiohead - OK Computer
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(33, 2, 'Paranoid Android', 380, 7800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
+(53, 2, 'Paranoid Android', 380, 7800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(34, 2, 'Karma Police', 250, 6800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
+(54, 2, 'Karma Police', 250, 6800, TO_DATE('1997-05-21', 'YYYY-MM-DD'));
 
 -- Canciones de Radiohead - In Rainbows
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(35, 2, '15 Step', 230, 6200, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
+(55, 2, '15 Step', 230, 6200, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(36, 2, 'Weird Fishes/Arpeggi', 300, 6900, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
+(56, 2, 'Weird Fishes/Arpeggi', 300, 6900, TO_DATE('2007-10-10', 'YYYY-MM-DD'));
 
 
 -- Canciones de Radwimps - Ningen Kaika
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(37, 2, 'Zenzenzense', 240, 6500, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
+(57, 2, 'Zenzenzense', 240, 6500, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(38, 2, 'Sparkle', 290, 7200, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
+(58, 2, 'Sparkle', 290, 7200, TO_DATE('2016-11-23', 'YYYY-MM-DD'));
 
 -- Canciones de Radwimps - Weathering With You
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(39, 2, 'Is There Still Anything That Love Can Do?', 220, 6100, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
+(59, 2, 'Is There Still Anything That Love Can Do?', 220, 6100, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(40, 2, 'Grand Escape (feat. Toko Miura)', 280, 6900, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
+(60, 2, 'Grand Escape (feat. Toko Miura)', 280, 6900, TO_DATE('2019-07-19', 'YYYY-MM-DD'));
 
 -- Canciones de El Kuelgue - Beatriz
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(41, 2, 'Ruli', 210, 4800, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
+(61, 2, 'Ruli', 210, 4800, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(42, 2, 'A Mi Gatito le Gusta el Reggaeton', 180, 5200, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
+(62, 2, 'A Mi Gatito le Gusta el Reggaeton', 180, 5200, TO_DATE('2016-10-28', 'YYYY-MM-DD'));
 
 -- Canciones de El Kuelgue - Cariño Reptil
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(43, 2, 'Jaguares', 190, 4600, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
+(63, 2, 'Jaguares', 190, 4600, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(44, 2, 'Cariño Reptil', 220, 5000, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
+(64, 2, 'Cariño Reptil', 220, 5000, TO_DATE('2012-06-26', 'YYYY-MM-DD'));
 
 -- Canciones de Jorge Drexler - Eco
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(45, 2, 'Al Otro Lado del Río', 230, 5100, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
+(81, 2, 'Al Otro Lado del Río', 230, 5100, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(46, 2, 'Eco', 240, 5300, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
+(82, 2, 'Eco', 240, 5300, TO_DATE('2004-04-13', 'YYYY-MM-DD'));
 
 -- Canciones de Jorge Drexler - Salvavidas de Hielo
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(47, 2, 'Asilo', 200, 4900, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
+(83, 2, 'Asilo', 200, 4900, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(48, 2, 'Salvavidas de Hielo', 210, 4800, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
+(84, 2, 'Salvavidas de Hielo', 210, 4800, TO_DATE('2017-09-22', 'YYYY-MM-DD'));
 
 -- Canciones de Hozier - Hozier
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(49, 2, 'Take Me to Church', 240, 7000, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
+(85, 2, 'Take Me to Church', 240, 7000, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(50, 2, 'From Eden', 230, 6700, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
+(86, 2, 'From Eden', 230, 6700, TO_DATE('2014-09-19', 'YYYY-MM-DD'));
 
 -- Canciones de Hozier - Wasteland, Baby!
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(51, 2, 'Movement', 200, 6200, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
+(87, 2, 'Movement', 200, 6200, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(52, 2, 'Almost (Sweet Music)', 240, 5800, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
+(88, 2, 'Almost (Sweet Music)', 240, 5800, TO_DATE('2019-03-01', 'YYYY-MM-DD'));
 
 -- Canciones de Guns N' Roses - Appetite for Destruction
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(53, 2, 'Sweet Child o Mine', 350, 7400, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
+(89, 2, 'Sweet Child o Mine', 350, 7400, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(54, 2, 'Welcome to the Jungle', 260, 6800, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
+(90, 2, 'Welcome to the Jungle', 260, 6800, TO_DATE('1987-07-21', 'YYYY-MM-DD'));
 
 -- Canciones de Guns N' Roses - Use Your Illusion II
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(55, 2, 'November Rain', 530, 8500, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
+(91, 2, 'November Rain', 530, 8500, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(56, 2, 'Dont Cry', 270, 7200, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
+(92, 2, 'Dont Cry', 270, 7200, TO_DATE('1991-09-17', 'YYYY-MM-DD'));
 
 -- Canciones de Bring Me The Horizon - Sempiternal
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(57, 2, 'Can You Feel My Heart', 220, 6300, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
+(93, 2, 'Can You Feel My Heart', 220, 6300, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(58, 2, 'Sleepwalking', 250, 6800, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
+(94, 2, 'Sleepwalking', 250, 6800, TO_DATE('2013-04-01', 'YYYY-MM-DD'));
 
 -- Canciones de Bring Me The Horizon - That's the Spirit
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(59, 2, 'Throne', 200, 5900, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
+(95, 2, 'Throne', 200, 5900, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
-(60, 2, 'Drown', 220, 6300, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
+(96, 2, 'Drown', 220, 6300, TO_DATE('2015-09-11', 'YYYY-MM-DD'));
+
+
+/*Generos Musicales*/
+
+-- Insertar géneros musicales
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(1, 'Rock');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(2, 'Pop');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(3, 'Hip Hop');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(4, 'Jazz');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(5, 'Reggae');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(6, 'Electrónica');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(7, 'R&B');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(8, 'Metal');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(9, 'Country');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(10, 'Blues');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(11, 'Funk');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(12, 'Soul');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(13, 'Reggaeton');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(14, 'Ska');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(15, 'Disco');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(16, 'Indie');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(17, 'Trap');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(18, 'Folk');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(19, 'Punk');
+
+INSERT INTO tbl_generos_musicales (id_genero_musical, nombre_genero_musical) VALUES
+(20, 'Gospel');
 
 
 
 
 /*CANCIONES*/
 
--- Canciones de Twenty One Pilots - Clancy
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(1, NULL, 1, 1, 1, 1);
+-- Canciones de Twenty One Pilots - Vessel
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(21, NULL, 1, 16, 1, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(2, NULL, 1, 1, 1, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(22, NULL, 1, 16, 1, 1);
 
 -- Canciones de Twenty One Pilots - Vessel
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(3, NULL, 2, 1, 1, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(23, NULL, 2, 16, 1, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(4, NULL, 2, 1, 1, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(24, NULL, 2, 16, 1, 1);
 
 -- Canciones de Vaundy - Strobo
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(5, NULL, 3, 2, 2, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(25, NULL, 3, 11, 2, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(6, NULL, 3, 2, 2, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(26, NULL, 3, 11, 2, 1);
 
 -- Canciones de Vaundy - Odoriko
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(7, NULL, 4, 2, 2, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(27, NULL, 4, 11, 2, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(8, NULL, 4, 2, 2, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(28, NULL, 4, 11, 2, 1);
 
 -- Canciones de Cardellino - Chistes Malos
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(9, NULL, 5, 3, 3, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(29, NULL, 5, 17, 3, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(10, NULL, 5, 3, 3, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(30, NULL, 5, 17, 3, 1);
 
 -- Canciones de Cardellino - Love Dealer
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(11, NULL, 6, 3, 3, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(31, NULL, 6, 17, 3, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(12, NULL, 6, 3, 3, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(32, NULL, 6, 17, 3, 1);
 
 -- Canciones de Vance Joy - Dream Your Life Away
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(17, NULL, 7, 4, 4, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(33, NULL, 7, 4, 4, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(18, NULL, 7, 4, 4, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(34, NULL, 7, 4, 4, 1);
 
 -- Canciones de Vance Joy - Nation Of Two
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(19, NULL, 8, 4, 4, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(35, NULL, 8, 4, 4, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(20, NULL, 8, 4, 4, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(36, NULL, 8, 4, 4, 1);
 
 -- Canciones de Indigo la end - Kanna
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(13, NULL, 9, 2, 5, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(37, NULL, 9, 11, 5, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(14, NULL, 9, 2, 5, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(38, NULL, 9, 11, 5, 1);
 
 -- Canciones de Indigo la end - Crying End Roll
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(15, NULL, 10, 2, 5, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(39, NULL, 10, 11, 5, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(16, NULL, 10, 2, 5, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(40, NULL, 10, 11, 5, 1);
 
 -- Canciones de Arctic Monkeys - AM
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(21, NULL, 11, 1, 6, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(41, NULL, 11, 16, 6, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(22, NULL, 11, 1, 6, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(42, NULL, 11, 16, 6, 1);
 
 -- Canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(23, NULL, 12, 1, 6, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(43, NULL, 12, 16, 6, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(24, NULL, 12, 1, 6, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(44, NULL, 12, 16, 6, 1);
 
 -- Canciones de Wallows - Nothing Happens
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(25, NULL, 13, 1, 7, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(45, NULL, 13, 16, 7, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(26, NULL, 13, 1, 7, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(46, NULL, 13, 16, 7, 1);
 
 -- Canciones de Wallows - Remote
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(27, NULL, 14, 1, 7, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(47, NULL, 14, 16, 7, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(28, NULL, 14, 1, 7, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(48, NULL, 14, 16, 7, 1);
 
 -- Canciones de The Strokes - Is This It
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(29, NULL, 15, 1, 8, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(49, NULL, 15, 16, 8, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(30, NULL, 15, 1, 8, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(50, NULL, 15, 16, 8, 1);
 
 -- Canciones de The Strokes - Room on Fire
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(31, NULL, 16, 1, 8, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(51, NULL, 16, 16, 8, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(32, NULL, 16, 1, 8, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(52, NULL, 16, 16, 8, 1);
 
 -- Canciones de Radiohead - OK Computer
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(33, NULL, 17, 1, 9, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(53, NULL, 17, 16, 9, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(34, NULL, 17, 1, 9, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(54, NULL, 17, 16, 9, 1);
 
 -- Canciones de Radiohead - In Rainbows
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(35, NULL, 18, 1, 9, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(55, NULL, 18, 16, 9, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(36, NULL, 18, 1, 9, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(56, NULL, 18, 16, 9, 1);
 
 -- Canciones de Radwimps - Ningen Kaika
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(37, NULL, 19, 2, 10, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(57, NULL, 19, 11, 10, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(38, NULL, 19, 2, 10, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(58, NULL, 19, 11, 10, 1);
 
 -- Canciones de Radwimps - Weathering With You
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(39, NULL, 20, 2, 10, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(59, NULL, 20, 11, 10, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(40, NULL, 20, 2, 10, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(60, NULL, 20, 11, 10, 1);
 
 -- Canciones de El Kuelgue - Beatriz
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(41, NULL, 21, 3, 11, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(61, NULL, 21, 17, 11, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(42, NULL, 21, 3, 11, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(62, NULL, 21, 17, 11, 1);
 
 -- Canciones de El Kuelgue - Cariño Reptil
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(43, NULL, 22, 3, 11, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(63, NULL, 22, 17, 11, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(44, NULL, 22, 3, 11, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(64, NULL, 22, 17, 11, 1);
 
 -- Canciones de Jorge Drexler - Eco
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(45, NULL, 23, 4, 12, 2);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(81, NULL, 23, 4, 12, 2);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(46, NULL, 23, 4, 12, 2);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(82, NULL, 23, 4, 12, 2);
 
 -- Canciones de Jorge Drexler - Salvavidas de Hielo
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(47, NULL, 24, 4, 12, 2);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(83, NULL, 24, 4, 12, 2);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(48, NULL, 24, 4, 12, 2);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(84, NULL, 24, 4, 12, 2);
 
 -- Canciones de Hozier - Hozier
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(49, NULL, 25, 4, 13, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(85, NULL, 25, 18, 13, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(50, NULL, 25, 4, 13, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(86, NULL, 25, 18, 13, 1);
 
 -- Canciones de Hozier - Wasteland, Baby!
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(51, NULL, 26, 4, 13, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(87, NULL, 26, 18, 13, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(52, NULL, 26, 4, 13, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(88, NULL, 26, 18, 13, 1);
 
 -- Canciones de Guns N' Roses - Appetite for Destruction
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(53, NULL, 27, 5, 14, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(89, NULL, 27, 19, 14, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(54, NULL, 27, 5, 14, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(90, NULL, 27, 19, 14, 1);
 
 -- Canciones de Guns N' Roses - Use Your Illusion II
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(55, NULL, 28, 5, 14, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(91, NULL, 28, 19, 14, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(56, NULL, 28, 5, 14, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(92, NULL, 28, 19, 14, 1);
 
 -- Canciones de Bring Me The Horizon - Sempiternal
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(57, NULL, 29, 6, 15, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(93, NULL, 29, 20, 15, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(58, NULL, 29, 6, 15, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(94, NULL, 29, 20, 15, 1);
 
 -- Canciones de Bring Me The Horizon - That's the Spirit
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(59, NULL, 30, 6, 15, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(95, NULL, 30, 20, 15, 1);
 
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
-(60, NULL, 30, 6, 15, 1);
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(96, NULL, 30, 20, 15, 1);
+
+
 
 -- Escritores en inglés
 INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
@@ -1548,6 +1822,7 @@ INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido
 
 INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
 (20, 'Jorge', '', 'Drexler');
+
 
 /*CREDITOS*/
 -- Créditos de canciones de Twenty One Pilots - Clancy
@@ -1860,6 +2135,174 @@ VALUES
     (19, 43, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99),
     (20, 44, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99);
 
+
+
+/*Listas de reproduccion*/
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(1, 100, 'Top 50 Global', 'Playlists/topglobal.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(2, 100, 'Top 50 USA', 'Playlists/topusa.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(3, 100, 'Top 50 Mexico', 'Playlists/topusa.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(4, 100, 'Top 50 Espana', 'Playlists/topespana.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(5, 100, 'Daily Mix 1', 'Playlists/dailymix1.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(6, 100, 'Daily Mix 2', 'Playlists/dailymix2.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(7, 100, 'Hit de hoy', 'Playlists/hit.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(8, 100, 'Música Indie', 'Playlists/playlist1.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(9, 35, 'Pop', 'Playlists/playlist3.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(10, 35, 'Indie', 'Playlists/playlist2.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(11, 35, 'Me Gusta', 'Playlists/liked.jpg');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista) VALUES
+(12, 100, 'Mega Hit Mix', 'Playlists/megahitmix.jpg');
+
+
+-- Insertar registros en tbl_rol_lista_r
+INSERT INTO tbl_rol_lista_r (id_rol, nombre_rol) VALUES
+(1, 'Colaborador');
+
+INSERT INTO tbl_rol_lista_r (id_rol, nombre_rol) VALUES
+(2, 'Seguidor');
+
+
+-- Insertar registros en tbl_listas_seguidas
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-01', 36, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-02', 37, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-03', 38, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-04', 39, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-05', 40, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-06', 41, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-07', 42, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-08', 43, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-09', 44, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-10', 45, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-11', 46, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-12', 47, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-13', 48, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-14', 49, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-15', 50, 2, 8);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-16', 51, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-17', 52, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-18', 53, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-19', 54, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-20', 55, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-21', 56, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-22', 57, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-23', 58, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-24', 59, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-25', 60, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-26', 61, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-27', 62, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-28', 63, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-29', 64, 2, 9);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+('2024-01-30', 65, 2, 9);
+
+
+--listas y playlist
+
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 18);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 19);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 20);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 21);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 22);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 23);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 24);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 25);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 26);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 27);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 28);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 29);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 30);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 31);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 32);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 18);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 19);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 20);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 21);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 22);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 23);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 24);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 25);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 26);
+INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 27);
 
 
 
