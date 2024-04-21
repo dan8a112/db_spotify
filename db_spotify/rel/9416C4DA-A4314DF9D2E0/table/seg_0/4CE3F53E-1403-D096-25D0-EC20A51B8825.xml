@@ -73,6 +73,21 @@
 <colAssociation fkAssociation="04311F6E-4580-083C-287E-59EA7719247B" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
 </associations>
 </Column>
+<Column name="ID_ESCRITOR" id="C6DFF49D-7F9E-0A39-622A-21548D7E15A8">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-21 05:14:48 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3BA479F-9D25-D987-E852-6C95FBB9D073" referredColumn="615E6623-7644-2CD0-6302-C5F245CEBA6D"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E5648A43-B422-AB05-C8B9-E9DE757CE4B0" name="TBL_CREDITOS_PK">
@@ -124,6 +139,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C6A06496-C136-64B5-EA8C-E870366C6517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B64BE8DC-4DDD-5FF1-9228-2C120A80CF3F" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-21 05:14:48 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6DFF49D-7F9E-0A39-622A-21548D7E15A8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

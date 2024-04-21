@@ -62,7 +62,7 @@
 <colAssociation fkAssociation="A98715A3-777F-2F03-A970-75E0B159C7DE" referredColumn="84F874FF-5039-3994-BAA2-D8DD8887C045"/>
 </associations>
 </Column>
-<Column name="ID_USUARIO" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
+<Column name="ID_ARTISTA" id="05A87E54-A6C7-2AEB-7D6F-C45542B377BD">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-15 21:10:38 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -90,18 +90,6 @@
 <colAssociation fkAssociation="8CFE94F7-5F97-C098-8A1A-163E6E76F19F" referredColumn="FF0CC9FE-F079-390A-DF4E-03C02B7BE918"/>
 </associations>
 </Column>
-<Column name="COLOR" id="34B3C0B6-7363-B3A6-6AC0-FF634ECCB370">
-<createdBy>casti</createdBy>
-<createdTime>2024-04-18 22:41:25 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6F6D6975-56E9-F50A-0D6A-297FFB88F3A0" name="TBL_CANCIONES_PK">
@@ -114,13 +102,6 @@
 <indexColumnUsage>
 <colUsage columnID="97091350-C172-18B6-E102-1814CA25BE8D"/>
 </indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6BBFC0A2-6B1D-8A6A-56DC-65D364A2EAFF" name="TBL_CANCIONES__IDX">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-23 19:04:52 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 <ind_PK_UK id="4AC71078-A5DF-8432-28A9-55CB0601D1B0" name="TBL_CANCIONES_TBL_ALBUMES_FK">
 <createdBy>casti</createdBy>
