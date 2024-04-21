@@ -1690,6 +1690,177 @@ INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista,
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
 (40, 'Universal Music Japan', 10, 19, 40, 17);
 
+-- PLANES, PAGOS, FACTURAS Y TARJETAS
+
+INSERT INTO tbl_planes (id_plan, nombre_plan, precio, usuarios_admitidos, duracion_plan) 
+VALUES
+    (1, 'Plan Individual', 9.99, 1, 30);
+
+INSERT INTO tbl_planes (id_plan, nombre_plan, precio, usuarios_admitidos, duracion_plan) 
+VALUES
+    (2, 'Plan Dúo', 12.99, 2, 30);
+
+INSERT INTO tbl_planes (id_plan, nombre_plan, precio, usuarios_admitidos, duracion_plan) 
+VALUES
+    (3, 'Plan Familiar', 14.99, 6, 30);
+
+INSERT INTO tbl_planes (id_plan, nombre_plan, precio, usuarios_admitidos, duracion_plan) 
+VALUES
+    (4, 'Plan Free', 0, 1, null);
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (1, '1234 5678 9012 3456', TO_DATE('01-01-2026', 'DD-MM-YYYY'), 123, 'Lucia Martin');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (2, '2345 6789 0123 4567', TO_DATE('01-02-2026', 'DD-MM-YYYY'), 234, 'Sergio Aguilar');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (3, '3456 7890 1234 5678', TO_DATE('01-03-2026', 'DD-MM-YYYY'), 345, 'Luis Gomez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (4, '4567 8901 2345 6789', TO_DATE('01-04-2026', 'DD-MM-YYYY'), 456, 'Carla Ortega');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (5, '5678 9012 3456 7890', TO_DATE('01-05-2026', 'DD-MM-YYYY'), 567, 'Ana Fernandez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (6, '6789 0123 4567 8901', TO_DATE('01-06-2026', 'DD-MM-YYYY'), 678, 'Roberto Castro');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (7, '7890 1234 5678 9012', TO_DATE('01-07-2026', 'DD-MM-YYYY'), 789, 'Patricia Garcia');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (8, '8901 2345 6789 0123', TO_DATE('01-08-2026', 'DD-MM-YYYY'), 890, 'Daniela Ramirez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (9, '9012 3456 7890 1234', TO_DATE('01-09-2026', 'DD-MM-YYYY'), 901, 'Juan Campos');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (10, '0123 4567 8901 2345', TO_DATE('01-10-2026', 'DD-MM-YYYY'), 012, 'Natalia Moreno');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (11, '5432 1098 7654 3210', TO_DATE('01-11-2026', 'DD-MM-YYYY'), 543, 'Jorge Perez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (12, '6543 2109 8765 4321', TO_DATE('01-12-2026', 'DD-MM-YYYY'), 654, 'Anita Perez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (13, '7654 3210 9876 5432', TO_DATE('01-01-2027', 'DD-MM-YYYY'), 765, 'Laura Gonzalez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (14, '8765 4321 0987 6543', TO_DATE('01-02-2027', 'DD-MM-YYYY'), 876, 'Lucia Martin');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (15, '9876 5432 1098 7654', TO_DATE('01-03-2027', 'DD-MM-YYYY'), 987, 'Sergio Aguilar');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (16, '0987 6543 2109 8765', TO_DATE('01-04-2027', 'DD-MM-YYYY'), 098, 'Luis Gomez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (17, '4321 0987 6543 2109', TO_DATE('01-05-2027', 'DD-MM-YYYY'), 432, 'Carla Ortega');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (18, '2109 8765 4321 0987', TO_DATE('01-06-2027', 'DD-MM-YYYY'), 210, 'Ana Fernandez');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (19, '3210 9876 5432 1098', TO_DATE('01-07-2027', 'DD-MM-YYYY'), 321, 'Roberto Castro');
+
+INSERT INTO tbl_tarjetas (id_tarjeta, numero_tarjeta, fecha_expiracion, cvv, titular_tarjeta)
+VALUES (20, '5432 1098 7654 3210', TO_DATE('01-08-2027', 'DD-MM-YYYY'), 543, 'Patricia Garcia');
+
+-- Usuarios con plan Individual
+INSERT INTO tbl_pago_planes (id_plan_pago, id_plan, id_tarjeta, id_usuario, fecha_inicio_plan, fecha_fin_plan)
+VALUES
+    (1, 1, 1, 35, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (2, 1, 2, 38, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (3, 1, 3, 40, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (4, 1, 4, 46, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (5, 1, 5, 50, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (6, 1, 6, 52, SYSDATE, ADD_MONTHS(SYSDATE, 1));
+
+-- Usuarios con plan Dúo
+INSERT INTO tbl_pago_planes (id_plan_pago, id_plan, id_tarjeta, id_usuario, fecha_inicio_plan, fecha_fin_plan)
+VALUES
+    (7, 2, 7, 55, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (8, 2, 8, 60, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (9, 2, 9, 64, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (10, 2, 10, 65, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (11, 2, 11, 69, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (12, 2, 12, 71, SYSDATE, ADD_MONTHS(SYSDATE, 1));
+
+-- Usuarios con plan Familiar
+INSERT INTO tbl_pago_planes (id_plan_pago, id_plan, id_tarjeta, id_usuario, fecha_inicio_plan, fecha_fin_plan)
+VALUES
+    (13, 3, 13, 75, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (14, 3, 14, 77, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (15, 3, 15, 79, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (16, 3, 16, 36, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (17, 3, 17, 39, SYSDATE, ADD_MONTHS(SYSDATE, 1)),
+    (18, 3, 18, 42, SYSDATE, ADD_MONTHS(SYSDATE, 1));
+
+-- Usuarios con plan Free
+INSERT INTO tbl_pago_planes (id_plan_pago, id_plan, id_tarjeta, id_usuario, fecha_inicio_plan, fecha_fin_plan)
+VALUES
+    (19, 4, NULL, 43, SYSDATE, NULL),
+    (20, 4, NULL, 44, SYSDATE, NULL),
+    (21, 4, NULL, 45, SYSDATE, NULL),
+    (22, 4, NULL, 47, SYSDATE, NULL),
+    (23, 4, NULL, 48, SYSDATE, NULL),
+    (24, 4, NULL, 49, SYSDATE, NULL),
+    (25, 4, NULL, 51, SYSDATE, NULL),
+    (26, 4, NULL, 53, SYSDATE, NULL),
+    (27, 4, NULL, 54, SYSDATE, NULL),
+    (28, 4, NULL, 57, SYSDATE, NULL),
+    (29, 4, NULL, 58, SYSDATE, NULL),
+    (30, 4, NULL, 59, SYSDATE, NULL),
+    (31, 4, NULL, 61, SYSDATE, NULL),
+    (32, 4, NULL, 62, SYSDATE, NULL),
+    (33, 4, NULL, 63, SYSDATE, NULL),
+    (34, 4, NULL, 67, SYSDATE, NULL),
+    (35, 4, NULL, 68, SYSDATE, NULL),
+    (36, 4, NULL, 70, SYSDATE, NULL),
+    (37, 4, NULL, 72, SYSDATE, NULL),
+    (38, 4, NULL, 73, SYSDATE, NULL),
+    (39, 4, NULL, 74, SYSDATE, NULL),
+    (40, 4, NULL, 76, SYSDATE, NULL),
+    (41, 4, NULL, 78, SYSDATE, NULL),
+    (42, 4, NULL, 80, SYSDATE, NULL);
+
+
+
+-- Crear facturas para febrero
+
+INSERT INTO tbl_facturas (id_factura, id_usuario, id_plan, fecha_cobro, monto_cobrado)
+VALUES
+    -- Facturas de febrero
+    (1, 35, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (2, 36, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (3, 37, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (4, 38, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (5, 39, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (6, 40, 1, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 9.99),
+    (7, 41, 2, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 12.99),
+    (8, 42, 2, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 12.99),
+    (9, 43, 2, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 12.99),
+    (10, 44, 2, TO_DATE('2024-02-01', 'YYYY-MM-DD'), 12.99);
+
+-- Crear facturas para marzo
+
+INSERT INTO tbl_facturas (id_factura, id_usuario, id_plan, fecha_cobro, monto_cobrado)
+VALUES
+    -- Facturas de marzo
+    (11, 35, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (12, 36, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (13, 37, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (14, 38, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (15, 39, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (16, 40, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 9.99),
+    (17, 41, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99),
+    (18, 42, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99),
+    (19, 43, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99),
+    (20, 44, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), 12.99);
+
+
 
 
 
