@@ -14,6 +14,9 @@ INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
 INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
 (5, 'Chino');
 
+INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
+(6, 'Japones');
+
 -- Insertar países
 INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
 (1, 'Estados Unidos', 'EEUU', 'usa.png', 1);
@@ -87,9 +90,7 @@ INSERT INTO tbl_tipo_usuario (id_tipo_usuario, tipo_usuario) VALUES
 
 -- Insertar usuarios podcasters
 
-
-
--- Insertar podcast
+-- Insertar podcasters
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (35, 1, 3, 'jordiwild@example.com', 'Jordi Wild', TO_DATE('1987-09-15', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/jordiwild.jpeg', 'password', 5);
 
@@ -118,6 +119,133 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 (43, 1, 3, 'dantegebel@example.com', 'Dante Gebel', TO_DATE('1976-09-07', 'YYYY-MM-DD'), SYSDATE, 'Podcasters/dantegebel.jpeg', 'password', 14);
 
 
+-- Podcast
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(1, 2, 35, 'The Wild Project', 'Podcasts/thewildproject.jpeg', 'Descripción de The Wild Project', 'Azul');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(2, 2, 36, 'Quantum FM', 'Podcasts/quantumfm.jpeg', 'Descripción de Quantum FM', 'Rojo');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(3, 2, 37, 'Caso 63', 'Podcasts/caso63.jpeg', 'Descripción de Caso 63', 'Verde');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(4, 2, 38, 'Los hijos de Morazan', 'Podcasts/loshijosdemorazan.jpeg', 'Descripción de Los hijos de Morazan', 'Amarillo');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(5, 2, 39, 'La Cotorrisa', 'Podcasts/lacotorrisa.jpeg', 'Descripción de La Cotorrisa', 'Naranja');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(6, 2, 40, 'Habitos Inteligentes', 'Podcasts/habitosinteligentes.jpeg', 'Descripción de Habitos Inteligentes', 'Morado');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(7, 2, 41, 'Tu Desarrollo Personal', 'Podcasts/tudesarrollopersonal.jpeg', 'Descripción de Tu Desarrollo Personal', 'Gris');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(8, 2, 42, 'Cuentos y Leyendas de Honduras', 'Podcasts/cuentosyleyendasdehonduras.jpeg', 'Descripción de Cuentos y Leyendas de Honduras', 'Marrón');
+
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
+(9, 2, 43, 'Dante Gebel', 'Podcasts/dantegebel.jpeg', 'Descripción de Dante Gebel', 'Negro');
+
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(1, 'Comedia');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(2, 'Entrevistas');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(3, 'Cultura');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(4, 'Negocios');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(5, 'Ciencia');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(6, 'Tecnología');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(7, 'Historia');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(8, 'Política');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(9, 'Salud');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(10, 'Misterio');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(11, 'Educación');
+
+INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
+(12, 'Ficcion');
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(1, 1);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(1, 2);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(1, 5);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(2, 5);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(2, 6);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(2, 11);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(3, 10);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(3, 12);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(3, 7);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(4, 10);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(4, 12);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(4, 7);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(5, 5);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(5, 11);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(5, 1);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(6, 4);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(6, 8);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(6, 3);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(7, 9);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(7, 2);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(7, 6);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(8, 1);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(8, 7);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(8, 12);
+
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(9, 2);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(9, 10);
+INSERT INTO tbl_genero_podcast (id_podcast, id_genero_podcast) VALUES
+(9, 11);
 
 -- Insertar usuarios artistas
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
@@ -328,6 +456,265 @@ INSERT INTO tbl_artistas (id_usuario, biografia) VALUES
 INSERT INTO tbl_artistas (id_usuario, biografia) VALUES
 (34, 'Rosalia es una cantante y compositora española.');
 
+
+-- TIPOS DE RED SOCIAL
+INSERT INTO tbl_tipo_redes_sociales (id_tipo_red_social, nombre_red_social, icono_red_social) VALUES
+(1, 'Instagram', 'Redes/instagram.png');
+
+INSERT INTO tbl_tipo_redes_sociales (id_tipo_red_social, nombre_red_social, icono_red_social) VALUES
+(2, 'Facebook', 'Redes/facebook.png');
+
+INSERT INTO tbl_tipo_redes_sociales (id_tipo_red_social, nombre_red_social, icono_red_social) VALUES
+(3, 'X', 'Redes/x.png');
+
+-- Usuarios con redes sociales
+
+-- Arctic Monkeys
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 6, 'arcticmonkeys_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 6, 'arcticmonkeys_facebook');
+
+-- Wallows
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 7, 'wallowsmusic_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 7, 'wallowsmusic_facebook');
+
+-- The Strokes
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 8, 'thestrokes_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 8, 'thestrokes_band_facebook');
+
+-- Radiohead
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 9, 'radiohead_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 9, 'radiohead_band_facebook');
+
+-- Radwimps
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 10, 'radwimps_japan_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 10, 'radwimps_japan_facebook');
+
+-- El Kuelgue
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 11, 'elkuelgue_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 11, 'elkuelgue_facebook');
+
+-- Jorge Drexler
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 12, 'jorgedrexler_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 12, 'jorgedrexler_facebook');
+
+-- Hozier
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 13, 'hozier_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 13, 'hozier_official_facebook');
+
+-- Guns N' Roses
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 14, 'gunsnroses_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 14, 'gunsnroses_official_facebook');
+
+-- Bring Me The Horizon
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 15, 'bmth_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 15, 'bmth_official_facebook');
+
+-- Vansire
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 16, 'vansire_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 16, 'vansire_music_facebook');
+
+-- My Chemical Romance
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 17, 'mychemicalromance_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 17, 'mychemicalromance_official_facebook');
+
+-- Doja Cat
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 18, 'dojacat_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 18, 'dojacat_official_facebook');
+
+-- Taylor Swift
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 19, 'taylorswift_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 19, 'taylorswift_facebook');
+
+-- Ariana Grande
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 20, 'arianagrande_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 20, 'arianagrande_official_facebook');
+
+-- girl in red
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 21, 'girlinred_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 21, 'girlinred_official_facebook');
+
+-- The Neighborhood
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 22, 'theneighborhood_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 22, 'theneighborhood_official_facebook');
+
+-- Dayglow
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 23, 'dayglow_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 23, 'dayglow_official_facebook');
+
+-- Bad Bunny
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 24, 'badbunny_official_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 24, 'badbunny_official_facebook');
+
+-- The Smiths
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 25, 'thesmiths_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 25, 'thesmiths_official_facebook');
+
+-- Atomic Rose
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 26, 'atomicrose_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 26, 'atomicrose_official_facebook');
+
+-- Bizarrap
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 27, 'bizarrap_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 27, 'bizarrap_facebook');
+
+-- Feid
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 28, 'feid_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 28, 'feid_facebook');
+
+-- Shakira
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 29, 'shakira_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 29, 'shakira_facebook');
+
+-- Peso Pluma
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 30, 'pesopluma_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 30, 'pesopluma_facebook');
+
+-- Ozuna
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 31, 'ozuna_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 31, 'ozuna_official_facebook');
+
+-- Karol G
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 32, 'karolg_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 32, 'karolg_official_facebook');
+
+-- Rauw Alejandro
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 33, 'rauwalejandro_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 33, 'rauwalejandro_official_facebook');
+
+-- Rosalía
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(1, 34, 'rosalia_instagram');
+
+INSERT INTO tbl_usuario_red_social (id_red_social, id_usuario, user_name) VALUES
+(2, 34, 'rosalia_official_facebook');
+
+/*MERCH*/
+
+INSERT INTO tbl_tallas (id_talla, nombre_talla) VALUES
+(1, 'S');
+
+INSERT INTO tbl_tallas (id_talla, nombre_talla) VALUES
+(2, 'M');
+
+INSERT INTO tbl_tallas (id_talla, nombre_talla) VALUES
+(3, 'L');
+
+INSERT INTO tbl_tallas (id_talla, nombre_talla) VALUES
+(4, 'XL');
+
+-- Merchandising para Twenty One Pilots
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(1, 1, 1, 'Camiseta Twenty One Pilots Logo', 'Camiseta oficial con el logo de Twenty One Pilots', 25.99, 50);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(2, 2, 1, 'Sudadera Twenty One Pilots', 'Sudadera con diseño exclusivo de Twenty One Pilots', 45.99, 30);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(3, 3, 1, 'Gorra Twenty One Pilots', 'Gorra con el emblema de Twenty One Pilots bordado', 20.99, 40);
+
+-- Merchandising para Taylor Swift
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(4, 2, 19, 'Camiseta Taylor Swift Folklore', 'Camiseta oficial del álbum Folklore de Taylor Swift', 29.99, 60);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(5, 3, 19, 'Pulsera Taylor Swift Lover', 'Pulsera de silicona con el logo de Lover', 9.99, 100);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(6, 4, 19, 'Gorra Taylor Swift Reputation', 'Gorra con diseño del álbum Reputation de Taylor Swift', 24.99, 45);
+
+-- Merchandising para Wallows
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(7, 1, 7, 'Camiseta Wallows Logo', 'Camiseta con el logo de Wallows en la parte frontal', 22.99, 70);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(8, 2, 7, 'Sudadera Wallows Nothing Happens', 'Sudadera oficial del álbum Nothing Happens', 49.99, 35);
+
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+(9, 3, 7, 'Gorra Wallows Striped', 'Gorra con diseño de rayas de Wallows', 18.99, 55);
 
 -- Crear usuarios estándar
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
@@ -623,10 +1010,7 @@ INSERT INTO tbl_tipo_media (id_tipo_media, tipo_media) VALUES (1, 'Canción');
 -- Insertar el tipo de medio "Podcast"
 INSERT INTO tbl_tipo_media (id_tipo_media, tipo_media) VALUES (2, 'Podcast');
 
-
-
-
--- Insertar podcasts
+-- Insertar Episodios podcast
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (1, 1, 'Oppenheimer, el proyecto Manhattan y la Bomba Atómica',2000, 500, SYSDATE);
 
@@ -679,8 +1063,6 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
 (6, 2, 'Overcompensate', 240, 230, SYSDATE);
-
-
 
 -- Canciones de Twenty One Pilots - Clancy
 INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, reproducciones_media, fecha_publicacion) VALUES
@@ -898,6 +1280,421 @@ INSERT INTO tbl_media (id_media, id_tipo_media, nombre_media, duracion_media, re
 
 
 
+
+/*CANCIONES*/
+
+-- Canciones de Twenty One Pilots - Clancy
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(1, NULL, 1, 1, 1, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(2, NULL, 1, 1, 1, 1);
+
+-- Canciones de Twenty One Pilots - Vessel
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(3, NULL, 2, 1, 1, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(4, NULL, 2, 1, 1, 1);
+
+-- Canciones de Vaundy - Strobo
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(5, NULL, 3, 2, 2, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(6, NULL, 3, 2, 2, 1);
+
+-- Canciones de Vaundy - Odoriko
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(7, NULL, 4, 2, 2, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(8, NULL, 4, 2, 2, 1);
+
+-- Canciones de Cardellino - Chistes Malos
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(9, NULL, 5, 3, 3, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(10, NULL, 5, 3, 3, 1);
+
+-- Canciones de Cardellino - Love Dealer
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(11, NULL, 6, 3, 3, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(12, NULL, 6, 3, 3, 1);
+
+-- Canciones de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(17, NULL, 7, 4, 4, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(18, NULL, 7, 4, 4, 1);
+
+-- Canciones de Vance Joy - Nation Of Two
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(19, NULL, 8, 4, 4, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(20, NULL, 8, 4, 4, 1);
+
+-- Canciones de Indigo la end - Kanna
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(13, NULL, 9, 2, 5, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(14, NULL, 9, 2, 5, 1);
+
+-- Canciones de Indigo la end - Crying End Roll
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(15, NULL, 10, 2, 5, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(16, NULL, 10, 2, 5, 1);
+
+-- Canciones de Arctic Monkeys - AM
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(21, NULL, 11, 1, 6, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(22, NULL, 11, 1, 6, 1);
+
+-- Canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(23, NULL, 12, 1, 6, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(24, NULL, 12, 1, 6, 1);
+
+-- Canciones de Wallows - Nothing Happens
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(25, NULL, 13, 1, 7, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(26, NULL, 13, 1, 7, 1);
+
+-- Canciones de Wallows - Remote
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(27, NULL, 14, 1, 7, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(28, NULL, 14, 1, 7, 1);
+
+-- Canciones de The Strokes - Is This It
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(29, NULL, 15, 1, 8, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(30, NULL, 15, 1, 8, 1);
+
+-- Canciones de The Strokes - Room on Fire
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(31, NULL, 16, 1, 8, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(32, NULL, 16, 1, 8, 1);
+
+-- Canciones de Radiohead - OK Computer
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(33, NULL, 17, 1, 9, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(34, NULL, 17, 1, 9, 1);
+
+-- Canciones de Radiohead - In Rainbows
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(35, NULL, 18, 1, 9, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(36, NULL, 18, 1, 9, 1);
+
+-- Canciones de Radwimps - Ningen Kaika
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(37, NULL, 19, 2, 10, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(38, NULL, 19, 2, 10, 1);
+
+-- Canciones de Radwimps - Weathering With You
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(39, NULL, 20, 2, 10, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(40, NULL, 20, 2, 10, 1);
+
+-- Canciones de El Kuelgue - Beatriz
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(41, NULL, 21, 3, 11, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(42, NULL, 21, 3, 11, 1);
+
+-- Canciones de El Kuelgue - Cariño Reptil
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(43, NULL, 22, 3, 11, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(44, NULL, 22, 3, 11, 1);
+
+-- Canciones de Jorge Drexler - Eco
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(45, NULL, 23, 4, 12, 2);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(46, NULL, 23, 4, 12, 2);
+
+-- Canciones de Jorge Drexler - Salvavidas de Hielo
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(47, NULL, 24, 4, 12, 2);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(48, NULL, 24, 4, 12, 2);
+
+-- Canciones de Hozier - Hozier
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(49, NULL, 25, 4, 13, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(50, NULL, 25, 4, 13, 1);
+
+-- Canciones de Hozier - Wasteland, Baby!
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(51, NULL, 26, 4, 13, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(52, NULL, 26, 4, 13, 1);
+
+-- Canciones de Guns N' Roses - Appetite for Destruction
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(53, NULL, 27, 5, 14, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(54, NULL, 27, 5, 14, 1);
+
+-- Canciones de Guns N' Roses - Use Your Illusion II
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(55, NULL, 28, 5, 14, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(56, NULL, 28, 5, 14, 1);
+
+-- Canciones de Bring Me The Horizon - Sempiternal
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(57, NULL, 29, 6, 15, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(58, NULL, 29, 6, 15, 1);
+
+-- Canciones de Bring Me The Horizon - That's the Spirit
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(59, NULL, 30, 6, 15, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_usuario, id_idioma) VALUES
+(60, NULL, 30, 6, 15, 1);
+
+-- Escritores en inglés
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(1, 'John', 'Anthony', 'Lennon');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(2, 'Paul', '', 'McCartney');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(3, 'George', '', 'Harrison');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(4, 'Richard', 'Starkey', 'Starr');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(5, 'Taylor', '', 'Swift');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(6, 'Ariana', '', 'Grande');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(7, 'Billy', '', 'Joel');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(8, 'Kurt', '', 'Cobain');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(9, 'Freddie', '', 'Mercury');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(10, 'Johann', 'Sebastian', 'Bach');
+
+-- Escritores en español
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(11, 'Joaquín', '', 'Sabina');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(12, 'Alejandro', '', 'Sanz');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(13, 'Silvio', '', 'Rodríguez');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(14, 'Pedro', '', 'Aznar');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(15, 'Gustavo', '', 'Cerati');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(16, 'Juan', 'Luis', 'Guerra');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(17, 'Ricardo', '', 'Arjona');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(18, 'Joan', 'Manuel', 'Serrat');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(19, 'Manuel', '', 'Carrasco');
+
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
+(20, 'Jorge', '', 'Drexler');
+
+/*CREDITOS*/
+-- Créditos de canciones de Twenty One Pilots - Clancy
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(1, 'Fueled by Ramen', 1, 7, 1, 16);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(2, 'Fueled by Ramen', 1, 12, 2, 5);
+
+-- Créditos de canciones de Twenty One Pilots - Vessel
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(3, 'Fueled by Ramen', 1, 19, 3, 19);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(4, 'Fueled by Ramen', 1, 8, 4, 4);
+
+-- Créditos de canciones de Vaundy - Strobo
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(5, 'Sony Music Japan', 2, 3, 5, 14);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(6, 'Sony Music Japan', 2, 15, 6, 17);
+
+-- Créditos de canciones de Vaundy - Odoriko
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(7, 'Sony Music Japan', 2, 6, 7, 12);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(8, 'Sony Music Japan', 2, 1, 8, 10);
+
+-- Créditos de canciones de Cardellino - Chistes Malos
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(9, 'Independiente', 3, 17, 9, 6);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(10, 'Independiente', 3, 14, 10, 8);
+
+-- Créditos de canciones de Cardellino - Love Dealer
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(11, 'Independiente', 3, 4, 11, 15);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(12, 'Independiente', 3, 10, 12, 3);
+
+-- Créditos de canciones de Indigo la end - Kanna
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(13, 'Warner Music Japan', 5, 9, 13, 8);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(14, 'Warner Music Japan', 5, 16, 14, 15);
+
+-- Créditos de canciones de Indigo la end - Crying End Roll
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(15, 'Warner Music Japan', 5, 1, 15, 12);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(16, 'Warner Music Japan', 5, 20, 16, 7);
+
+-- Créditos de canciones de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(17, 'Atlantic Records', 4, 5, 17, 20);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(18, 'Atlantic Records', 4, 2, 18, 2);
+
+-- Créditos de canciones de Vance Joy - Nation Of Two
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(19, 'Atlantic Records', 4, 13, 19, 11);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(20, 'Atlantic Records', 4, 11, 20, 20);
+
+-- Créditos de canciones de Arctic Monkeys - AM
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(21, 'Domino Recording Company', 6, 18, 21, 2);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(22, 'Domino Recording Company', 6, 7, 22, 13);
+
+-- Créditos de canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(23, 'Domino Recording Company', 6, 15, 23, 14);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(24, 'Domino Recording Company', 6, 6, 24, 1);
+
+-- Créditos de canciones de Wallows - Nothing Happens
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(25, 'Atlantic Records', 7, 4, 25, 3);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(26, 'Atlantic Records', 7, 10, 26, 19);
+
+-- Créditos de canciones de Wallows - Remote
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(27, 'Atlantic Records', 7, 19, 27, 9);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(28, 'Atlantic Records', 7, 8, 28, 7);
+
+-- Créditos de canciones de The Strokes - Is This It
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(29, 'Rough Trade Records', 8, 14, 29, 18);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(30, 'Rough Trade Records', 8, 20, 30, 16);
+
+-- Créditos de canciones de The Strokes - Room on Fire
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(31, 'Rough Trade Records', 8, 3, 31, 1);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(32, 'Rough Trade Records', 8, 5, 32, 20);
+
+-- Créditos de canciones de Radiohead - OK Computer
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(33, 'Parlophone Records', 9, 9, 33, 10);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(34, 'Parlophone Records', 9, 7, 34, 4);
+
+-- Créditos de canciones de Radiohead - In Rainbows
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(35, 'XL Recordings', 9, 2, 35, 13);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(36, 'XL Recordings', 9, 6, 36, 8);
+
+-- Créditos de canciones de Radwimps - Ningen Kaika
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(37, 'Universal Music Japan', 10, 11, 37, 7);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(38, 'Universal Music Japan', 10, 18, 38, 14);
+
+-- Créditos de canciones de Radwimps - Kimi no Na wa
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(39, 'Universal Music Japan', 10, 1, 39, 2);
+
+INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
+(40, 'Universal Music Japan', 10, 19, 40, 17);
 
 
 
