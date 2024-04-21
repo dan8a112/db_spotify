@@ -727,143 +727,137 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 (37, 1, 2, 'gerardorodriguez@example.com', 'Gerardo Rodriguez', TO_DATE('1993-02-10', 'YYYY-MM-DD'), SYSDATE, 'gerardorodriguez.jpg', 'password', 3);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(38, 2, 2, 'usuario1@example.com', 'Usuario 1', TO_DATE('1995-03-20', 'YYYY-MM-DD'), SYSDATE, 'usuario1.jpg', 'password', 4);
+(38, 2, 2, 'juanperez@example.com', 'Juan Perez', TO_DATE('1995-03-20', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 4);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(39, 2, 2, 'usuario2@example.com', 'Usuario 2', TO_DATE('1998-07-12', 'YYYY-MM-DD'), SYSDATE, 'usuario2.jpg', 'password', 5);
+(39, 2, 2, 'mariagomez@example.com', 'Maria Gomez', TO_DATE('1998-07-12', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 5);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(40, 1, 2, 'usuario3@example.com', 'Usuario 3', TO_DATE('1991-12-05', 'YYYY-MM-DD'), SYSDATE, 'usuario3.jpg', 'password', 6);
+(40, 1, 2, 'pedrolopez@example.com', 'Pedro Lopez', TO_DATE('1991-12-05', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 6);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(41, 2, 2, 'usuario4@example.com', 'Usuario 4', TO_DATE('1989-09-18', 'YYYY-MM-DD'), SYSDATE, 'usuario4.jpg', 'password', 7);
+(41, 2, 2, 'lauragonzalez@example.com', 'Laura Gonzalez', TO_DATE('1989-09-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 7);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(42, 2, 2, 'usuario5@example.com', 'Usuario 5', TO_DATE('1996-06-25', 'YYYY-MM-DD'), SYSDATE, 'usuario5.jpg', 'password', 8);
+(42, 2, 2, 'carlosrodriguez@example.com', 'Carlos Rodriguez', TO_DATE('1996-06-25', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 8);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(43, 1, 2, 'usuario43@example.com', 'Usuario 43', TO_DATE('1992-04-14', 'YYYY-MM-DD'), SYSDATE, 'usuario43.jpg', 'password', 9);
+(43, 1, 2, 'anaperez@example.com', 'Ana Perez', TO_DATE('1992-04-14', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 9);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
+(44, 2, 2, 'danielmartinez@example.com', 'Daniel Martinez', TO_DATE('1990-11-27', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 10);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(44, 2, 2, 'usuario44@example.com', 'Usuario 44', TO_DATE('1990-11-27', 'YYYY-MM-DD'), SYSDATE, 'usuario44.jpg', 'password', 10);
+(45, 1, 2, 'sofiaruiz@example.com', 'Sofia Ruiz', TO_DATE('1985-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 11);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(44, 2, 2, 'usuario44@example.com', 'Usuario 44', TO_DATE('1990-11-27', 'YYYY-MM-DD'), SYSDATE, 'usuario44.jpg', 'password', 10);
+(46, 2, 2, 'andreslopez@example.com', 'Andres Lopez', TO_DATE('1998-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 12);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(45, , 2, 'usuario45@example.com', 'Usuario 45', TO_DATE('1985-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuario45.jpg', 'password', 11);
+(47, 1, 2, 'luisfernandez@example.com', 'Luis Fernandez', TO_DATE('1979-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 13);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(46, 2, 2, 'usuario46@example.com', 'Usuario 46', TO_DATE('1998-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuario46.jpg', 'password', 12);
+(48, 1, 2, 'marcelaguerrero@example.com', 'Marcela Guerrero', TO_DATE('1993-05-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 14);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(47, 1, 2, 'usuario47@example.com', 'Usuario 47', TO_DATE('1979-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuario47.jpg', 'password', 13);
+(49, 2, 2, 'anacastillo@example.com', 'Ana Castillo', TO_DATE('1986-12-25', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 15);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(48, 1, 2, 'usuario48@example.com', 'Usuario 48', TO_DATE('1993-05-18', 'YYYY-MM-DD'), SYSDATE, 'usuario48.jpg', 'password', 14);
+(50, 1, 2, 'carlosramirez@example.com', 'Carlos Ramirez', TO_DATE('1995-09-08', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 16);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(49, 2, 2, 'usuario49@example.com', 'Usuario 49', TO_DATE('1986-12-25', 'YYYY-MM-DD'), SYSDATE, 'usuario49.jpg', 'password', 15);
+(51, 2, 2, 'dianagonzalez@example.com', 'Diana Gonzalez', TO_DATE('1999-02-14', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 17);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(50, 1, 2, 'usuario50@example.com', 'Usuario 50', TO_DATE('1995-09-08', 'YYYY-MM-DD'), SYSDATE, 'usuario50.jpg', 'password', 16);
+(52, 1, 2, 'miguelhernandez@example.com', 'Miguel Hernandez', TO_DATE('1988-07-03', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 18);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(51, 2, 2, 'usuario51@example.com', 'Usuario 51', TO_DATE('1999-02-14', 'YYYY-MM-DD'), SYSDATE, 'usuario51.jpg', 'password', 17);
+(53, 2, 2, 'andreaperez@example.com', 'Andrea Perez', TO_DATE('1991-04-20', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 19);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(52, 1, 2, 'usuario52@example.com', 'Usuario 52', TO_DATE('1988-07-03', 'YYYY-MM-DD'), SYSDATE, 'usuario52.jpg', 'password', 18);
+(54, 1, 2, 'nataliacastro@example.com', 'Natalia Castro', TO_DATE('1993-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 20);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(53, 2, 2, 'usuario53@example.com', 'Usuario 53', TO_DATE('1991-04-20', 'YYYY-MM-DD'), SYSDATE, 'usuario53.jpg', 'password', 19);
+(55, 2, 2, 'pablogomez@example.com', 'Pablo Gomez', TO_DATE('1987-11-29', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 21);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(54, 1, 2, 'usuario54@example.com', 'Usuario 54', TO_DATE('1993-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuario54.jpg', 'password', 20);
+(56, 1, 2, 'anacabrera@example.com', 'Ana Cabrera', TO_DATE('1996-06-12', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 22);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(55, 2, 2, 'usuario55@example.com', 'Usuario 55', TO_DATE('1987-11-29', 'YYYY-MM-DD'), SYSDATE, 'usuario55.jpg', 'password', 21);
+(57, 2, 2, 'davidlopez@example.com', 'David Lopez', TO_DATE('1999-03-25', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 23);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(56, 1, 2, 'usuario56@example.com', 'Usuario 56', TO_DATE('1996-06-12', 'YYYY-MM-DD'), SYSDATE, 'usuario56.jpg', 'password', 22);
+(58, 1, 2, 'lauramartin@example.com', 'Laura Martin', TO_DATE('1984-10-07', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 24);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(57, 2, 2, 'usuario57@example.com', 'Usuario 57', TO_DATE('1999-03-25', 'YYYY-MM-DD'), SYSDATE, 'usuario57.jpg', 'password', 23);
+(59, 2, 2, 'albertogarcia@example.com', 'Alberto Garcia', TO_DATE('1991-05-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 25);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(58, 1, 2, 'usuario58@example.com', 'Usuario 58', TO_DATE('1984-10-07', 'YYYY-MM-DD'), SYSDATE, 'usuario58.jpg', 'password', 24);
+(60, 1, 2, 'elenagonzalez@example.com', 'Elena Gonzalez', TO_DATE('1990-02-03', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 26);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(59, 2, 2, 'usuario59@example.com', 'Usuario 59', TO_DATE('1991-05-18', 'YYYY-MM-DD'), SYSDATE, 'usuario59.jpg', 'password', 25);
+(61, 1, 2, 'sergioortiz@example.com', 'Sergio Ortiz', TO_DATE('1995-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 27);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(60, 1, 2, 'usuario60@example.com', 'Usuario 60', TO_DATE('1990-02-03', 'YYYY-MM-DD'), SYSDATE, 'usuario60.jpg', 'password', 26);
+(62, 2, 2, 'danielagonzalez@example.com', 'Daniela Gonzalez', TO_DATE('1988-12-11', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 28);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(61, 1, 2, 'usuario61@example.com', 'Usuario 61', TO_DATE('1995-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuario61.jpg', 'password', 27);
+(63, 1, 2, 'juanfernandez@example.com', 'Juan Fernandez', TO_DATE('1997-04-05', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 29);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(62, 2, 2, 'usuario62@example.com', 'Usuario 62', TO_DATE('1988-12-11', 'YYYY-MM-DD'), SYSDATE, 'usuario62.jpg', 'password', 28);
+(64, 2, 2, 'paolacastro@example.com', 'Paola Castro', TO_DATE('1993-11-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 30);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(63, 1, 2, 'usuario63@example.com', 'Usuario 63', TO_DATE('1997-04-05', 'YYYY-MM-DD'), SYSDATE, 'usuario63.jpg', 'password', 29);
+(65, 1, 2, 'davidmartinez@example.com', 'David Martinez', TO_DATE('1990-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 31);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(64, 2, 2, 'usuario64@example.com', 'Usuario 64', TO_DATE('1993-11-18', 'YYYY-MM-DD'), SYSDATE, 'usuario64.jpg', 'password', 30);
+(66, 2, 2, 'mariacastro@example.com', 'Maria Castro', TO_DATE('1985-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 32);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(65, 1, 2, 'usuario65@example.com', 'Usuario 65', TO_DATE('1990-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuario65.jpg', 'password', 31);
+(67, 1, 2, 'carlosruiz@example.com', 'Carlos Ruiz', TO_DATE('1982-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 33);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(66, 2, 2, 'usuario66@example.com', 'Usuario 66', TO_DATE('1985-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuario66.jpg', 'password', 32);
+(68, 2, 2, 'luciamartin@example.com', 'Lucia Martin', TO_DATE('1991-06-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 34);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(67, 1, 2, 'usuario67@example.com', 'Usuario 67', TO_DATE('1982-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuario67.jpg', 'password', 33);
+(69, 1, 2, 'sergioaguilar@example.com', 'Sergio Aguilar', TO_DATE('1996-10-14', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 35);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(68, 2, 2, 'usuario68@example.com', 'Usuario 68', TO_DATE('1991-06-15', 'YYYY-MM-DD'), SYSDATE, 'usuario68.jpg', 'password', 34);
+(70, 2, 2, 'luisgomez@example.com', 'Luis Gomez', TO_DATE('1989-05-27', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 36);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(69, 1, 2, 'usuario69@example.com', 'Usuario 69', TO_DATE('1996-10-14', 'YYYY-MM-DD'), SYSDATE, 'usuario69.jpg', 'password', 35);
+(71, 1, 2, 'carlaortega@example.com', 'Carla Ortega', TO_DATE('1998-03-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 37);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(70, 2, 2, 'usuario70@example.com', 'Usuario 70', TO_DATE('1989-05-27', 'YYYY-MM-DD'), SYSDATE, 'usuario70.jpg', 'password', 36);
+(72, 2, 2, 'anafernandez@example.com', 'Ana Fernandez', TO_DATE('1992-11-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 38);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(71, 1, 2, 'usuario71@example.com', 'Usuario 71', TO_DATE('1998-03-30', 'YYYY-MM-DD'), SYSDATE, 'usuario71.jpg', 'password', 37);
+(73, 1, 2, 'robertocastro@example.com', 'Roberto Castro', TO_DATE('1987-06-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 39);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(72, 2, 2, 'usuario72@example.com', 'Usuario 72', TO_DATE('1992-11-15', 'YYYY-MM-DD'), SYSDATE, 'usuario72.jpg', 'password', 38);
+(74, 2, 2, 'patriciagarcia@example.com', 'Patricia Garcia', TO_DATE('1995-01-23', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 40);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(73, 1, 2, 'usuario73@example.com', 'Usuario 73', TO_DATE('1987-06-18', 'YYYY-MM-DD'), SYSDATE, 'usuario73.jpg', 'password', 39);
+(75, 1, 2, 'danielaramirez@example.com', 'Daniela Ramirez', TO_DATE('1989-09-06', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 41);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(74, 2, 2, 'usuario74@example.com', 'Usuario 74', TO_DATE('1995-01-23', 'YYYY-MM-DD'), SYSDATE, 'usuario74.jpg', 'password', 40);
+(76, 2, 2, 'juancampos@example.com', 'Juan Campos', TO_DATE('1997-04-19', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 42);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(75, 1, 2, 'usuario75@example.com', 'Usuario 75', TO_DATE('1989-09-06', 'YYYY-MM-DD'), SYSDATE, 'usuario75.jpg', 'password', 41);
+(77, 1, 2, 'nataliamoreno@example.com', 'Natalia Moreno', TO_DATE('1993-11-02', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 43);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(76, 2, 2, 'usuario76@example.com', 'Usuario 76', TO_DATE('1997-04-19', 'YYYY-MM-DD'), SYSDATE, 'usuario76.jpg', 'password', 42);
+(78, 2, 2, 'jorgeperez@example.com', 'Jorge Perez', TO_DATE('1988-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 44);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(77, 1, 2, 'usuario77@example.com', 'Usuario 77', TO_DATE('1993-11-02', 'YYYY-MM-DD'), SYSDATE, 'usuario77.jpg', 'password', 43);
+(79, 1, 2, 'anitaperez@example.com', 'Anita Perez', TO_DATE('1996-05-28', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 45);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(78, 2, 2, 'usuario78@example.com', 'Usuario 78', TO_DATE('1988-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuario78.jpg', 'password', 44);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(79, 1, 2, 'usuario79@example.com', 'Usuario 79', TO_DATE('1996-05-28', 'YYYY-MM-DD'), SYSDATE, 'usuario79.jpg', 'password', 45);
-
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(80, 2, 2, 'usuario80@example.com', 'Usuario 80', TO_DATE('1991-02-09', 'YYYY-MM-DD'), SYSDATE, 'usuario80.jpg', 'password', 46);
+(80, 2, 2, 'lauragonzalez@example.com', 'Laura Gonzalez', TO_DATE('1991-02-09', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 46);
 
 
 -- Insertar datos en la tabla tbl_tipo_lanzamiento
 INSERT INTO tbl_tipo_lanzamiento (id_tipo_lanzamiento, nombre_lanzamiento) VALUES (1, 'Álbum');
 INSERT INTO tbl_tipo_lanzamiento (id_tipo_lanzamiento, nombre_lanzamiento) VALUES (2, 'Sencillo');
-
-
 
 -- Insertar Albumes
 

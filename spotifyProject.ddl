@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-19 13:20:04 CST
+--   en:        2024-04-21 14:35:56 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -30,20 +30,13 @@ CREATE TABLE tbl_artistas (
 ALTER TABLE tbl_artistas ADD CONSTRAINT tbl_artistas_pk PRIMARY KEY ( id_usuario );
 
 CREATE TABLE tbl_canciones (
-    id_cancion            INTEGER NOT NULL,
-    letra_cancion         VARCHAR2(4000),
-    id_album              INTEGER NOT NULL,
-    id_genero_musical     INTEGER NOT NULL,
-    id_creditos_musicales INTEGER NOT NULL,
-    id_usuario            INTEGER NOT NULL,
-    id_idioma             INTEGER NOT NULL,
-    color                 VARCHAR2(10)
+    id_cancion        INTEGER NOT NULL,
+    letra_cancion     VARCHAR2(4000),
+    id_album          INTEGER NOT NULL,
+    id_genero_musical INTEGER NOT NULL,
+    id_artista        INTEGER NOT NULL,
+    id_idioma         INTEGER NOT NULL
 );
-
-CREATE UNIQUE INDEX tbl_canciones__idx ON
-    tbl_canciones (
-        id_creditos_musicales
-    ASC );
 
 ALTER TABLE tbl_canciones ADD CONSTRAINT tbl_canciones_pk PRIMARY KEY ( id_cancion );
 
@@ -56,8 +49,15 @@ CREATE TABLE tbl_creditos (
     id_creditos_musicales INTEGER NOT NULL,
     firma_discografica    VARCHAR2(100),
     id_artista            INTEGER NOT NULL,
-    id_productor          INTEGER NOT NULL
+    id_productor          INTEGER,
+    id_cancion            INTEGER NOT NULL,
+    id_escritor           INTEGER
 );
+
+CREATE UNIQUE INDEX tbl_creditos__idx ON
+    tbl_creditos (
+        id_cancion
+    ASC );
 
 ALTER TABLE tbl_creditos ADD CONSTRAINT tbl_creditos_pk PRIMARY KEY ( id_creditos_musicales );
 
@@ -78,11 +78,6 @@ CREATE TABLE tbl_escritores (
 );
 
 ALTER TABLE tbl_escritores ADD CONSTRAINT tbl_escritores_pk PRIMARY KEY ( id_escritor );
-
-CREATE TABLE tbl_escritores_y_canciones (
-    id_escritor           INTEGER NOT NULL,
-    id_creditos_musicales INTEGER NOT NULL
-);
 
 CREATE TABLE tbl_eventos (
     id_evento     INTEGER NOT NULL,
@@ -149,7 +144,7 @@ CREATE TABLE tbl_listas_reproduccion (
     id_lista_reproduccion     INTEGER NOT NULL,
     id_usuario_propietario    INTEGER NOT NULL,
     nombre_lista_reproduccion VARCHAR2(300),
-    cantidad_canciones        INTEGER
+    url_portada_lista         VARCHAR2(100)
 );
 
 ALTER TABLE tbl_listas_reproduccion ADD CONSTRAINT tbl_listas_reproduccion_pk PRIMARY KEY ( id_lista_reproduccion );
@@ -201,10 +196,10 @@ CREATE TABLE tbl_merch (
 ALTER TABLE tbl_merch ADD CONSTRAINT tbl_merch_pk PRIMARY KEY ( id_merch );
 
 CREATE TABLE tbl_pago_planes (
-    id_plan_pagado    INTEGER NOT NULL,
+    id_plan_pago      INTEGER NOT NULL,
     id_plan           INTEGER NOT NULL,
+    id_tarjeta        INTEGER NOT NULL,
     id_usuario        INTEGER NOT NULL,
-    id_tarjeta        INTEGER,
     fecha_inicio_plan DATE,
     fecha_fin_plan    DATE
 );
@@ -214,7 +209,12 @@ CREATE UNIQUE INDEX tbl_pago_planes__idx ON
         id_usuario
     ASC );
 
-ALTER TABLE tbl_pago_planes ADD CONSTRAINT tbl_pago_planes_pk PRIMARY KEY ( id_plan_pagado );
+CREATE UNIQUE INDEX tbl_pago_planes__tar ON
+    tbl_pago_planes (
+        id_tarjeta
+    ASC );
+
+ALTER TABLE tbl_pago_planes ADD CONSTRAINT tbl_pago_planes_pk PRIMARY KEY ( id_plan_pago );
 
 CREATE TABLE tbl_paises (
     id_pais          INTEGER NOT NULL,
@@ -336,7 +336,7 @@ ALTER TABLE tbl_usuario_estandar ADD CONSTRAINT tbl_usuario_estandar_pk PRIMARY 
 CREATE TABLE tbl_usuario_red_social (
     id_red_social INTEGER NOT NULL,
     id_usuario    INTEGER NOT NULL,
-    user_name     INTEGER
+    user_name     VARCHAR2(50)
 );
 
 CREATE TABLE tbl_usuarios (
@@ -395,12 +395,8 @@ ALTER TABLE tbl_canciones
         REFERENCES tbl_albumes ( id_album );
 
 ALTER TABLE tbl_canciones
-    ADD CONSTRAINT tbl_canciones_tbl_artistas_fk FOREIGN KEY ( id_usuario )
+    ADD CONSTRAINT tbl_canciones_tbl_artistas_fk FOREIGN KEY ( id_artista )
         REFERENCES tbl_artistas ( id_usuario );
-
-ALTER TABLE tbl_canciones
-    ADD CONSTRAINT tbl_canciones_tbl_creditos_fk FOREIGN KEY ( id_creditos_musicales )
-        REFERENCES tbl_creditos ( id_creditos_musicales );
 
 ALTER TABLE tbl_canciones
     ADD CONSTRAINT tbl_canciones_tbl_gm_fk FOREIGN KEY ( id_genero_musical )
@@ -422,6 +418,14 @@ ALTER TABLE tbl_creditos
     ADD CONSTRAINT tbl_creditos_tbl_artistas_fk FOREIGN KEY ( id_artista )
         REFERENCES tbl_artistas ( id_usuario );
 
+ALTER TABLE tbl_creditos
+    ADD CONSTRAINT tbl_creditos_tbl_canciones_fk FOREIGN KEY ( id_cancion )
+        REFERENCES tbl_canciones ( id_cancion );
+
+ALTER TABLE tbl_creditos
+    ADD CONSTRAINT tbl_creditos_tbl_escritores_fk FOREIGN KEY ( id_escritor )
+        REFERENCES tbl_escritores ( id_escritor );
+
 ALTER TABLE tbl_episodio
     ADD CONSTRAINT tbl_episodio_podcasts_fk FOREIGN KEY ( id_podcast )
         REFERENCES tbl_podcasts ( id_podcast );
@@ -437,14 +441,6 @@ ALTER TABLE tbl_eventos
 ALTER TABLE tbl_eventos
     ADD CONSTRAINT tbl_eventos_tbl_lugares_fk FOREIGN KEY ( id_lugar )
         REFERENCES tbl_lugares ( id_lugar );
-
-ALTER TABLE tbl_escritores_y_canciones
-    ADD CONSTRAINT tbl_eyc_tbl_creditos_fk FOREIGN KEY ( id_creditos_musicales )
-        REFERENCES tbl_creditos ( id_creditos_musicales );
-
-ALTER TABLE tbl_escritores_y_canciones
-    ADD CONSTRAINT tbl_eyc_tbl_escritores_fk FOREIGN KEY ( id_escritor )
-        REFERENCES tbl_escritores ( id_escritor );
 
 ALTER TABLE tbl_facturas
     ADD CONSTRAINT tbl_facturas_tbl_planes_fk FOREIGN KEY ( id_plan )
@@ -511,7 +507,7 @@ ALTER TABLE tbl_paises
         REFERENCES tbl_idiomas ( id_idioma );
 
 ALTER TABLE tbl_pago_planes
-    ADD CONSTRAINT tbl_pl_planes_tbl_tar_fk FOREIGN KEY ( id_tarjeta )
+    ADD CONSTRAINT tbl_pap_tbl_tar_fk FOREIGN KEY ( id_tarjeta )
         REFERENCES tbl_tarjetas ( id_tarjeta );
 
 ALTER TABLE tbl_seguidores
@@ -558,9 +554,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            39
--- CREATE INDEX                             3
--- ALTER TABLE                             81
+-- CREATE TABLE                            38
+-- CREATE INDEX                             4
+-- ALTER TABLE                             80
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

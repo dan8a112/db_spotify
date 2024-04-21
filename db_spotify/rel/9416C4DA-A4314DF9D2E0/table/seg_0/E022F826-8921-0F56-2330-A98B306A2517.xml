@@ -135,7 +135,7 @@
 <colUsage columnID="A27A68A1-F5A6-5411-7352-40473761EF4D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="088A28F3-54C3-ED77-32A5-6BC3D0A50254" name="TBL_PAGO_PLANES_TBL_TARJETAS_FK">
+<ind_PK_UK id="088A28F3-54C3-ED77-32A5-6BC3D0A50254" name="TBL_PAP_TBL_TAR_FK">
 <createdBy>danyo</createdBy>
 <createdTime>2024-04-21 20:32:00 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
