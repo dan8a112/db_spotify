@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-21 14:35:56 CST
+--   en:        2024-04-21 14:49:13 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -198,7 +198,7 @@ ALTER TABLE tbl_merch ADD CONSTRAINT tbl_merch_pk PRIMARY KEY ( id_merch );
 CREATE TABLE tbl_pago_planes (
     id_plan_pago      INTEGER NOT NULL,
     id_plan           INTEGER NOT NULL,
-    id_tarjeta        INTEGER NOT NULL,
+    id_tarjeta        INTEGER,
     id_usuario        INTEGER NOT NULL,
     fecha_inicio_plan DATE,
     fecha_fin_plan    DATE
