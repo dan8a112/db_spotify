@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-21 15:00:00 CST
+--   en:        2024-04-22 17:05:04 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -466,6 +466,11 @@ ALTER TABLE tbl_historial_canciones
     ADD CONSTRAINT tbl_hc_tbl_hr_fk FOREIGN KEY ( id_historial_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
 
+--  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE tbl_listas_reproduccion
+    ADD CONSTRAINT tbl_listas_reproduccion_tbl_tipos_listas_fk FOREIGN KEY ( id_tipo_lista )
+        REFERENCES tbl_tipos_listas ( id_tipo_lista );
+
 ALTER TABLE tbl_listas_seguidas
     ADD CONSTRAINT tbl_listas_seguidas_tbl_lr_fk FOREIGN KEY ( id_lista_reproduccion )
         REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
@@ -521,10 +526,6 @@ ALTER TABLE tbl_pago_planes
 ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
-
-ALTER TABLE tbl_listas_reproduccion
-    ADD CONSTRAINT tbl_tipos_listas_fk FOREIGN KEY ( id_tipo_lista )
-        REFERENCES tbl_tipos_listas ( id_tipo_lista );
 
 ALTER TABLE tbl_usuario_estandar
     ADD CONSTRAINT tbl_ue_tbl_hc_fk FOREIGN KEY ( id_historial_de_reproduccion )
@@ -604,5 +605,5 @@ ALTER TABLE tbl_seguidores
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   0
+-- ERRORS                                   1
 -- WARNINGS                                 0
