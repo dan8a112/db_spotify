@@ -151,31 +151,31 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 
 -- Podcast
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(1, 2, 35, 'The Wild Project', 'Podcasts/thewildproject.jpeg', 'Descripción de The Wild Project', 'Azul');
+(1, 2, 81, 'The Wild Project', 'Podcasts/thewildproject.jpeg', 'Descripción de The Wild Project', 'Azul');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(2, 2, 36, 'Quantum FM', 'Podcasts/quantumfm.jpeg', 'Descripción de Quantum FM', 'Rojo');
+(2, 2, 82, 'Quantum FM', 'Podcasts/quantumfm.jpeg', 'Descripción de Quantum FM', 'Rojo');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(3, 2, 37, 'Caso 63', 'Podcasts/caso63.jpeg', 'Descripción de Caso 63', 'Verde');
+(3, 2, 83, 'Caso 63', 'Podcasts/caso63.jpeg', 'Descripción de Caso 63', 'Verde');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(4, 2, 38, 'Los hijos de Morazan', 'Podcasts/loshijosdemorazan.jpeg', 'Descripción de Los hijos de Morazan', 'Amarillo');
+(4, 2, 84, 'Los hijos de Morazan', 'Podcasts/loshijosdemorazan.jpeg', 'Descripción de Los hijos de Morazan', 'Amarillo');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(5, 2, 39, 'La Cotorrisa', 'Podcasts/lacotorrisa.jpeg', 'Descripción de La Cotorrisa', 'Naranja');
+(5, 2, 85, 'La Cotorrisa', 'Podcasts/lacotorrisa.jpeg', 'Descripción de La Cotorrisa', 'Naranja');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(6, 2, 40, 'Habitos Inteligentes', 'Podcasts/habitosinteligentes.jpeg', 'Descripción de Habitos Inteligentes', 'Morado');
+(6, 2, 86, 'Habitos Inteligentes', 'Podcasts/habitosinteligentes.jpeg', 'Descripción de Habitos Inteligentes', 'Morado');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(7, 2, 41, 'Tu Desarrollo Personal', 'Podcasts/tudesarrollopersonal.jpeg', 'Descripción de Tu Desarrollo Personal', 'Gris');
+(7, 2, 87, 'Tu Desarrollo Personal', 'Podcasts/tudesarrollopersonal.jpeg', 'Descripción de Tu Desarrollo Personal', 'Gris');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(8, 2, 42, 'Cuentos y Leyendas de Honduras', 'Podcasts/cuentosyleyendasdehonduras.jpeg', 'Descripción de Cuentos y Leyendas de Honduras', 'Marrón');
+(8, 2, 88, 'Cuentos y Leyendas de Honduras', 'Podcasts/cuentosyleyendasdehonduras.jpeg', 'Descripción de Cuentos y Leyendas de Honduras', 'Marrón');
 
 INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(9, 2, 43, 'Dante Gebel', 'Podcasts/dantegebel.jpeg', 'Descripción de Dante Gebel', 'Negro');
+(9, 2, 89, 'Dante Gebel', 'Podcasts/dantegebel.jpeg', 'Descripción de Dante Gebel', 'Negro');
 
 
 INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
@@ -276,9 +276,10 @@ INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (9, 10);
 INSERT INTO tbl_podcast_x_generos (id_podcast, id_genero_podcast) VALUES
 (9, 11);
+
 -- Insertar usuarios artistas
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(100, 3, 1, 'spotify@example.com', 'Spotify', TO_DATE('1988-12-01', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/spotify.png', 'password', 1);
+(100, 3, 2, 'spotify@example.com', 'Spotify', TO_DATE('1988-12-01', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/spotify.png', 'password', 1);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (1, 3, 1, 'twentyonepilots@example.com', 'Twenty One Pilots', TO_DATE('1988-12-01', 'YYYY-MM-DD'), SYSDATE, 'Artistas/twentyonepilots.jpeg', 'password', 1);
@@ -824,70 +825,167 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (59, 2, 2, 'albertogarcia@example.com', 'Alberto Garcia', TO_DATE('1991-05-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 25);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(60, 1, 2, 'elenagonzalez@example.com', 'Elena Gonzalez', TO_DATE('1990-02-03', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 1);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(60, 1, 2, 'elenagonzalez@example.com', 'Elena Gonzalez', TO_DATE('1990-02-03', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 26);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(61, 1, 2, 'sergioortiz@example.com', 'Sergio Ortiz', TO_DATE('1995-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 2);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(61, 1, 2, 'sergioortiz@example.com', 'Sergio Ortiz', TO_DATE('1995-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 27);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(62, 2, 2, 'danielagonzalez@example.com', 'Daniela Gonzalez', TO_DATE('1988-12-11', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 3);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(62, 2, 2, 'danielagonzalez@example.com', 'Daniela Gonzalez', TO_DATE('1988-12-11', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 28);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(63, 1, 2, 'juanfernandez@example.com', 'Juan Fernandez', TO_DATE('1997-04-05', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 4);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(63, 1, 2, 'juanfernandez@example.com', 'Juan Fernandez', TO_DATE('1997-04-05', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 29);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(64, 2, 2, 'paolacastro@example.com', 'Paola Castro', TO_DATE('1993-11-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 5);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(64, 2, 2, 'paolacastro@example.com', 'Paola Castro', TO_DATE('1993-11-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 30);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(65, 1, 2, 'davidmartinez@example.com', 'David Martinez', TO_DATE('1990-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 6);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(65, 1, 2, 'davidmartinez@example.com', 'David Martinez', TO_DATE('1990-06-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 31);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(66, 2, 2, 'mariacastro@example.com', 'Maria Castro', TO_DATE('1985-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 7);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(66, 2, 2, 'mariacastro@example.com', 'Maria Castro', TO_DATE('1985-03-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 32);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(67, 1, 2, 'carlosruiz@example.com', 'Carlos Ruiz', TO_DATE('1982-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 8);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(67, 1, 2, 'carlosruiz@example.com', 'Carlos Ruiz', TO_DATE('1982-09-22', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 33);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(68, 2, 2, 'luciamartin@example.com', 'Lucia Martin', TO_DATE('1991-06-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 9);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(68, 2, 2, 'luciamartin@example.com', 'Lucia Martin', TO_DATE('1991-06-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 34);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(69, 1, 2, 'sergioaguilar@example.com', 'Sergio Aguilar', TO_DATE('1996-10-14', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 10);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(69, 1, 2, 'sergioaguilar@example.com', 'Sergio Aguilar', TO_DATE('1996-10-14', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 35);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(70, 2, 2, 'luisgomez@example.com', 'Luis Gomez', TO_DATE('1989-05-27', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 11);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(70, 2, 2, 'luisgomez@example.com', 'Luis Gomez', TO_DATE('1989-05-27', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 36);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(71, 1, 2, 'carlaortega@example.com', 'Carla Ortega', TO_DATE('1998-03-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 12);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(71, 1, 2, 'carlaortega@example.com', 'Carla Ortega', TO_DATE('1998-03-30', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 37);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(72, 2, 2, 'anafernandez@example.com', 'Ana Fernandez', TO_DATE('1992-11-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 13);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(72, 2, 2, 'anafernandez@example.com', 'Ana Fernandez', TO_DATE('1992-11-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 38);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(73, 1, 2, 'robertocastro@example.com', 'Roberto Castro', TO_DATE('1987-06-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 14);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(73, 1, 2, 'robertocastro@example.com', 'Roberto Castro', TO_DATE('1987-06-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 39);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(74, 2, 2, 'patriciagarcia@example.com', 'Patricia Garcia', TO_DATE('1995-01-23', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 15);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(74, 2, 2, 'patriciagarcia@example.com', 'Patricia Garcia', TO_DATE('1995-01-23', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 40);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(75, 1, 2, 'danielaramirez@example.com', 'Daniela Ramirez', TO_DATE('1989-09-06', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 16);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(75, 1, 2, 'danielaramirez@example.com', 'Daniela Ramirez', TO_DATE('1989-09-06', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 41);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(76, 2, 2, 'juancampos@example.com', 'Juan Campos', TO_DATE('1997-04-19', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 17);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(76, 2, 2, 'juancampos@example.com', 'Juan Campos', TO_DATE('1997-04-19', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 42);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(77, 1, 2, 'nataliamoreno@example.com', 'Natalia Moreno', TO_DATE('1993-11-02', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 18);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(77, 1, 2, 'nataliamoreno@example.com', 'Natalia Moreno', TO_DATE('1993-11-02', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 43);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(78, 2, 2, 'jorgeperez@example.com', 'Jorge Perez', TO_DATE('1988-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 19);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(78, 2, 2, 'jorgeperez@example.com', 'Jorge Perez', TO_DATE('1988-08-15', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 44);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(79, 1, 2, 'anitaperez@example.com', 'Anita Perez', TO_DATE('1996-05-28', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 20);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(79, 1, 2, 'anitaperez@example.com', 'Anita Perez', TO_DATE('1996-05-28', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 45);
+INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES 
+(80, 2, 2, 'lauragonzalez@example.com', 'Laura Gonzalez', TO_DATE('1991-02-09', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 21);
 
-INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(80, 2, 2, 'lauragonzalez@example.com', 'Laura Gonzalez', TO_DATE('1991-02-09', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 46);
+--Se crean historiales para cada usuario estandar
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (1);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (2);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (3);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (4);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (5);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (6);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (7);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (8);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (9);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (10);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (11);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (12);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (13);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (14);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (15);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (16);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (17);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (18);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (19);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (20);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (21);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (22);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (23);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (24);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (25);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (26);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (27);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (28);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (29);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (30);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (31);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (32);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (33);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (34);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (35);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (36);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (37);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (38);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (39);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (40);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (41);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (42);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (43);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (44);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (45);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (46);
+INSERT INTO tbl_historial_de_reproduccion (id_historial_reproduccion) VALUES (47);
 
+--Se insertan los usuarios a la tabla de usuarios estandar
+
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (35, 1);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (36, 2);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (37, 3);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (38, 4);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (39, 5);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (40, 6);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (41, 7);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (42, 8);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (43, 9);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (44, 10);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (45, 11);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (46, 12);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (47, 13);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (48, 14);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (49, 15);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (50, 16);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (51, 17);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (52, 18);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (53, 19);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (54, 20);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (55, 21);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (56, 22);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (57, 23);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (58, 24);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (59, 25);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (60, 26);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (61, 27);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (62, 28);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (63, 29);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (64, 30);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (65, 31);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (66, 32);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (67, 33);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (68, 34);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (69, 35);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (70, 36);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (71, 37);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (72, 38);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (73, 39);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (74, 40);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (75, 41);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (76, 42);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (77, 43);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (78, 44);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (79, 45);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (80, 46);
+INSERT INTO tbl_usuario_estandar (id_usuario, id_historial_de_reproduccion) VALUES (100, 47);
 
 -- Insertar datos en la tabla tbl_tipo_lanzamiento
 INSERT INTO tbl_tipo_lanzamiento (id_tipo_lanzamiento, nombre_lanzamiento) VALUES (1, 'Álbum');
@@ -923,7 +1021,7 @@ INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (13, 'Nothing Happens', 'Album/wallows-nothinghappens.jpeg', TO_DATE('2019-03-22', 'YYYY-MM-DD'), 7, 1);
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (14, 'Remote', 'Album/wallows-remote.jpeg', TO_DATE('2020-10-23', 'YYYY-MM-DD'), 7, 1);
 
--- The Strokes
+-- The Strokesvs
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (15, 'Is This It', 'album/thestrokes-isthisit.jpeg', TO_DATE('2001-07-30', 'YYYY-MM-DD'), 8, 1);
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (16, 'Room on Fire', 'album/thestrokes-roomonfire.jpeg', TO_DATE('2003-10-28', 'YYYY-MM-DD'), 8, 1);
 
@@ -1823,147 +1921,209 @@ INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido
 INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
 (20, 'Jorge', '', 'Drexler');
 
+-- Productores en inglés
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(1, 'George', 'Martin', '');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(2, 'Rick', '', 'Rubin');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(3, 'Brian', '', 'Eno');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(4, 'Max', '', 'Martin');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(5, 'Quincy', '', 'Jones');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(6, 'Dr.', 'Dre', '');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(7, 'Timbaland', '', '');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(8, 'Ted', '', 'Templeman');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(9, 'Mark', '', 'Ronson');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(10, 'Jeff', '', 'Bhasker');
+
+-- Productores en español
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(11, 'Gustavo', '', 'Santaolalla');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(12, 'Rafa', '', 'Sardina');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(13, 'Juan', 'Luis', 'Guerre');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(14, 'Gustavo', '', 'Cerati');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(15, 'Pablo', '', 'Durand');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(16, 'Gustavo', '', 'Hadad');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(17, 'Tommy', '', 'Torres');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(18, 'Alejandro', '', 'Sancho');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(19, 'Julián', '', 'Bunetta');
+
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
+(20, 'Jorge', '', 'Drexler');
+
 
 /*CREDITOS*/
 -- Créditos de canciones de Twenty One Pilots - Clancy
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(1, 'Fueled by Ramen', 1, 7, 1, 16);
+(1, 'Fueled by Ramen', 1, 7, 21, 16);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(2, 'Fueled by Ramen', 1, 12, 2, 5);
+(2, 'Fueled by Ramen', 1, 12, 22, 5);
 
 -- Créditos de canciones de Twenty One Pilots - Vessel
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(3, 'Fueled by Ramen', 1, 19, 3, 19);
+(3, 'Fueled by Ramen', 1, 19, 23, 19);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(4, 'Fueled by Ramen', 1, 8, 4, 4);
+(4, 'Fueled by Ramen', 1, 8, 24, 4);
 
 -- Créditos de canciones de Vaundy - Strobo
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(5, 'Sony Music Japan', 2, 3, 5, 14);
+(5, 'Sony Music Japan', 2, 3, 25, 14);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(6, 'Sony Music Japan', 2, 15, 6, 17);
+(6, 'Sony Music Japan', 2, 15, 26, 17);
 
 -- Créditos de canciones de Vaundy - Odoriko
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(7, 'Sony Music Japan', 2, 6, 7, 12);
+(7, 'Sony Music Japan', 2, 6, 27, 12);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(8, 'Sony Music Japan', 2, 1, 8, 10);
+(8, 'Sony Music Japan', 2, 1, 28, 10);
 
 -- Créditos de canciones de Cardellino - Chistes Malos
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(9, 'Independiente', 3, 17, 9, 6);
+(9, 'Independiente', 3, 17, 29, 6);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(10, 'Independiente', 3, 14, 10, 8);
+(10, 'Independiente', 3, 14, 30, 8);
 
 -- Créditos de canciones de Cardellino - Love Dealer
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(11, 'Independiente', 3, 4, 11, 15);
+(11, 'Independiente', 3, 4, 31, 15);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(12, 'Independiente', 3, 10, 12, 3);
+(12, 'Independiente', 3, 10, 32, 3);
 
 -- Créditos de canciones de Indigo la end - Kanna
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(13, 'Warner Music Japan', 5, 9, 13, 8);
+(13, 'Warner Music Japan', 5, 9, 37, 8);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(14, 'Warner Music Japan', 5, 16, 14, 15);
+(14, 'Warner Music Japan', 5, 16, 38, 15);
 
 -- Créditos de canciones de Indigo la end - Crying End Roll
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(15, 'Warner Music Japan', 5, 1, 15, 12);
+(15, 'Warner Music Japan', 5, 1, 39, 12);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(16, 'Warner Music Japan', 5, 20, 16, 7);
+(16, 'Warner Music Japan', 5, 20, 40, 7);
 
 -- Créditos de canciones de Vance Joy - Dream Your Life Away
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(17, 'Atlantic Records', 4, 5, 17, 20);
+(17, 'Atlantic Records', 4, 5, 33, 20);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(18, 'Atlantic Records', 4, 2, 18, 2);
+(18, 'Atlantic Records', 4, 2, 34, 2);
 
 -- Créditos de canciones de Vance Joy - Nation Of Two
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(19, 'Atlantic Records', 4, 13, 19, 11);
+(19, 'Atlantic Records', 4, 13, 35, 11);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(20, 'Atlantic Records', 4, 11, 20, 20);
+(20, 'Atlantic Records', 4, 11, 36, 20);
 
 -- Créditos de canciones de Arctic Monkeys - AM
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(21, 'Domino Recording Company', 6, 18, 21, 2);
+(21, 'Domino Recording Company', 6, 18, 41, 2);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(22, 'Domino Recording Company', 6, 7, 22, 13);
+(22, 'Domino Recording Company', 6, 7, 42, 13);
 
 -- Créditos de canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(23, 'Domino Recording Company', 6, 15, 23, 14);
+(23, 'Domino Recording Company', 6, 15, 43, 14);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(24, 'Domino Recording Company', 6, 6, 24, 1);
+(24, 'Domino Recording Company', 6, 6, 44, 1);
 
 -- Créditos de canciones de Wallows - Nothing Happens
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(25, 'Atlantic Records', 7, 4, 25, 3);
+(25, 'Atlantic Records', 7, 4, 45, 3);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(26, 'Atlantic Records', 7, 10, 26, 19);
+(26, 'Atlantic Records', 7, 10, 46, 19);
 
 -- Créditos de canciones de Wallows - Remote
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(27, 'Atlantic Records', 7, 19, 27, 9);
+(27, 'Atlantic Records', 7, 19, 47, 9);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(28, 'Atlantic Records', 7, 8, 28, 7);
+(28, 'Atlantic Records', 7, 8, 48, 7);
 
 -- Créditos de canciones de The Strokes - Is This It
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(29, 'Rough Trade Records', 8, 14, 29, 18);
+(29, 'Rough Trade Records', 8, 14, 49, 18);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(30, 'Rough Trade Records', 8, 20, 30, 16);
+(30, 'Rough Trade Records', 8, 20, 50, 16);
 
 -- Créditos de canciones de The Strokes - Room on Fire
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(31, 'Rough Trade Records', 8, 3, 31, 1);
+(31, 'Rough Trade Records', 8, 3, 51, 1);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(32, 'Rough Trade Records', 8, 5, 32, 20);
+(32, 'Rough Trade Records', 8, 5, 52, 20);
 
 -- Créditos de canciones de Radiohead - OK Computer
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(33, 'Parlophone Records', 9, 9, 33, 10);
+(33, 'Parlophone Records', 9, 9, 53, 10);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(34, 'Parlophone Records', 9, 7, 34, 4);
+(34, 'Parlophone Records', 9, 7, 54, 4);
 
 -- Créditos de canciones de Radiohead - In Rainbows
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(35, 'XL Recordings', 9, 2, 35, 13);
+(35, 'XL Recordings', 9, 2, 55, 13);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(36, 'XL Recordings', 9, 6, 36, 8);
+(36, 'XL Recordings', 9, 6, 56, 8);
 
 -- Créditos de canciones de Radwimps - Ningen Kaika
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(37, 'Universal Music Japan', 10, 11, 37, 7);
+(37, 'Universal Music Japan', 10, 11, 57, 7);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(38, 'Universal Music Japan', 10, 18, 38, 14);
+(38, 'Universal Music Japan', 10, 18, 58, 14);
 
 -- Créditos de canciones de Radwimps - Kimi no Na wa
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(39, 'Universal Music Japan', 10, 1, 39, 2);
+(39, 'Universal Music Japan', 10, 1, 59, 2);
 
 INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(40, 'Universal Music Japan', 10, 19, 40, 17);
+(40, 'Universal Music Japan', 10, 19, 60, 17);
 
 -- PLANES, PAGOS, FACTURAS Y TARJETAS
 
@@ -2322,101 +2482,97 @@ INSERT INTO tbl_rol_lista_r (id_rol, nombre_rol) VALUES
 
 -- Insertar registros en tbl_listas_seguidas
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-01', 36, 2, 8);
+(TO_DATE('2024-01-01', 'YYYY-MM-DD'), 36, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-02', 37, 2, 8);
+(TO_DATE('2024-01-02', 'YYYY-MM-DD'), 37, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-03', 38, 2, 8);
+(TO_DATE('2024-01-03', 'YYYY-MM-DD'), 38, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-04', 39, 2, 8);
+(TO_DATE('2024-01-04', 'YYYY-MM-DD'), 39, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-05', 40, 2, 8);
+(TO_DATE('2024-01-05', 'YYYY-MM-DD'), 40, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-06', 41, 2, 8);
+(TO_DATE('2024-01-06', 'YYYY-MM-DD'), 41, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-07', 42, 2, 8);
+(TO_DATE('2024-01-07', 'YYYY-MM-DD'), 42, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-08', 43, 2, 8);
+(TO_DATE('2024-01-08', 'YYYY-MM-DD'), 43, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-09', 44, 2, 8);
+(TO_DATE('2024-01-09', 'YYYY-MM-DD'), 44, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-10', 45, 2, 8);
+(TO_DATE('2024-01-10', 'YYYY-MM-DD'), 45, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-11', 46, 2, 8);
+(TO_DATE('2024-01-11', 'YYYY-MM-DD'), 46, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-12', 47, 2, 8);
+(TO_DATE('2024-01-12', 'YYYY-MM-DD'), 47, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-13', 48, 2, 8);
+(TO_DATE('2024-01-13', 'YYYY-MM-DD'), 48, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-14', 49, 2, 8);
+(TO_DATE('2024-01-14', 'YYYY-MM-DD'), 49, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-15', 50, 2, 8);
+(TO_DATE('2024-01-15', 'YYYY-MM-DD'), 50, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-16', 51, 2, 9);
+(TO_DATE('2024-01-16', 'YYYY-MM-DD'), 51, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-17', 52, 2, 9);
+(TO_DATE('2024-01-17', 'YYYY-MM-DD'), 52, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-18', 53, 2, 9);
+(TO_DATE('2024-01-18', 'YYYY-MM-DD'), 53, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-19', 54, 2, 9);
+(TO_DATE('2024-01-19', 'YYYY-MM-DD'), 54, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-20', 55, 2, 9);
+(TO_DATE('2024-01-20', 'YYYY-MM-DD'), 55, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-21', 56, 2, 9);
+(TO_DATE('2024-01-21', 'YYYY-MM-DD'), 56, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-22', 57, 2, 9);
+(TO_DATE('2024-01-22', 'YYYY-MM-DD'), 57, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-23', 58, 2, 9);
+(TO_DATE('2024-01-23', 'YYYY-MM-DD'), 58, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-24', 59, 2, 9);
+(TO_DATE('2024-01-24', 'YYYY-MM-DD'), 59, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-25', 60, 2, 9);
+(TO_DATE('2024-01-25', 'YYYY-MM-DD'), 60, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-26', 61, 2, 9);
+(TO_DATE('2024-01-26', 'YYYY-MM-DD'), 61, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-27', 62, 2, 9);
+(TO_DATE('2024-01-27', 'YYYY-MM-DD'), 62, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-28', 63, 2, 9);
+(TO_DATE('2024-01-28', 'YYYY-MM-DD'), 63, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-29', 64, 2, 9);
+(TO_DATE('2024-01-29', 'YYYY-MM-DD'), 64, 2, 9);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
-('2024-01-30', 65, 2, 9);
-
+(TO_DATE('2024-01-30', 'YYYY-MM-DD'), 65, 2, 9);
 
 --listas y playlist
 
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 18);
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 19);
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 20);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 21);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 22);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 23);
@@ -2429,9 +2585,6 @@ INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 30);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 31);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (8, 32);
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 18);
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 19);
-INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 20);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 21);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 22);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 23);
@@ -2439,19 +2592,3 @@ INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 25);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 26);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 27);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
