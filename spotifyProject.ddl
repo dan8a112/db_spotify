@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-22 23:36:03 CST
+--   en:        2024-04-23 17:23:56 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -145,7 +145,8 @@ CREATE TABLE tbl_listas_reproduccion (
     id_usuario_propietario    INTEGER NOT NULL,
     nombre_lista_reproduccion VARCHAR2(300),
     url_portada_lista         VARCHAR2(100),
-    id_tipo_lista             INTEGER NOT NULL
+    id_tipo_lista             INTEGER NOT NULL,
+    descripcion               VARCHAR2(500)
 );
 
 ALTER TABLE tbl_listas_reproduccion ADD CONSTRAINT tbl_listas_reproduccion_pk PRIMARY KEY ( id_lista_reproduccion );
