@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-22 17:05:04 CST
+--   en:        2024-04-22 23:36:03 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -189,7 +189,7 @@ CREATE TABLE tbl_merch (
     id_artista       INTEGER NOT NULL,
     nombre_merch     VARCHAR2(100),
     decripcion_merch VARCHAR2(500),
-    precio_merch     NUMBER,
+    precio_merch     FLOAT,
     stock_merch      INTEGER,
     url_imagen_merch VARCHAR2(100)
 );
@@ -230,7 +230,7 @@ ALTER TABLE tbl_paises ADD CONSTRAINT tbl_paises_pk PRIMARY KEY ( id_pais );
 CREATE TABLE tbl_planes (
     id_plan            INTEGER NOT NULL,
     nombre_plan        VARCHAR2(100),
-    precio             NUMBER,
+    precio             FLOAT,
     usuarios_admitidos INTEGER,
     duracion_plan      INTEGER
 );
@@ -466,11 +466,6 @@ ALTER TABLE tbl_historial_canciones
     ADD CONSTRAINT tbl_hc_tbl_hr_fk FOREIGN KEY ( id_historial_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE tbl_listas_reproduccion
-    ADD CONSTRAINT tbl_listas_reproduccion_tbl_tipos_listas_fk FOREIGN KEY ( id_tipo_lista )
-        REFERENCES tbl_tipos_listas ( id_tipo_lista );
-
 ALTER TABLE tbl_listas_seguidas
     ADD CONSTRAINT tbl_listas_seguidas_tbl_lr_fk FOREIGN KEY ( id_lista_reproduccion )
         REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
@@ -478,6 +473,10 @@ ALTER TABLE tbl_listas_seguidas
 ALTER TABLE tbl_listas_seguidas
     ADD CONSTRAINT tbl_listas_seguidas_tbl_ue_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_usuario_estandar ( id_usuario );
+
+ALTER TABLE tbl_listas_reproduccion
+    ADD CONSTRAINT tbl_lr_tbl_tipos_listas_fk FOREIGN KEY ( id_tipo_lista )
+        REFERENCES tbl_tipos_listas ( id_tipo_lista );
 
 ALTER TABLE tbl_listas_reproduccion
     ADD CONSTRAINT tbl_lr_tbl_ue_fk FOREIGN KEY ( id_usuario_propietario )
@@ -605,5 +604,5 @@ ALTER TABLE tbl_seguidores
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   1
+-- ERRORS                                   0
 -- WARNINGS                                 0
