@@ -93,7 +93,7 @@
 <colUsage columnID="E17C3689-F6F5-5702-1529-CBD6FD2CC149"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BFF01EE1-44AA-4ABA-C647-CCB019862E32" name="TBL_LISTAS_REPRODUCCION_TBL_TIPOS_LISTAS_FK">
+<ind_PK_UK id="BFF01EE1-44AA-4ABA-C647-CCB019862E32" name="TBL_LR_TBL_TIPOS_LISTAS_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-21 20:56:03 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
