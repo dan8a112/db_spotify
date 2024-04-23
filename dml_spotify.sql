@@ -2435,41 +2435,41 @@ INSERT INTO tbl_tipos_listas (id_tipo_lista, nombre_tipo_lista) VALUES (6, 'Para
 
 /*Listas de reproduccion*/
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(1, 100, 'Top 50 Global', 'Playlists/topglobal.jpg', 1);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(1, 100, 'Top 50 Global', 'Playlists/topglobal.jpg', 1, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(2, 100, 'Top 50 USA', 'Playlists/topusa.jpg', 1);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(2, 100, 'Top 50 USA', 'Playlists/topusa.jpg', 1, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(3, 100, 'Top 50 Mexico', 'Playlists/topusa.jpg', 1);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(3, 100, 'Top 50 Mexico', 'Playlists/topusa.jpg', 1, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(4, 100, 'Top 50 Espana', 'Playlists/topespana.jpg', 1);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(4, 100, 'Top 50 Espana', 'Playlists/topespana.jpg', 1, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(5, 100, 'Daily Mix 1', 'Playlists/dailymix1.jpg', 2);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(5, 100, 'Daily Mix 1', 'Playlists/dailymix1.jpg', 2, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(6, 100, 'Daily Mix 2', 'Playlists/dailymix2.jpg', 2);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(6, 100, 'Daily Mix 2', 'Playlists/dailymix2.jpg', 2, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(7, 100, 'Hit de hoy', 'Playlists/hit.jpg', 3);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(7, 100, 'Hit de hoy', 'Playlists/hit.jpg', 3, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(8, 100, 'Música Indie', 'Playlists/playlist1.jpg', 4);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(8, 100, 'Música Indie', 'Playlists/playlist1.jpg', 4, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(9, 35, 'Pop', 'Playlists/playlist3.jpg', 4);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(9, 35, 'Pop', 'Playlists/playlist3.jpg', 4, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(10, 35, 'Indie', 'Playlists/playlist2.jpg', 4);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(10, 35, 'Indie', 'Playlists/playlist2.jpg', 4, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(11, 35, 'Me Gusta', 'Playlists/liked.jpg', 5);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(11, 35, 'Me Gusta', 'Playlists/liked.jpg', 5, "Musica tranquila para un dia tranquilo");
 
-INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista) VALUES
-(12, 100, 'Mega Hit Mix', 'Playlists/megahitmix.jpg', 3);
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion) VALUES
+(12, 100, 'Mega Hit Mix', 'Playlists/megahitmix.jpg', 3, "Musica tranquila para un dia tranquilo");
 
 
 -- Insertar registros en tbl_rol_lista_r
