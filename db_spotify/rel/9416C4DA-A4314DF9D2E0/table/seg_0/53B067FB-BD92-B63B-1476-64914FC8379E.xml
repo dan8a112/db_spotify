@@ -70,6 +70,18 @@
 <colAssociation fkAssociation="88558026-F47C-8EF9-DE33-AFAF71842D77" referredColumn="E37FC80D-BB7F-53E5-7301-0056A94AC7B7"/>
 </associations>
 </Column>
+<Column name="DESCRIPCION" id="E155F825-2681-0FD3-BBA6-BAF3BE13FF06">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-23 23:23:08 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D043BEF8-DBFF-ADF8-50BA-731CC9D50333" name="TBL_LISTAS_REPRODUCCION_PK">
