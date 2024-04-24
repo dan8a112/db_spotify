@@ -18,79 +18,79 @@ INSERT INTO tbl_idiomas (id_idioma, nombre_idioma) VALUES
 (6, 'Japones');
 
 -- Insertar países
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (1, 'Estados Unidos', 'EEUU', 'usa.png', 1);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (2, 'Canadá', 'CAN', 'canada.png', 1);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (3, 'México', 'MEX', 'mexico.png', 2);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (4, 'Brasil', 'BRA', 'brasil.png', 3);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (5, 'Argentina', 'ARG', 'argentina.png', 3);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (6, 'Francia', 'FRA', 'francia.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (7, 'Alemania', 'ALE', 'alemania.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (8, 'China', 'CHN', 'china.png', 5);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (9, 'Japón', 'JPN', 'japon.png', 5);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (10, 'Uruguay', 'URG', 'uruguay.png', 5);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (11, 'Reino Unido', 'RU', 'reinounido.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (12, 'Italia', 'ITA', 'italia.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (13, 'España', 'ESP', 'espana.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (14, 'Australia', 'AUS', 'australia.png', 1);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (15, 'Rusia', 'RUS', 'rusia.png', 5);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (16, 'India', 'IND', 'india.png', 1);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (17, 'Sudáfrica', 'ZAF', 'sudafrica.png', 2);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (18, 'Nigeria', 'NGA', 'nigeria.png', 2);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (19, 'Egipto', 'EGY', 'egipto.png', 2);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (20, 'Corea del Sur', 'KOR', 'corea.png', 6);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (21, 'Grecia', 'GRE', 'grecia.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (22, 'Turquía', 'TUR', 'turquia.png', 4);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (23, 'Colombia', 'COL', 'colombia.png', 3);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (24, 'Perú', 'PER', 'peru.png', 3);
 
-INSERT INTO tbl_paises (id_pais, nombre_pais, abrebiacion_pais, icono_pais, id_idioma) VALUES
+INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_idioma) VALUES
 (25, 'Chile', 'CHL', 'chile.png', 3);
 
 
@@ -720,33 +720,33 @@ INSERT INTO tbl_tallas (id_talla, nombre_talla) VALUES
 (4, 'XL');
 
 -- Merchandising para Twenty One Pilots
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (1, 1, 1, 'Camiseta Twenty One Pilots Logo', 'Camiseta oficial con el logo de Twenty One Pilots', 25.99, 50);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (2, 2, 1, 'Sudadera Twenty One Pilots', 'Sudadera con diseño exclusivo de Twenty One Pilots', 45.99, 30);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (3, 3, 1, 'Gorra Twenty One Pilots', 'Gorra con el emblema de Twenty One Pilots bordado', 20.99, 40);
 
 -- Merchandising para Taylor Swift
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (4, 2, 19, 'Camiseta Taylor Swift Folklore', 'Camiseta oficial del álbum Folklore de Taylor Swift', 29.99, 60);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (5, 3, 19, 'Pulsera Taylor Swift Lover', 'Pulsera de silicona con el logo de Lover', 9.99, 100);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (6, 4, 19, 'Gorra Taylor Swift Reputation', 'Gorra con diseño del álbum Reputation de Taylor Swift', 24.99, 45);
 
 -- Merchandising para Wallows
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (7, 1, 7, 'Camiseta Wallows Logo', 'Camiseta con el logo de Wallows en la parte frontal', 22.99, 70);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (8, 2, 7, 'Sudadera Wallows Nothing Happens', 'Sudadera oficial del álbum Nothing Happens', 49.99, 35);
 
-INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, decripcion_merch, precio_merch, stock_merch) VALUES
+INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (9, 3, 7, 'Gorra Wallows Striped', 'Gorra con diseño de rayas de Wallows', 18.99, 55);
 
 
@@ -2592,3 +2592,5 @@ INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 25);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 26);
 INSERT INTO tbl_listas_y_canciones (id_lista_reproduccion, id_cancion) VALUES (9, 27);
+
+COMMIT;
