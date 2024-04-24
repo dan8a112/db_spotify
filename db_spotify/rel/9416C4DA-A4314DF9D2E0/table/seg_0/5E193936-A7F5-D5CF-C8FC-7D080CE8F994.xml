@@ -58,7 +58,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DECRIPCION_MERCH" id="34C442CC-3E7B-EC75-7612-45BF5B0D9EBF">
+<Column name="DESCRIPCION_MERCH" id="34C442CC-3E7B-EC75-7612-45BF5B0D9EBF">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-22 00:12:28 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

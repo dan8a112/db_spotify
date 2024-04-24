@@ -30,7 +30,7 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ABREBIACION_PAIS" id="F08EC5FA-2B9A-A9AF-DB64-4AE3FD84E38E">
+<Column name="ABREVIACION_PAIS" id="F08EC5FA-2B9A-A9AF-DB64-4AE3FD84E38E">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 23:27:56 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
