@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-23 17:23:56 CST
+--   en:        2024-04-23 18:00:40 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -166,8 +166,8 @@ CREATE TABLE tbl_listas_y_canciones (
 CREATE TABLE tbl_lugares (
     id_lugar     INTEGER NOT NULL,
     nombre_lugar VARCHAR2(150),
-    latitud      NUMBER,
-    longitud     NUMBER,
+    latitud      FLOAT,
+    longitud     FLOAT,
     id_pais      INTEGER NOT NULL
 );
 
