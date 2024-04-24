@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F41B7516-D7AE-653B-C50A-F1A239A8B189" name="TBL_ALBUMES_SEGUIDOS">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 21:50:59 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="38283076-5F53-7A8E-0F90-268547BAA5FE">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 21:52:28 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3606CB3B-0CF1-E753-BDD7-3E6E56A4A7EF" referredColumn="39C19B57-F9F6-1575-4C7B-530F40CFB66C"/>
+</associations>
+</Column>
+<Column name="ID_ALBUM" id="DC62CF40-C7C7-7336-F9C6-8594E9411A90">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 21:54:14 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BB5051F-796B-39C6-7C70-6EFC0FCB0C9A" referredColumn="260F3CD0-7621-367A-E05E-B8FA6AA15EE1"/>
+</associations>
+</Column>
+<Column name="FECHA_SEGUIMIENTO" id="2460844E-D48D-66FA-C715-295F8BD1E4AB">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 22:03:46 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8928F716-4055-3CD1-4E71-4000FF79476B" name="TBL_AS_TBL_UE_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 21:52:28 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38283076-5F53-7A8E-0F90-268547BAA5FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F90C18C1-EA4A-BA49-D401-CA711CCB7AD4" name="TBL_AS_TBL_ALBUMES_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-24 21:54:14 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC62CF40-C7C7-7336-F9C6-8594E9411A90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
