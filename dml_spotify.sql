@@ -749,8 +749,6 @@ INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion
 INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion_merch, precio_merch, stock_merch) VALUES
 (9, 3, 7, 'Gorra Wallows Striped', 'Gorra con diseño de rayas de Wallows', 18.99, 55);
 
-
-
 -- Crear usuarios estándar
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'angelcastillo.jpg', 'password', 1);
@@ -1128,6 +1126,39 @@ INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_
 -- Rosalía
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (67, 'Los Ángeles', 'album/rosalia-losangeles.jpeg', TO_DATE('2017-02-10', 'YYYY-MM-DD'), 34, 1);
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (68, 'El Mal Querer', 'album/rosalia-elmalquerer.jpeg', TO_DATE('2018-11-02', 'YYYY-MM-DD'), 34, 1);
+
+-- Albumes Seguidos
+
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (35, 1, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (35, 2, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (35, 3, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (36, 4, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (36, 5, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (36, 6, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (37, 7, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (37, 8, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (37, 9, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (38, 10, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (38, 11, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (38, 12, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (39, 13, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (39, 14, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (39, 15, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (40, 16, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (40, 17, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (40, 18, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (41, 19, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (41, 20, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (41, 21, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (42, 22, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (42, 23, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (42, 24, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (43, 25, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (43, 26, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (43, 27, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (44, 28, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (44, 29, SYSDATE);
+INSERT INTO tbl_albumes_seguidos (id_usuario, id_album, fecha_seguimiento) VALUES (44, 30, SYSDATE);
 
 
 -- Insertar el tipo de medio "Canción"
@@ -1689,33 +1720,33 @@ INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musica
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
 (32, NULL, 6, 17, 3, 1);
 
--- Canciones de Vance Joy - Dream Your Life Away
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(33, NULL, 7, 4, 4, 1);
-
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(34, NULL, 7, 4, 4, 1);
-
--- Canciones de Vance Joy - Nation Of Two
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(35, NULL, 8, 4, 4, 1);
-
-INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(36, NULL, 8, 4, 4, 1);
-
 -- Canciones de Indigo la end - Kanna
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(37, NULL, 9, 11, 5, 1);
+(37, NULL, 9, 11, 4, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(38, NULL, 9, 11, 5, 1);
+(38, NULL, 9, 11, 4, 1);
 
 -- Canciones de Indigo la end - Crying End Roll
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(39, NULL, 10, 11, 5, 1);
+(39, NULL, 10, 11, 4, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(40, NULL, 10, 11, 5, 1);
+(40, NULL, 10, 11, 4, 1);
+
+-- Canciones de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(33, NULL, 7, 4, 5, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(34, NULL, 7, 4, 5, 1);
+
+-- Canciones de Vance Joy - Nation Of Two
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(35, NULL, 8, 4, 5, 1);
+
+INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
+(36, NULL, 8, 4, 5, 1);
 
 -- Canciones de Arctic Monkeys - AM
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
