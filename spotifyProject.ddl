@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-23 18:00:40 CST
+--   en:        2024-04-23 18:08:23 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -185,14 +185,14 @@ CREATE TABLE tbl_media (
 ALTER TABLE tbl_media ADD CONSTRAINT tbl_media_pk PRIMARY KEY ( id_media );
 
 CREATE TABLE tbl_merch (
-    id_merch         INTEGER NOT NULL,
-    id_talla         INTEGER NOT NULL,
-    id_artista       INTEGER NOT NULL,
-    nombre_merch     VARCHAR2(100),
-    decripcion_merch VARCHAR2(500),
-    precio_merch     FLOAT,
-    stock_merch      INTEGER,
-    url_imagen_merch VARCHAR2(100)
+    id_merch          INTEGER NOT NULL,
+    id_talla          INTEGER NOT NULL,
+    id_artista        INTEGER NOT NULL,
+    nombre_merch      VARCHAR2(100),
+    descripcion_merch VARCHAR2(500),
+    precio_merch      FLOAT,
+    stock_merch       INTEGER,
+    url_imagen_merch  VARCHAR2(100)
 );
 
 ALTER TABLE tbl_merch ADD CONSTRAINT tbl_merch_pk PRIMARY KEY ( id_merch );
@@ -221,7 +221,7 @@ ALTER TABLE tbl_pago_planes ADD CONSTRAINT tbl_pago_planes_pk PRIMARY KEY ( id_p
 CREATE TABLE tbl_paises (
     id_pais          INTEGER NOT NULL,
     nombre_pais      VARCHAR2(1000),
-    abrebiacion_pais VARCHAR2(10),
+    abreviacion_pais VARCHAR2(10),
     icono_pais       VARCHAR2(1000),
     id_idioma        INTEGER NOT NULL
 );
