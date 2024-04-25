@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-23 18:08:23 CST
+--   en:        2024-04-25 11:43:15 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -20,6 +20,12 @@ CREATE TABLE tbl_albumes (
 );
 
 ALTER TABLE tbl_albumes ADD CONSTRAINT tbl_albumes_pk PRIMARY KEY ( id_album );
+
+CREATE TABLE tbl_albumes_seguidos (
+    id_usuario        INTEGER NOT NULL,
+    id_album          INTEGER NOT NULL,
+    fecha_seguimiento DATE
+);
 
 CREATE TABLE tbl_artistas (
     id_usuario INTEGER NOT NULL,
@@ -391,6 +397,14 @@ ALTER TABLE tbl_artistas
     ADD CONSTRAINT tbl_artistas_tbl_usuarios_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_usuarios ( id_usuario );
 
+ALTER TABLE tbl_albumes_seguidos
+    ADD CONSTRAINT tbl_as_tbl_albumes_fk FOREIGN KEY ( id_album )
+        REFERENCES tbl_albumes ( id_album );
+
+ALTER TABLE tbl_albumes_seguidos
+    ADD CONSTRAINT tbl_as_tbl_ue_fk FOREIGN KEY ( id_usuario )
+        REFERENCES tbl_usuario_estandar ( id_usuario );
+
 ALTER TABLE tbl_canciones_artistas
     ADD CONSTRAINT tbl_ca_tbl_artistas_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_artistas ( id_usuario );
@@ -567,9 +581,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            39
+-- CREATE TABLE                            40
 -- CREATE INDEX                             4
--- ALTER TABLE                             82
+-- ALTER TABLE                             84
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
