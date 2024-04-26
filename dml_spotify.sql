@@ -298,7 +298,7 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 
 -- Insertar nuevos artistas
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(6, 3, 1, 'arcticmonkeys@example.com', 'Arctic Monkeys', TO_DATE('1986-01-28', 'YYYY-MM-DD'), SYSDATE, 'Artistas/arcticmonkeys.jpg', 'password', 14);
+(6, 3, 1, 'arcticmonkeys@example.com', 'Arctic Monkeys', TO_DATE('1986-01-28', 'YYYY-MM-DD'), SYSDATE, 'Artistas/articmonkeys.jpg', 'password', 14);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (7, 3, 1, 'wallows@example.com', 'Wallows', TO_DATE('1998-03-05', 'YYYY-MM-DD'), SYSDATE, 'Artistas/wallows.jpg', 'password', 14);
@@ -1009,7 +1009,7 @@ Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usua
 
 --Vance Joy
 Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (9,'Dream Your Life Away','Albumes/vancejoy-dreamyourlifeaway.jpeg',To_Date('29-DIC-19','DD-MON-RR'),5, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (10,'Nation Of Two','Albumes/vancejoy-cryingendroll.jpeg',To_Date('27-OCT-22','DD-MON-RR'),5, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (10,'Nation Of Two','Albumes/vancejoy-nationoftwo.jpeg',To_Date('27-OCT-22','DD-MON-RR'),5, 1);
 
 -- Arctic Monkeys
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (11, 'AM', 'Albumes/articmonkeys-am.jpeg', TO_DATE('2013-09-09', 'YYYY-MM-DD'), 6, 1);
@@ -1722,31 +1722,31 @@ INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musica
 
 -- Canciones de Indigo la end - Kanna
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(37, NULL, 9, 11, 4, 1);
+(37, NULL, 7, 11, 4, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(38, NULL, 9, 11, 4, 1);
+(38, NULL, 7, 11, 4, 1);
 
 -- Canciones de Indigo la end - Crying End Roll
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(39, NULL, 10, 11, 4, 1);
+(39, NULL, 8, 11, 4, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(40, NULL, 10, 11, 4, 1);
+(40, NULL, 8, 11, 4, 1);
 
 -- Canciones de Vance Joy - Dream Your Life Away
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(33, NULL, 7, 4, 5, 1);
+(33, NULL, 9, 4, 5, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(34, NULL, 7, 4, 5, 1);
+(34, NULL, 9, 4, 5, 1);
 
 -- Canciones de Vance Joy - Nation Of Two
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(35, NULL, 8, 4, 5, 1);
+(35, NULL, 10, 4, 5, 1);
 
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
-(36, NULL, 8, 4, 5, 1);
+(36, NULL, 10, 4, 5, 1);
 
 -- Canciones de Arctic Monkeys - AM
 INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musical, id_artista, id_idioma) VALUES
