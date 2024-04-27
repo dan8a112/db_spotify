@@ -2710,6 +2710,47 @@ INSERT INTO tbl_historial_canciones (id_historial_reproduccion, id_media, fecha_
 INSERT INTO tbl_historial_canciones (id_historial_reproduccion, id_media, fecha_reproduccion) VALUES (10, 46, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
 INSERT INTO tbl_historial_canciones (id_historial_reproduccion, id_media, fecha_reproduccion) VALUES (42, 47, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
 
-
+-- Primeros 10 registros
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (35, 1, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (35, 2, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (36, 3, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (37, 4, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (38, 5, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (39, 6, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (40, 7, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (41, 8, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (42, 9, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (43, 10, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (44, 11, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (45, 12, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (46, 13, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (47, 14, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (48, 15, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (49, 16, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (50, 17, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (51, 18, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (52, 19, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (53, 20, TO_DATE('2024-04-18', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (54, 21, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (55, 22, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (56, 23, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (57, 24, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (58, 25, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (59, 26, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (60, 27, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (61, 28, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (62, 29, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (63, 30, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (64, 31, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (65, 32, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (66, 33, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (67, 34, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (68, 1, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (69, 2, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (70, 3, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (71, 4, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (72, 5, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (73, 6, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (35, 82, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
 
 COMMIT;
