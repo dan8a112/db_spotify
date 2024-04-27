@@ -63,6 +63,18 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A570C75-8F68-2B85-67CB-DA2890EBEB98" name="TBL_LISTAS_SEGUIDAS_PK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-27 20:50:15 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B141A57-20E4-21B8-EC75-A3F66C75CEDF"/>
+<colUsage columnID="D94F4C24-9DE9-0E7D-29A8-8B7F1A5DA9B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="2C752F6D-77AC-141E-872D-DC8741EB57BA" name="TBL_LISTAS_SEGUIDAS_TBL_UE_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-20 22:41:04 UTC</createdTime>
