@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-29 12:34:37 CST
+--   en:        2024-04-29 14:58:59 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -173,6 +173,9 @@ CREATE TABLE tbl_listas_y_canciones (
     id_lista_reproduccion INTEGER NOT NULL,
     id_cancion            INTEGER NOT NULL
 );
+
+ALTER TABLE tbl_listas_y_canciones ADD CONSTRAINT tbl_listas_y_canciones_pk PRIMARY KEY ( id_lista_reproduccion,
+                                                                                          id_cancion );
 
 CREATE TABLE tbl_lugares (
     id_lugar     INTEGER NOT NULL,
@@ -594,7 +597,7 @@ ALTER TABLE tbl_seguidores
 -- 
 -- CREATE TABLE                            40
 -- CREATE INDEX                             4
--- ALTER TABLE                             88
+-- ALTER TABLE                             89
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
