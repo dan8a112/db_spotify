@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-29 14:58:59 CST
+--   en:        2024-04-29 16:30:38 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -15,8 +15,8 @@ CREATE TABLE tbl_albumes (
     portada             VARCHAR2(1000),
     fecha_lanzamiento   DATE,
     id_usuario          INTEGER NOT NULL,
-    color               VARCHAR2(10),
-    id_tipo_lanzamiento INTEGER NOT NULL
+    id_tipo_lanzamiento INTEGER NOT NULL,
+    id_color            INTEGER
 );
 
 ALTER TABLE tbl_albumes ADD CONSTRAINT tbl_albumes_pk PRIMARY KEY ( id_album );
@@ -53,6 +53,14 @@ CREATE TABLE tbl_canciones_artistas (
     id_usuario INTEGER NOT NULL,
     id_media   INTEGER NOT NULL
 );
+
+CREATE TABLE tbl_colores (
+    id_color          INTEGER NOT NULL,
+    nombre_color      VARCHAR2(20),
+    valor_hexadecimal VARCHAR2(7)
+);
+
+ALTER TABLE tbl_colores ADD CONSTRAINT tbl_colores_pk PRIMARY KEY ( id_color );
 
 CREATE TABLE tbl_creditos (
     id_credito         INTEGER NOT NULL,
@@ -264,7 +272,7 @@ CREATE TABLE tbl_podcasts (
     nombre_podcast      VARCHAR2(100),
     url_portada_podcast VARCHAR2(1000),
     descripcion_podcast VARCHAR2(500),
-    color               VARCHAR2(10)
+    id_color            INTEGER
 );
 
 ALTER TABLE tbl_podcasts ADD CONSTRAINT podcasts_pk PRIMARY KEY ( id_podcast );
@@ -402,6 +410,10 @@ ALTER TABLE tbl_podcasts
 ALTER TABLE tbl_albumes
     ADD CONSTRAINT tbl_albumes_tbl_artistas_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_artistas ( id_usuario );
+
+ALTER TABLE tbl_albumes
+    ADD CONSTRAINT tbl_albumes_tbl_colores_fk FOREIGN KEY ( id_color )
+        REFERENCES tbl_colores ( id_color );
 
 ALTER TABLE tbl_merch
     ADD CONSTRAINT tbl_artistas_fk FOREIGN KEY ( id_artista )
@@ -547,6 +559,10 @@ ALTER TABLE tbl_pago_planes
     ADD CONSTRAINT tbl_pap_tbl_tar_fk FOREIGN KEY ( id_tarjeta )
         REFERENCES tbl_tarjetas ( id_tarjeta );
 
+ALTER TABLE tbl_podcasts
+    ADD CONSTRAINT tbl_podcasts_tbl_colores_fk FOREIGN KEY ( id_color )
+        REFERENCES tbl_colores ( id_color );
+
 ALTER TABLE tbl_productores
     ADD CONSTRAINT tbl_pro_tbl_creditos_fk FOREIGN KEY ( id_credito )
         REFERENCES tbl_creditos ( id_credito );
@@ -595,9 +611,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            40
+-- CREATE TABLE                            41
 -- CREATE INDEX                             4
--- ALTER TABLE                             89
+-- ALTER TABLE                             92
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

@@ -94,6 +94,19 @@ INSERT INTO tbl_paises (id_pais, nombre_pais, abreviacion_pais, icono_pais, id_i
 (25, 'Chile', 'CHL', 'chile.png', 3);
 
 
+--Insertar Colores
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (1, 'Rojo', '#9f1d16');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (2, 'rosado', '#bf158f');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (3, 'Azul', '#144a72');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (4, 'gris', '#404e58');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (5, 'blanco', '#617d92');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (6, 'verde', '#265023');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (7, 'Negro', '#313131');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (8, 'Anaranjado', '#9b3e16');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (9, 'azul oscuro', '#2c0974');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (10, 'azul claro', '#136361');
+INSERT INTO tbl_colores (id_color, nombre_color, valor_hexadecimal) VALUES (11, 'mostaza', '#65550b');
+
 -- Insertar géneros
 INSERT INTO tbl_genero (id_genero, nombre_genero) VALUES
 (1, 'Masculino');
@@ -150,32 +163,32 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 
 
 -- Podcast
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(1, 2, 81, 'The Wild Project', 'Podcasts/thewildproject.jpeg', 'Descripción de The Wild Project', 'Azul');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(1, 2, 81, 'The Wild Project', 'Podcasts/thewildproject.jpeg', 'Descripción de The Wild Project', 11);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(2, 2, 82, 'Quantum FM', 'Podcasts/quantumfm.jpeg', 'Descripción de Quantum FM', 'Rojo');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(2, 2, 82, 'Quantum FM', 'Podcasts/quantumfm.jpeg', 'Descripción de Quantum FM', 9);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(3, 2, 83, 'Caso 63', 'Podcasts/caso63.jpeg', 'Descripción de Caso 63', 'Verde');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(3, 2, 83, 'Caso 63', 'Podcasts/caso63.jpeg', 'Descripción de Caso 63', 1);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(4, 2, 84, 'Los hijos de Morazan', 'Podcasts/loshijosdemorazan.jpeg', 'Descripción de Los hijos de Morazan', 'Amarillo');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(4, 2, 84, 'Los hijos de Morazan', 'Podcasts/loshijosdemorazan.jpeg', 'Descripción de Los hijos de Morazan', 9);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(5, 2, 85, 'La Cotorrisa', 'Podcasts/lacotorrisa.jpeg', 'Descripción de La Cotorrisa', 'Naranja');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(5, 2, 85, 'La Cotorrisa', 'Podcasts/lacotorrisa.jpeg', 'Descripción de La Cotorrisa', 4);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(6, 2, 86, 'Habitos Inteligentes', 'Podcasts/habitosinteligentes.jpeg', 'Descripción de Habitos Inteligentes', 'Morado');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(6, 2, 86, 'Habitos Inteligentes', 'Podcasts/habitosinteligentes.jpeg', 'Descripción de Habitos Inteligentes', 4);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(7, 2, 87, 'Tu Desarrollo Personal', 'Podcasts/tudesarrollopersonal.jpeg', 'Descripción de Tu Desarrollo Personal', 'Gris');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(7, 2, 87, 'Tu Desarrollo Personal', 'Podcasts/tudesarrollopersonal.jpeg', 'Descripción de Tu Desarrollo Personal', 4);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(8, 2, 88, 'Cuentos y Leyendas de Honduras', 'Podcasts/cuentosyleyendasdehonduras.jpeg', 'Descripción de Cuentos y Leyendas de Honduras', 'Marrón');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(8, 2, 88, 'Cuentos y Leyendas de Honduras', 'Podcasts/cuentosyleyendasdehonduras.jpeg', 'Descripción de Cuentos y Leyendas de Honduras', 4);
 
-INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, color) VALUES
-(9, 2, 89, 'Dante Gebel', 'Podcasts/dantegebel.jpeg', 'Descripción de Dante Gebel', 'Negro');
+INSERT INTO tbl_podcasts (id_podcast, id_idioma, id_podcaster, nombre_podcast, url_portada_podcast, descripcion_podcast, id_color) VALUES
+(9, 2, 89, 'Dante Gebel', 'Podcasts/dantegebel.jpeg', 'Descripción de Dante Gebel', 4);
 
 
 INSERT INTO tbl_genero_podcast (id_genero_podcast, genero_podcast) VALUES
@@ -992,140 +1005,140 @@ INSERT INTO tbl_tipo_lanzamiento (id_tipo_lanzamiento, nombre_lanzamiento) VALUE
 -- Insertar Albumes
 
 --Twenty One Pilots
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (1,'Clancy','Albumes/twentyonepilots-clancy.jpeg',To_Date('17-MAY-24','DD-MON-RR'),1, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (2,'Vessel','Albumes/twentyonepilots-vessel.jpeg',To_Date('8-ENE-15','DD-MON-RR'),1, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (1,'Clancy','Albumes/twentyonepilots-clancy.jpeg',To_Date('17-MAY-24','DD-MON-RR'),1, 1, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (2,'Vessel','Albumes/twentyonepilots-vessel.jpeg',To_Date('8-ENE-15','DD-MON-RR'),1, 1, 5);
 
 --Vaundy
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (3,'Strobo','Albumes/vaundy-strobo.jpeg',To_Date('18-MAY-21','DD-MON-RR'),2, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (4,'Odoriko','Albumes/vaundy-odoriko.jpeg',To_Date('4-ENE-22','DD-MON-RR'),2, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (3,'Strobo','Albumes/vaundy-strobo.jpeg',To_Date('18-MAY-21','DD-MON-RR'),2, 1,2);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (4,'Odoriko','Albumes/vaundy-odoriko.jpeg',To_Date('4-ENE-22','DD-MON-RR'),2, 1,1);
 
 --Cardellino
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (5,'Chistes Malos','Albumes/cardellino-chistesmalos.jpeg',To_Date('25-ABR-21','DD-MON-RR'),3, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (6,'Love Dealer','Albumes/cardellino-lovedealer.jpeg',To_Date('09-FEB-20','DD-MON-RR'),3, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (5,'Chistes Malos','Albumes/cardellino-chistesmalos.jpeg',To_Date('25-ABR-21','DD-MON-RR'),3, 1,4);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (6,'Love Dealer','Albumes/cardellino-lovedealer.jpeg',To_Date('09-FEB-20','DD-MON-RR'),3, 1, 3);
 
 --Indigo la end
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (7,'Kanna','Albumes/indigolaend-kanna.jpeg',To_Date('29-DIC-19','DD-MON-RR'),4, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (8,'Crying End Roll','Albumes/indigolaend-cryingendroll.jpeg',To_Date('27-OCT-22','DD-MON-RR'),4, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (7,'Kanna','Albumes/indigolaend-kanna.jpeg',To_Date('29-DIC-19','DD-MON-RR'),4, 1, 6);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (8,'Crying End Roll','Albumes/indigolaend-cryingendroll.jpeg',To_Date('27-OCT-22','DD-MON-RR'),4, 1, 3);
 
 --Vance Joy
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (9,'Dream Your Life Away','Albumes/vancejoy-dreamyourlifeaway.jpeg',To_Date('29-DIC-19','DD-MON-RR'),5, 1);
-Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento) Values (10,'Nation Of Two','Albumes/vancejoy-nationoftwo.jpeg',To_Date('27-OCT-22','DD-MON-RR'),5, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (9,'Dream Your Life Away','Albumes/vancejoy-dreamyourlifeaway.jpeg',To_Date('29-DIC-19','DD-MON-RR'),5, 1, 1);
+Insert Into Tbl_Albumes (Id_Album,Nombre_Album,Portada,Fecha_Lanzamiento,Id_Usuario, id_tipo_lanzamiento, id_color) Values (10,'Nation Of Two','Albumes/vancejoy-nationoftwo.jpeg',To_Date('27-OCT-22','DD-MON-RR'),5, 1, 1);
 
 -- Arctic Monkeys
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (11, 'AM', 'Albumes/articmonkeys-am.jpeg', TO_DATE('2013-09-09', 'YYYY-MM-DD'), 6, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (12, 'Tranquility Base Hotel & Casino', 'Albumes/articmonkeys-tranquilitybasehotel&casino.jpeg', TO_DATE('2018-05-11', 'YYYY-MM-DD'), 6, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (11, 'AM', 'Albumes/articmonkeys-am.jpeg', TO_DATE('2013-09-09', 'YYYY-MM-DD'), 6, 1,7);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (12, 'Tranquility Base Hotel & Casino', 'Albumes/articmonkeys-tranquilitybasehotel&casino.jpeg', TO_DATE('2018-05-11', 'YYYY-MM-DD'), 6, 1,8);
 
 -- Wallows
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (13, 'Nothing Happens', 'Albumes/wallows-nothinghappens.jpeg', TO_DATE('2019-03-22', 'YYYY-MM-DD'), 7, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (14, 'Remote', 'Albumes/wallows-remote.jpeg', TO_DATE('2020-10-23', 'YYYY-MM-DD'), 7, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (13, 'Nothing Happens', 'Albumes/wallows-nothinghappens.jpeg', TO_DATE('2019-03-22', 'YYYY-MM-DD'), 7, 1,1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (14, 'Remote', 'Albumes/wallows-remote.jpeg', TO_DATE('2020-10-23', 'YYYY-MM-DD'), 7, 1,9);
 
 -- The Strokes
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (15, 'Is This It', 'Albumes/thestrokes-isthisit.jpeg', TO_DATE('2001-07-30', 'YYYY-MM-DD'), 8, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (16, 'Room on Fire', 'Albumes/thestrokes-roomonfire.jpeg', TO_DATE('2003-10-28', 'YYYY-MM-DD'), 8, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (15, 'Is This It', 'Albumes/thestrokes-isthisit.jpeg', TO_DATE('2001-07-30', 'YYYY-MM-DD'), 8, 1,7);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (16, 'Room on Fire', 'Albumes/thestrokes-roomonfire.jpeg', TO_DATE('2003-10-28', 'YYYY-MM-DD'), 8, 1,1);
 
 -- Radiohead
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (17, 'OK Computer', 'Albumes/radiohead-okcomputer.jpeg', TO_DATE('1997-05-21', 'YYYY-MM-DD'), 9, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (18, 'In Rainbows', 'Albumes/radiohead-inrainbows.jpeg', TO_DATE('2007-10-10', 'YYYY-MM-DD'), 9, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (17, 'OK Computer', 'Albumes/radiohead-okcomputer.jpeg', TO_DATE('1997-05-21', 'YYYY-MM-DD'), 9, 1, 10);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (18, 'In Rainbows', 'Albumes/radiohead-inrainbows.jpeg', TO_DATE('2007-10-10', 'YYYY-MM-DD'), 9, 1,1);
 
 -- Radwimps
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (19, 'Ningen Kaika', 'Albumes/radwimps-ningenkaika.jpeg', TO_DATE('2016-11-23', 'YYYY-MM-DD'), 10, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (20, 'Weathering With You', 'Albumes/radwimps-weatheringwithyou.jpeg', TO_DATE('2019-07-19', 'YYYY-MM-DD'), 10, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (19, 'Ningen Kaika', 'Albumes/radwimps-ningenkaika.jpeg', TO_DATE('2016-11-23', 'YYYY-MM-DD'), 10, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (20, 'Weathering With You', 'Albumes/radwimps-weatheringwithyou.jpeg', TO_DATE('2019-07-19', 'YYYY-MM-DD'), 10, 1, 1);
 
 -- El Kuelgue
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (21, 'Beatriz', 'Albumes/elkuelgue-beatriz.jpeg', TO_DATE('2016-10-28', 'YYYY-MM-DD'), 11, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (22, 'Cariño Reptil', 'Albumes/elkuelgue-carinoreptil.jpeg', TO_DATE('2012-06-26', 'YYYY-MM-DD'), 11, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (21, 'Beatriz', 'Albumes/elkuelgue-beatriz.jpeg', TO_DATE('2016-10-28', 'YYYY-MM-DD'), 11, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (22, 'Cariño Reptil', 'Albumes/elkuelgue-carinoreptil.jpeg', TO_DATE('2012-06-26', 'YYYY-MM-DD'), 11, 1, 1);
 
 -- Jorge Drexler
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (23, 'Eco', 'Albumes/jorgedrexler-eco.jpeg', TO_DATE('2004-04-13', 'YYYY-MM-DD'), 12, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (24, 'Salvavidas de Hielo', 'Albumes/jorgedrexler-salvavidasdehielo.jpeg', TO_DATE('2017-09-22', 'YYYY-MM-DD'), 12, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (23, 'Eco', 'Albumes/jorgedrexler-eco.jpeg', TO_DATE('2004-04-13', 'YYYY-MM-DD'), 12, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (24, 'Salvavidas de Hielo', 'Albumes/jorgedrexler-salvavidasdehielo.jpeg', TO_DATE('2017-09-22', 'YYYY-MM-DD'), 12, 1, 1);
 
 -- Hozier
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (25, 'Hozier', 'Albumes/hozier-hozier.jpeg', TO_DATE('2014-09-19', 'YYYY-MM-DD'), 13, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (26, 'Wasteland, Baby!', 'Albumes/hozier-wastelandbaby.jpeg', TO_DATE('2019-03-01', 'YYYY-MM-DD'), 13, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (25, 'Hozier', 'Albumes/hozier-hozier.jpeg', TO_DATE('2014-09-19', 'YYYY-MM-DD'), 13, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (26, 'Wasteland, Baby!', 'Albumes/hozier-wastelandbaby.jpeg', TO_DATE('2019-03-01', 'YYYY-MM-DD'), 13, 1, 1);
 
 -- Guns N' Roses
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (27, 'Appetite for Destruction', 'Albumes/gunsnroses-appetitefordestruction.jpeg', TO_DATE('1987-07-21', 'YYYY-MM-DD'), 14, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (28, 'Use Your Illusion II', 'Albumes/gunsnroses-useyourillusionii.jpeg', TO_DATE('1991-09-17', 'YYYY-MM-DD'), 14, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (27, 'Appetite for Destruction', 'Albumes/gunsnroses-appetitefordestruction.jpeg', TO_DATE('1987-07-21', 'YYYY-MM-DD'), 14, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (28, 'Use Your Illusion II', 'Albumes/gunsnroses-useyourillusionii.jpeg', TO_DATE('1991-09-17', 'YYYY-MM-DD'), 14, 1, 1);
 
 -- Bring Me The Horizon
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (29, 'Sempiternal', 'Albumes/bringmethehorizon-sempiternal.jpeg', TO_DATE('2013-04-01', 'YYYY-MM-DD'), 15, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (30, 'Thats the Spirit', 'Albumes/bringmethehorizon-thatsthespirit.jpeg', TO_DATE('2015-09-11', 'YYYY-MM-DD'), 15, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (29, 'Sempiternal', 'Albumes/bringmethehorizon-sempiternal.jpeg', TO_DATE('2013-04-01', 'YYYY-MM-DD'), 15, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (30, 'Thats the Spirit', 'Albumes/bringmethehorizon-thatsthespirit.jpeg', TO_DATE('2015-09-11', 'YYYY-MM-DD'), 15, 1, 1);
 
 -- Vansire
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (31, 'Angel Youth', 'Albumes/vansire-angelyouth.jpeg', TO_DATE('2018-06-08', 'YYYY-MM-DD'), 16, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (32, 'The Modern Western World', 'Albumes/vansire-themodernwesternworld.jpeg', TO_DATE('2022-05-12', 'YYYY-MM-DD'), 16, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (31, 'Angel Youth', 'Albumes/vansire-angelyouth.jpeg', TO_DATE('2018-06-08', 'YYYY-MM-DD'), 16, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (32, 'The Modern Western World', 'Albumes/vansire-themodernwesternworld.jpeg', TO_DATE('2022-05-12', 'YYYY-MM-DD'), 16, 1, 1);
 
 -- My Chemical Romance
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (33, 'The Black Parade', 'Albumes/mychemicalromance-theblackparade.jpeg', TO_DATE('2006-10-23', 'YYYY-MM-DD'), 17, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (34, 'Three Cheers for Sweet Revenge', 'Albumes/mychemicalromance-threecheersforsweetrevenge.jpeg', TO_DATE('2004-06-08', 'YYYY-MM-DD'), 17, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (33, 'The Black Parade', 'Albumes/mychemicalromance-theblackparade.jpeg', TO_DATE('2006-10-23', 'YYYY-MM-DD'), 17, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (34, 'Three Cheers for Sweet Revenge', 'Albumes/mychemicalromance-threecheersforsweetrevenge.jpeg', TO_DATE('2004-06-08', 'YYYY-MM-DD'), 17, 1, 1);
 
 -- Doja Cat
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (35, 'Hot Pink', 'Albumes/dojacat-hotpink.jpeg', TO_DATE('2019-11-07', 'YYYY-MM-DD'), 18, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (36, 'Planet Her', 'Albumes/dojacat-planether.jpeg', TO_DATE('2021-06-25', 'YYYY-MM-DD'), 18, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (35, 'Hot Pink', 'Albumes/dojacat-hotpink.jpeg', TO_DATE('2019-11-07', 'YYYY-MM-DD'), 18, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (36, 'Planet Her', 'Albumes/dojacat-planether.jpeg', TO_DATE('2021-06-25', 'YYYY-MM-DD'), 18, 1, 1);
 
 -- Taylor Swift
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (37, '1989(Taylor''s Version)', 'Albumes/taylorswift-1989.jpeg', TO_DATE('2023-10-26', 'YYYY-MM-DD'), 19, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (38, 'Red', 'Albumes/taylorswift-red.jpeg', TO_DATE('2012-10-22', 'YYYY-MM-DD'), 19, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (37, '1989(Taylor''s Version)', 'Albumes/taylorswift-1989.jpeg', TO_DATE('2023-10-26', 'YYYY-MM-DD'), 19, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (38, 'Red', 'Albumes/taylorswift-red.jpeg', TO_DATE('2012-10-22', 'YYYY-MM-DD'), 19, 1, 1);
 
 -- Ariana Grande
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (39, 'Thank U, Next', 'Albumes/arianagrande-thankunext.jpeg', TO_DATE('2019-02-08', 'YYYY-MM-DD'), 20, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (40, 'Sweetener', 'Albumes/arianagrande-sweetener.jpeg', TO_DATE('2018-08-17', 'YYYY-MM-DD'), 20, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (39, 'Thank U, Next', 'Albumes/arianagrande-thankunext.jpeg', TO_DATE('2019-02-08', 'YYYY-MM-DD'), 20, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (40, 'Sweetener', 'Albumes/arianagrande-sweetener.jpeg', TO_DATE('2018-08-17', 'YYYY-MM-DD'), 20, 1, 1);
 
 -- girl in red
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (41, 'if i could make it go quiet', 'Albumes/girlinred-ificouldmakeitgoquiet.jpeg', TO_DATE('2021-04-30', 'YYYY-MM-DD'), 21, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (42, 'chapter 1', 'Albumes/girlinred-chapter1.jpeg', TO_DATE('2018-09-14', 'YYYY-MM-DD'), 21, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (41, 'if i could make it go quiet', 'Albumes/girlinred-ificouldmakeitgoquiet.jpeg', TO_DATE('2021-04-30', 'YYYY-MM-DD'), 21, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (42, 'chapter 1', 'Albumes/girlinred-chapter1.jpeg', TO_DATE('2018-09-14', 'YYYY-MM-DD'), 21, 1, 1);
 
 -- The Neighborhood
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (43, 'Wiped Out!', 'Albumes/theneighborhood-wipedout.jpeg', TO_DATE('2015-10-30', 'YYYY-MM-DD'), 22, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (44, 'I Love You', 'Albumes/theneighborhood-iloveyou.jpeg', TO_DATE('2013-04-23', 'YYYY-MM-DD'), 22, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (43, 'Wiped Out!', 'Albumes/theneighborhood-wipedout.jpeg', TO_DATE('2015-10-30', 'YYYY-MM-DD'), 22, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (44, 'I Love You', 'Albumes/theneighborhood-iloveyou.jpeg', TO_DATE('2013-04-23', 'YYYY-MM-DD'), 22, 1, 1);
 
 -- Dayglow
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (45, 'Fuzzybrain', 'Albumes/dayglow-fuzzybrain.jpeg', TO_DATE('2018-11-23', 'YYYY-MM-DD'), 23, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (46, 'Harmony House', 'Albumes/dayglow-harmonyhouse.jpeg', TO_DATE('2021-05-21', 'YYYY-MM-DD'), 23, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (45, 'Fuzzybrain', 'Albumes/dayglow-fuzzybrain.jpeg', TO_DATE('2018-11-23', 'YYYY-MM-DD'), 23, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (46, 'Harmony House', 'Albumes/dayglow-harmonyhouse.jpeg', TO_DATE('2021-05-21', 'YYYY-MM-DD'), 23, 1, 1);
 
 -- Bad Bunny
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (47, 'YHLQMDLG', 'Albumes/badbunny-yhlqmdlg.jpeg', TO_DATE('2020-02-29', 'YYYY-MM-DD'), 24, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (48, 'El Último Tour Del Mundo', 'Albumes/badbunny-elultimotourdelmundo.jpeg', TO_DATE('2020-11-27', 'YYYY-MM-DD'), 24, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (47, 'YHLQMDLG', 'Albumes/badbunny-yhlqmdlg.jpeg', TO_DATE('2020-02-29', 'YYYY-MM-DD'), 24, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (48, 'El Último Tour Del Mundo', 'Albumes/badbunny-elultimotourdelmundo.jpeg', TO_DATE('2020-11-27', 'YYYY-MM-DD'), 24, 1, 1);
 
 -- The Smiths
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (49, 'The Queen Is Dead', 'Albumes/thesmiths-thequeenisdead.jpeg', TO_DATE('1986-06-16', 'YYYY-MM-DD'), 25, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (50, 'Strangeways, Here We Come', 'Albumes/thesmiths-strangewaysherewecome.jpeg', TO_DATE('1987-09-28', 'YYYY-MM-DD'), 25, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (49, 'The Queen Is Dead', 'Albumes/thesmiths-thequeenisdead.jpeg', TO_DATE('1986-06-16', 'YYYY-MM-DD'), 25, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (50, 'Strangeways, Here We Come', 'Albumes/thesmiths-strangewaysherewecome.jpeg', TO_DATE('1987-09-28', 'YYYY-MM-DD'), 25, 1, 1);
 
 -- Atomic Rose
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (51, 'Big Kids', 'Albumes/atomicrose-bigkids.jpeg', TO_DATE('2020-03-27', 'YYYY-MM-DD'), 26, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (52, 'Something That Can Last Forever', 'Albumes/atomicrose-somethingthatcanlastforever.jpeg', TO_DATE('2023-01-01', 'YYYY-MM-DD'), 26, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (51, 'Big Kids', 'Albumes/atomicrose-bigkids.jpeg', TO_DATE('2020-03-27', 'YYYY-MM-DD'), 26, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (52, 'Something That Can Last Forever', 'Albumes/atomicrose-somethingthatcanlastforever.jpeg', TO_DATE('2023-01-01', 'YYYY-MM-DD'), 26, 1, 1);
 
 -- Bizarrap
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (53, 'Music Sessions #59', 'Albumes/bizarrap-musicsessions59.jpeg', TO_DATE('2023-11-20', 'YYYY-MM-DD'), 27, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (54, 'en dormir sin Madrid', 'Albumes/bizarrap-endormirsinmadrid.jpeg', TO_DATE('2023-05-07', 'YYYY-MM-DD'), 27, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (53, 'Music Sessions #59', 'Albumes/bizarrap-musicsessions59.jpeg', TO_DATE('2023-11-20', 'YYYY-MM-DD'), 27, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (54, 'en dormir sin Madrid', 'Albumes/bizarrap-endormirsinmadrid.jpeg', TO_DATE('2023-05-07', 'YYYY-MM-DD'), 27, 1, 1);
 
 -- Feid
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (55, 'FERXXO (Vol 1: M.O.R)', 'Albumes/feid-ferxxo.jpeg', TO_DATE('2018-12-07', 'YYYY-MM-DD'), 28, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (56, '19', 'Albumes/feid-19.jpeg', TO_DATE('2021-11-19', 'YYYY-MM-DD'), 28, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (55, 'FERXXO (Vol 1: M.O.R)', 'Albumes/feid-ferxxo.jpeg', TO_DATE('2018-12-07', 'YYYY-MM-DD'), 28, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (56, '19', 'Albumes/feid-19.jpeg', TO_DATE('2021-11-19', 'YYYY-MM-DD'), 28, 1, 1);
 
 -- Shakira
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (57, 'Pies Descalzos', 'Albumes/shakira-piesdescalzos.jpeg', TO_DATE('1995-10-06', 'YYYY-MM-DD'), 29, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (58, 'Dónde Están los Ladrones?', 'Albumes/shakira-dondeestanlosladrones.jpeg', TO_DATE('1998-09-29', 'YYYY-MM-DD'), 29, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (57, 'Pies Descalzos', 'Albumes/shakira-piesdescalzos.jpeg', TO_DATE('1995-10-06', 'YYYY-MM-DD'), 29, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (58, 'Dónde Están los Ladrones?', 'Albumes/shakira-dondeestanlosladrones.jpeg', TO_DATE('1998-09-29', 'YYYY-MM-DD'), 29, 1, 1);
 
 -- Peso Pluma
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (59, 'GÉNESIS', 'Albumes/pesopluma-genesis.jpeg', TO_DATE('2023-11-15', 'YYYY-MM-DD'), 30, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (60, 'Ah y Que?', 'Albumes/pesopluma-ahyque.jpeg', TO_DATE('2022-05-20', 'YYYY-MM-DD'), 30, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (59, 'GÉNESIS', 'Albumes/pesopluma-genesis.jpeg', TO_DATE('2023-11-15', 'YYYY-MM-DD'), 30, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (60, 'Ah y Que?', 'Albumes/pesopluma-ahyque.jpeg', TO_DATE('2022-05-20', 'YYYY-MM-DD'), 30, 1, 1);
 
 -- Ozuna
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (61, 'Odisea', 'Albumes/ozuna-odisea.jpeg', TO_DATE('2017-08-25', 'YYYY-MM-DD'), 31, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (62, 'ENOC', 'Albumes/ozuna-enoc.jpeg', TO_DATE('2020-09-04', 'YYYY-MM-DD'), 31, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (61, 'Odisea', 'Albumes/ozuna-odisea.jpeg', TO_DATE('2017-08-25', 'YYYY-MM-DD'), 31, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (62, 'ENOC', 'Albumes/ozuna-enoc.jpeg', TO_DATE('2020-09-04', 'YYYY-MM-DD'), 31, 1, 1);
 
 -- Karol G
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (63, 'Unstoppable', 'Albumes/karolg-unstoppable.jpeg', TO_DATE('2017-10-27', 'YYYY-MM-DD'), 32, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (64, 'KG0516', 'Albumes/karolg-kg0516.jpeg', TO_DATE('2021-03-25', 'YYYY-MM-DD'), 32, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (63, 'Unstoppable', 'Albumes/karolg-unstoppable.jpeg', TO_DATE('2017-10-27', 'YYYY-MM-DD'), 32, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (64, 'KG0516', 'Albumes/karolg-kg0516.jpeg', TO_DATE('2021-03-25', 'YYYY-MM-DD'), 32, 1, 1);
 
 -- Rauw Alejandro
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (65, 'Vice Versa', 'Albumes/rauwalejandro-viceversa.jpeg', TO_DATE('2019-11-08', 'YYYY-MM-DD'), 33, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (66, 'Afrodisíaco', 'Albumes/rauwalejandro-afrodisiaco.jpeg', TO_DATE('2021-11-05', 'YYYY-MM-DD'), 33, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (65, 'Vice Versa', 'Albumes/rauwalejandro-viceversa.jpeg', TO_DATE('2019-11-08', 'YYYY-MM-DD'), 33, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (66, 'Afrodisíaco', 'Albumes/rauwalejandro-afrodisiaco.jpeg', TO_DATE('2021-11-05', 'YYYY-MM-DD'), 33, 1, 1);
 
 -- Rosalía
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (67, 'Los Ángeles', 'Albumes/rosalia-losangeles.jpeg', TO_DATE('2017-02-10', 'YYYY-MM-DD'), 34, 1);
-INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (68, 'El Mal Querer', 'Albumes/rosalia-elmalquerer.jpeg', TO_DATE('2018-11-02', 'YYYY-MM-DD'), 34, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (67, 'Los Ángeles', 'Albumes/rosalia-losangeles.jpeg', TO_DATE('2017-02-10', 'YYYY-MM-DD'), 34, 1, 1);
+INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento, id_color) VALUES (68, 'El Mal Querer', 'Albumes/rosalia-elmalquerer.jpeg', TO_DATE('2018-11-02', 'YYYY-MM-DD'), 34, 1, 1);
 
 -- Albumes Seguidos
 
