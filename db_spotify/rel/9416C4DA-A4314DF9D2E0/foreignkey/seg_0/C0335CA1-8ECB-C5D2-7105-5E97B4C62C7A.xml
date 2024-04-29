@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C0335CA1-8ECB-C5D2-7105-5E97B4C62C7A" containerWithKeyObject="72FDBA05-D61F-2083-7DB2-0145E4FA3AD3" localFKIndex="C04BAB02-558D-2B19-561D-80CF213E9735" name="TBL_PRODUCTORES_TBL_CREDITOS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C0335CA1-8ECB-C5D2-7105-5E97B4C62C7A" containerWithKeyObject="72FDBA05-D61F-2083-7DB2-0145E4FA3AD3" localFKIndex="C04BAB02-558D-2B19-561D-80CF213E9735" name="TBL_PRO_TBL_CREDITOS_FK">
 <createdBy>danyo</createdBy>
 <createdTime>2024-04-29 17:54:20 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>E5648A43-B422-AB05-C8B9-E9DE757CE4B0</keyObject>
 <referredKeyID>E5648A43-B422-AB05-C8B9-E9DE757CE4B0</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID_CREDITOS_MUSICALES</refColNames>
+<refColNames>ID_CREDITO</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

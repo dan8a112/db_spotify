@@ -149,16 +149,6 @@
 <colUsage columnID="081DA466-C46E-4BCF-0CA3-A20055F9BD05"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DD9A0872-C28D-0407-7D93-38872E73131A" name="TBL_USUARIOS__NOMBRE_USUARIO">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-28 17:51:39 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F2F3352F-D8F1-EB4B-7237-9A85589C3C69"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="E881E5BC-F790-BE56-89C5-C165181ED3D4" name="TBL_USUARIOS_TBL_GENERO_FK">
 <createdBy>daniel</createdBy>
 <createdTime>2024-02-12 21:36:10 UTC</createdTime>

@@ -54,7 +54,7 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CREDITOS_MUSICALES" id="62FFB24D-6A97-88B1-7EBD-8A1840F471AD">
+<Column name="ID_CREDITO" id="62FFB24D-6A97-88B1-7EBD-8A1840F471AD">
 <createdBy>danyo</createdBy>
 <createdTime>2024-04-29 17:54:01 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

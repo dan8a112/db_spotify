@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_CREDITOS_MUSICALES" id="089AE51D-227F-9746-961E-0980CFA4021A">
+<Column name="ID_CREDITO" id="089AE51D-227F-9746-961E-0980CFA4021A">
 <createdBy>casti</createdBy>
 <createdTime>2024-02-14 20:30:52 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>

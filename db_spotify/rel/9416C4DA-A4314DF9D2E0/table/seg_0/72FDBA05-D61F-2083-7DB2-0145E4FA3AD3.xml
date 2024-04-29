@@ -54,7 +54,7 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CREDITOS_MUSICALES" id="2297B23D-E339-3077-BCED-64B742A0730E">
+<Column name="ID_CREDITO" id="2297B23D-E339-3077-BCED-64B742A0730E">
 <createdBy>danyo</createdBy>
 <createdTime>2024-04-29 17:54:20 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
@@ -81,7 +81,7 @@
 <colUsage columnID="22F82625-C5F6-0F42-9663-736B3BCDD74F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C04BAB02-558D-2B19-561D-80CF213E9735" name="TBL_PRODUCTORES_TBL_CREDITOS_FK">
+<ind_PK_UK id="C04BAB02-558D-2B19-561D-80CF213E9735" name="TBL_PRO_TBL_CREDITOS_FK">
 <createdBy>danyo</createdBy>
 <createdTime>2024-04-29 17:54:20 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
