@@ -769,7 +769,7 @@ INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre
 (40, 1, 2, 'pedrolopez@example.com', 'Pedro Lopez', TO_DATE('1991-12-05', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil3.jpeg', 'password', 6);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(41, 2, 2, 'lauragonzalez@example.com', 'Laura Gonzalez', TO_DATE('1989-09-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 7);
+(41, 2, 2, 'lauragonzalez23@example.com', 'Laura Gonzalez', TO_DATE('1989-09-18', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil1.jpeg', 'password', 7);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (42, 2, 2, 'carlosrodriguez@example.com', 'Carlos Rodriguez', TO_DATE('1996-06-25', 'YYYY-MM-DD'), SYSDATE, 'usuarioperfil2.jpeg', 'password', 8);
@@ -1019,7 +1019,7 @@ INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (13, 'Nothing Happens', 'Albumes/wallows-nothinghappens.jpeg', TO_DATE('2019-03-22', 'YYYY-MM-DD'), 7, 1);
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (14, 'Remote', 'Albumes/wallows-remote.jpeg', TO_DATE('2020-10-23', 'YYYY-MM-DD'), 7, 1);
 
--- The Strokesvs
+-- The Strokes
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (15, 'Is This It', 'Albumes/thestrokes-isthisit.jpeg', TO_DATE('2001-07-30', 'YYYY-MM-DD'), 8, 1);
 INSERT INTO tbl_albumes (id_album, nombre_album, portada, fecha_lanzamiento, id_usuario, id_tipo_lanzamiento) VALUES (16, 'Room on Fire', 'Albumes/thestrokes-roomonfire.jpeg', TO_DATE('2003-10-28', 'YYYY-MM-DD'), 8, 1);
 
@@ -1889,272 +1889,252 @@ INSERT INTO tbl_canciones (id_cancion, letra_cancion, id_album, id_genero_musica
 (96, NULL, 30, 20, 15, 1);
 
 
+-- Créditos de canción 1 de Twenty One Pilots - Clancy
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (1, 'Fueled by Ramen', 1, 21);
+
+-- Créditos de canción 2 de Twenty One Pilots - Clancy
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (2, 'Fueled by Ramen', 1, 22);
+
+-- Créditos de canción 1 de Twenty One Pilots - Vessel
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (3, 'Fueled by Ramen', 1, 23);
+
+-- Créditos de canción 2 de Twenty One Pilots - Vessel
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (4, 'Fueled by Ramen', 1, 24);
+
+-- Créditos de canción 1 de Vaundy - Strobo
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (5, 'Sony Music Japan', 2, 25);
+
+-- Créditos de canción 2 de Vaundy - Strobo
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (6, 'Sony Music Japan', 2, 26);
+
+-- Créditos de canción 1 de Vaundy - Odoriko
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (7, 'Sony Music Japan', 2, 27);
+
+-- Créditos de canción 2 de Vaundy - Odoriko
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (8, 'Sony Music Japan', 2, 28);
+
+-- Créditos de canción 1 de Cardellino - Chistes Malos
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (9, 'Independiente', 3, 29);
+
+-- Créditos de canción 2 de Cardellino - Chistes Malos
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (10, 'Independiente', 3, 30);
+
+-- Créditos de canción 1 de Cardellino - Love Dealer
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (11, 'Independiente', 3, 31);
+
+-- Créditos de canción 2 de Cardellino - Love Dealer
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (12, 'Independiente', 3, 32);
+
+-- Créditos de canción 1 de Indigo la end - Kanna
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (13, 'Warner Music Japan', 5, 37);
+
+-- Créditos de canción 2 de Indigo la end - Kanna
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (14, 'Warner Music Japan', 5, 38);
+
+-- Créditos de canción 1 de Indigo la end - Crying End Roll
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (15, 'Warner Music Japan', 5, 39);
+
+-- Créditos de canción 2 de Indigo la end - Crying End Roll
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (16, 'Warner Music Japan', 5, 40);
+
+-- Créditos de canción 1 de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (17, 'Atlantic Records', 4, 33);
+
+-- Créditos de canción 2 de Vance Joy - Dream Your Life Away
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (18, 'Atlantic Records', 4, 34);
+
+-- Créditos de canción 1 de Vance Joy - Nation Of Two
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (19, 'Atlantic Records', 4, 35);
+
+-- Créditos de canción 2 de Vance Joy - Nation Of Two
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (20, 'Atlantic Records', 4, 36);
+
+-- Créditos de canción 1 de Arctic Monkeys - AM
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (21, 'Domino Recording Company', 6, 41);
+
+-- Créditos de canción 2 de Arctic Monkeys - AM
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (22, 'Domino Recording Company', 6, 42);
+
+-- Créditos de canción 1 de Arctic Monkeys - Tranquility Base Hotel & Casino
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (23, 'Domino Recording Company', 6, 43);
+
+-- Créditos de canción 2 de Arctic Monkeys - Tranquility Base Hotel & Casino
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (24, 'Domino Recording Company', 6, 44);
+
+-- Créditos de canción 1 de Wallows - Nothing Happens
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (25, 'Atlantic Records', 7, 45);
+
+-- Créditos de canción 2 de Wallows - Nothing Happens
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (26, 'Atlantic Records', 7, 46);
+
+-- Créditos de canción 1 de Wallows - Remote
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (27, 'Atlantic Records', 7, 47);
+
+-- Créditos de canción 2 de Wallows - Remote
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (28, 'Atlantic Records', 7, 48);
+
+-- Créditos de canción 1 de The Strokes - Is This It
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (29, 'Rough Trade Records', 8, 49);
+
+-- Créditos de canción 2 de The Strokes - Is This It
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (30, 'Rough Trade Records', 8, 50);
+
+-- Créditos de canción 1 de The Strokes - Room on Fire
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (31, 'Rough Trade Records', 8, 51);
+
+-- Créditos de canción 2 de The Strokes - Room on Fire
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (32, 'Rough Trade Records', 8, 52);
+
+-- Créditos de canción 1 de Radiohead - OK Computer
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (33, 'Parlophone Records', 9, 53);
+
+-- Créditos de canción 2 de Radiohead - OK Computer
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (34, 'Parlophone Records', 9, 54);
+
+-- Créditos de canción 1 de Radiohead - In Rainbows
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (35, 'XL Recordings', 9, 55);
+
+-- Créditos de canción 2 de Radiohead - In Rainbows
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (36, 'XL Recordings', 9, 56);
+
+-- Créditos de canción 1 de Radwimps - Ningen Kaika
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (37, 'Universal Music Japan', 10, 57);
+
+-- Créditos de canción 2 de Radwimps - Ningen Kaika
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (38, 'Universal Music Japan', 10, 58);
+
+-- Créditos de canción 1 de Radwimps - Kimi no Na wa
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (39, 'Universal Music Japan', 10, 59);
+
+-- Créditos de canción 2 de Radwimps - Kimi no Na wa
+INSERT INTO tbl_creditos (id_credito, firma_discografica, id_artista, id_cancion) VALUES (40, 'Universal Music Japan', 10, 60);
+
+
+
 
 -- Escritores en inglés
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(1, 'John', 'Anthony', 'Lennon');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(1, 'John', 'Anthony', 'Lennon', 1);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(2, 'Paul', '', 'McCartney');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(2, 'Paul', '', 'McCartney', 2);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(3, 'George', '', 'Harrison');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(3, 'George', '', 'Harrison', 3);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(4, 'Richard', 'Starkey', 'Starr');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(4, 'Richard', 'Starkey', 'Starr', 4);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(5, 'Taylor', '', 'Swift');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(5, 'Taylor', '', 'Swift', 5);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(6, 'Ariana', '', 'Grande');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(6, 'Ariana', '', 'Grande', 6);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(7, 'Billy', '', 'Joel');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(7, 'Billy', '', 'Joel', 7);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(8, 'Kurt', '', 'Cobain');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(8, 'Kurt', '', 'Cobain', 8);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(9, 'Freddie', '', 'Mercury');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(9, 'Freddie', '', 'Mercury', 9);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(10, 'Johann', 'Sebastian', 'Bach');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(10, 'Johann', 'Sebastian', 'Bach', 10);
 
 -- Escritores en español
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(11, 'Joaquín', '', 'Sabina');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(11, 'Joaquín', '', 'Sabina', 11);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(12, 'Alejandro', '', 'Sanz');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(12, 'Alejandro', '', 'Sanz', 12);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(13, 'Silvio', '', 'Rodríguez');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(13, 'Silvio', '', 'Rodríguez', 13);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(14, 'Pedro', '', 'Aznar');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(14, 'Pedro', '', 'Aznar', 14);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(15, 'Gustavo', '', 'Cerati');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(15, 'Gustavo', '', 'Cerati', 15);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(16, 'Juan', 'Luis', 'Guerra');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(16, 'Juan', 'Luis', 'Guerra', 16);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(17, 'Ricardo', '', 'Arjona');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(17, 'Ricardo', '', 'Arjona', 17);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(18, 'Joan', 'Manuel', 'Serrat');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(18, 'Joan', 'Manuel', 'Serrat', 18);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(19, 'Manuel', '', 'Carrasco');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(19, 'Manuel', '', 'Carrasco', 19);
 
-INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido) VALUES
-(20, 'Jorge', '', 'Drexler');
+INSERT INTO tbl_escritores (id_escritor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(20, 'Jorge', '', 'Drexler', 20);
 
 -- Productores en inglés
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(1, 'George', 'Martin', '');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(1, 'George', 'Martin', '', 21);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(2, 'Rick', '', 'Rubin');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(2, 'Rick', '', 'Rubin', 22);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(3, 'Brian', '', 'Eno');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(3, 'Brian', '', 'Eno', 23);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(4, 'Max', '', 'Martin');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(4, 'Max', '', 'Martin', 24);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(5, 'Quincy', '', 'Jones');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(5, 'Quincy', '', 'Jones', 25);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(6, 'Dr.', 'Dre', '');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(6, 'Dr.', 'Dre', '', 26);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(7, 'Timbaland', '', '');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(7, 'Timbaland', '', '', 27);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(8, 'Ted', '', 'Templeman');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(8, 'Ted', '', 'Templeman', 28);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(9, 'Mark', '', 'Ronson');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(9, 'Mark', '', 'Ronson', 29);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(10, 'Jeff', '', 'Bhasker');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(10, 'Jeff', '', 'Bhasker', 30);
 
 -- Productores en español
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(11, 'Gustavo', '', 'Santaolalla');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(11, 'Gustavo', '', 'Santaolalla', 31);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(12, 'Rafa', '', 'Sardina');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(12, 'Rafa', '', 'Sardina', 32);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(13, 'Juan', 'Luis', 'Guerre');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(13, 'Juan', 'Luis', 'Guerre', 33);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(14, 'Gustavo', '', 'Cerati');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(14, 'Eduardo', '', 'Cabra', 34);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(15, 'Pablo', '', 'Durand');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(15, 'Alejandro', '', 'Roma', 35);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(16, 'Gustavo', '', 'Hadad');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(16, 'Gianmarco', '', 'Zignago', 36);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(17, 'Tommy', '', 'Torres');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(17, 'Emanuel', '', 'Bravo', 37);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(18, 'Alejandro', '', 'Sancho');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(18, 'Hugo', '', 'Santander', 38);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(19, 'Julián', '', 'Bunetta');
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(19, 'César', '', 'Lemos', 39);
 
-INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido) VALUES
-(20, 'Jorge', '', 'Drexler');
-
-
-/*CREDITOS*/
--- Créditos de canciones de Twenty One Pilots - Clancy
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(1, 'Fueled by Ramen', 1, 7, 21, 16);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(2, 'Fueled by Ramen', 1, 12, 22, 5);
-
--- Créditos de canciones de Twenty One Pilots - Vessel
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(3, 'Fueled by Ramen', 1, 19, 23, 19);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(4, 'Fueled by Ramen', 1, 8, 24, 4);
-
--- Créditos de canciones de Vaundy - Strobo
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(5, 'Sony Music Japan', 2, 3, 25, 14);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(6, 'Sony Music Japan', 2, 15, 26, 17);
-
--- Créditos de canciones de Vaundy - Odoriko
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(7, 'Sony Music Japan', 2, 6, 27, 12);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(8, 'Sony Music Japan', 2, 1, 28, 10);
-
--- Créditos de canciones de Cardellino - Chistes Malos
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(9, 'Independiente', 3, 17, 29, 6);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(10, 'Independiente', 3, 14, 30, 8);
-
--- Créditos de canciones de Cardellino - Love Dealer
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(11, 'Independiente', 3, 4, 31, 15);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(12, 'Independiente', 3, 10, 32, 3);
-
--- Créditos de canciones de Indigo la end - Kanna
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(13, 'Warner Music Japan', 5, 9, 37, 8);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(14, 'Warner Music Japan', 5, 16, 38, 15);
-
--- Créditos de canciones de Indigo la end - Crying End Roll
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(15, 'Warner Music Japan', 5, 1, 39, 12);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(16, 'Warner Music Japan', 5, 20, 40, 7);
-
--- Créditos de canciones de Vance Joy - Dream Your Life Away
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(17, 'Atlantic Records', 4, 5, 33, 20);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(18, 'Atlantic Records', 4, 2, 34, 2);
-
--- Créditos de canciones de Vance Joy - Nation Of Two
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(19, 'Atlantic Records', 4, 13, 35, 11);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(20, 'Atlantic Records', 4, 11, 36, 20);
-
--- Créditos de canciones de Arctic Monkeys - AM
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(21, 'Domino Recording Company', 6, 18, 41, 2);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(22, 'Domino Recording Company', 6, 7, 42, 13);
-
--- Créditos de canciones de Arctic Monkeys - Tranquility Base Hotel & Casino
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(23, 'Domino Recording Company', 6, 15, 43, 14);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(24, 'Domino Recording Company', 6, 6, 44, 1);
-
--- Créditos de canciones de Wallows - Nothing Happens
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(25, 'Atlantic Records', 7, 4, 45, 3);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(26, 'Atlantic Records', 7, 10, 46, 19);
-
--- Créditos de canciones de Wallows - Remote
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(27, 'Atlantic Records', 7, 19, 47, 9);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(28, 'Atlantic Records', 7, 8, 48, 7);
-
--- Créditos de canciones de The Strokes - Is This It
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(29, 'Rough Trade Records', 8, 14, 49, 18);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(30, 'Rough Trade Records', 8, 20, 50, 16);
-
--- Créditos de canciones de The Strokes - Room on Fire
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(31, 'Rough Trade Records', 8, 3, 51, 1);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(32, 'Rough Trade Records', 8, 5, 52, 20);
-
--- Créditos de canciones de Radiohead - OK Computer
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(33, 'Parlophone Records', 9, 9, 53, 10);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(34, 'Parlophone Records', 9, 7, 54, 4);
-
--- Créditos de canciones de Radiohead - In Rainbows
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(35, 'XL Recordings', 9, 2, 55, 13);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(36, 'XL Recordings', 9, 6, 56, 8);
-
--- Créditos de canciones de Radwimps - Ningen Kaika
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(37, 'Universal Music Japan', 10, 11, 57, 7);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(38, 'Universal Music Japan', 10, 18, 58, 14);
-
--- Créditos de canciones de Radwimps - Kimi no Na wa
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(39, 'Universal Music Japan', 10, 1, 59, 2);
-
-INSERT INTO tbl_creditos (id_creditos_musicales, firma_discografica, id_artista, id_productor, id_cancion, id_escritor) VALUES
-(40, 'Universal Music Japan', 10, 19, 60, 17);
+INSERT INTO tbl_productores (id_productor, primer_nombre, segundo_nombre, apellido, id_credito) VALUES
+(20, 'Sebastián', '', 'Krys', 40);
 
 -- PLANES, PAGOS, FACTURAS Y TARJETAS
 
