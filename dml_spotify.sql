@@ -751,7 +751,7 @@ INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion
 
 -- Crear usuarios estándar
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'angelcastillo.jpg', 'password', 1);
+(35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/usuario1.jpg', 'password', 1);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (36, 1, 2, 'danielochoa@example.com', 'Daniel Ochoa', TO_DATE('1985-08-22', 'YYYY-MM-DD'), SYSDATE, 'danielochoa.jpg', 'password', 2);
