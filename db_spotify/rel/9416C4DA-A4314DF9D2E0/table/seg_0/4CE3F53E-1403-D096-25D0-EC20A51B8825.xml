@@ -44,21 +44,6 @@
 <colAssociation fkAssociation="708F7296-2F36-2513-A555-9B7878950E3B" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
 </associations>
 </Column>
-<Column name="ID_PRODUCTOR" id="BA5B45B3-B1B9-367B-4A5B-CC21233F653C">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:21:31 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="17144763-1A87-6CF6-B1BA-2B2B44D3CA11" referredColumn="22F82625-C5F6-0F42-9663-736B3BCDD74F"/>
-</associations>
-</Column>
 <Column name="ID_CANCION" id="C6A06496-C136-64B5-EA8C-E870366C6517">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-19 22:01:17 UTC</createdTime>
@@ -71,21 +56,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="04311F6E-4580-083C-287E-59EA7719247B" referredColumn="97091350-C172-18B6-E102-1814CA25BE8D"/>
-</associations>
-</Column>
-<Column name="ID_ESCRITOR" id="C6DFF49D-7F9E-0A39-622A-21548D7E15A8">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-21 05:14:48 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A3BA479F-9D25-D987-E852-6C95FBB9D073" referredColumn="615E6623-7644-2CD0-6302-C5F245CEBA6D"/>
 </associations>
 </Column>
 </columns>
@@ -121,16 +91,6 @@
 <colUsage columnID="F3515D87-4318-2AD0-AEFD-C113C06D3D85"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="485DDCF5-B0DA-4935-396D-21EB4DA9287F" name="TBL_CRE_TBL_PRO_FK">
-<createdBy>casti</createdBy>
-<createdTime>2024-02-19 20:21:31 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="BA5B45B3-B1B9-367B-4A5B-CC21233F653C"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="B263A31C-52A6-0D1B-F085-613FE329FCEE" name="TBL_CREDITOS_TBL_CANCIONES_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-19 22:01:17 UTC</createdTime>
@@ -139,16 +99,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C6A06496-C136-64B5-EA8C-E870366C6517"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B64BE8DC-4DDD-5FF1-9228-2C120A80CF3F" name="TBL_CREDITOS_TBL_ESCRITORES_FK">
-<createdBy>danyo</createdBy>
-<createdTime>2024-04-21 05:14:48 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C6DFF49D-7F9E-0A39-622A-21548D7E15A8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

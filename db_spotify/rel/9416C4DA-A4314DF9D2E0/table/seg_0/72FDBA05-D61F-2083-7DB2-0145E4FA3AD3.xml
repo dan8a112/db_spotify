@@ -54,6 +54,20 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_CREDITOS_MUSICALES" id="2297B23D-E339-3077-BCED-64B742A0730E">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-29 17:54:20 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0335CA1-8ECB-C5D2-7105-5E97B4C62C7A" referredColumn="089AE51D-227F-9746-961E-0980CFA4021A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="29E63850-B77F-591F-ECFE-6E3A32D33E00" name="TBL_ESCRITORESv1_PK">
@@ -65,6 +79,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="22F82625-C5F6-0F42-9663-736B3BCDD74F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C04BAB02-558D-2B19-561D-80CF213E9735" name="TBL_PRODUCTORES_TBL_CREDITOS_FK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-29 17:54:20 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2297B23D-E339-3077-BCED-64B742A0730E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-24 16:04:09 CST
+--   en:        2024-04-29 12:34:37 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -27,6 +27,9 @@ CREATE TABLE tbl_albumes_seguidos (
     fecha_seguimiento DATE
 );
 
+ALTER TABLE tbl_albumes_seguidos ADD CONSTRAINT tbl_albumes_seguidos_pk PRIMARY KEY ( id_usuario,
+                                                                                      id_album );
+
 CREATE TABLE tbl_artistas (
     id_usuario INTEGER NOT NULL,
     biografia  VARCHAR2(1000),
@@ -52,12 +55,10 @@ CREATE TABLE tbl_canciones_artistas (
 );
 
 CREATE TABLE tbl_creditos (
-    id_creditos_musicales INTEGER NOT NULL,
-    firma_discografica    VARCHAR2(100),
-    id_artista            INTEGER NOT NULL,
-    id_productor          INTEGER,
-    id_cancion            INTEGER NOT NULL,
-    id_escritor           INTEGER
+    id_credito         INTEGER NOT NULL,
+    firma_discografica VARCHAR2(100),
+    id_artista         INTEGER NOT NULL,
+    id_cancion         INTEGER NOT NULL
 );
 
 CREATE UNIQUE INDEX tbl_creditos__idx ON
@@ -65,7 +66,7 @@ CREATE UNIQUE INDEX tbl_creditos__idx ON
         id_cancion
     ASC );
 
-ALTER TABLE tbl_creditos ADD CONSTRAINT tbl_creditos_pk PRIMARY KEY ( id_creditos_musicales );
+ALTER TABLE tbl_creditos ADD CONSTRAINT tbl_creditos_pk PRIMARY KEY ( id_credito );
 
 CREATE TABLE tbl_episodio (
     id_episodio          INTEGER NOT NULL,
@@ -80,7 +81,8 @@ CREATE TABLE tbl_escritores (
     id_escritor    INTEGER NOT NULL,
     primer_nombre  VARCHAR2(150),
     segundo_nombre VARCHAR2(150),
-    apellido       VARCHAR2(150)
+    apellido       VARCHAR2(150),
+    id_credito     INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_escritores ADD CONSTRAINT tbl_escritores_pk PRIMARY KEY ( id_escritor );
@@ -163,6 +165,9 @@ CREATE TABLE tbl_listas_seguidas (
     id_rol                INTEGER NOT NULL,
     id_lista_reproduccion INTEGER NOT NULL
 );
+
+ALTER TABLE tbl_listas_seguidas ADD CONSTRAINT tbl_listas_seguidas_pk PRIMARY KEY ( id_usuario,
+                                                                                    id_lista_reproduccion );
 
 CREATE TABLE tbl_listas_y_canciones (
     id_lista_reproduccion INTEGER NOT NULL,
@@ -265,7 +270,8 @@ CREATE TABLE tbl_productores (
     id_productor   INTEGER NOT NULL,
     primer_nombre  VARCHAR2(150),
     segundo_nombre VARCHAR2(150),
-    apellido       VARCHAR2(150)
+    apellido       VARCHAR2(150),
+    id_credito     INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_productores ADD CONSTRAINT tbl_escritoresv1_pk PRIMARY KEY ( id_productor );
@@ -282,6 +288,9 @@ CREATE TABLE tbl_seguidores (
     id_usuario_seguido  INTEGER NOT NULL,
     fecha_seguimiento   DATE
 );
+
+ALTER TABLE tbl_seguidores ADD CONSTRAINT tbl_seguidores_pk PRIMARY KEY ( id_usuario_seguidor,
+                                                                          id_usuario_seguido );
 
 CREATE TABLE tbl_tallas (
     id_talla     INTEGER NOT NULL,
@@ -369,6 +378,8 @@ CREATE TABLE tbl_usuarios (
 
 ALTER TABLE tbl_usuarios ADD CONSTRAINT tbl_usuarios_pk PRIMARY KEY ( id_usuario );
 
+ALTER TABLE tbl_usuarios ADD CONSTRAINT tbl_usuarios__correo UNIQUE ( correo );
+
 ALTER TABLE tbl_podcast_x_generos
     ADD CONSTRAINT genero_podcast_fk FOREIGN KEY ( id_genero_podcast )
         REFERENCES tbl_genero_podcast ( id_genero_podcast );
@@ -434,20 +445,12 @@ ALTER TABLE tbl_canciones
         REFERENCES tbl_media ( id_media );
 
 ALTER TABLE tbl_creditos
-    ADD CONSTRAINT tbl_cre_tbl_pro_fk FOREIGN KEY ( id_productor )
-        REFERENCES tbl_productores ( id_productor );
-
-ALTER TABLE tbl_creditos
     ADD CONSTRAINT tbl_creditos_tbl_artistas_fk FOREIGN KEY ( id_artista )
         REFERENCES tbl_artistas ( id_usuario );
 
 ALTER TABLE tbl_creditos
     ADD CONSTRAINT tbl_creditos_tbl_canciones_fk FOREIGN KEY ( id_cancion )
         REFERENCES tbl_canciones ( id_cancion );
-
-ALTER TABLE tbl_creditos
-    ADD CONSTRAINT tbl_creditos_tbl_escritores_fk FOREIGN KEY ( id_escritor )
-        REFERENCES tbl_escritores ( id_escritor );
 
 ALTER TABLE tbl_episodio
     ADD CONSTRAINT tbl_episodio_podcasts_fk FOREIGN KEY ( id_podcast )
@@ -456,6 +459,10 @@ ALTER TABLE tbl_episodio
 ALTER TABLE tbl_episodio
     ADD CONSTRAINT tbl_episodio_tbl_media_fk FOREIGN KEY ( id_episodio )
         REFERENCES tbl_media ( id_media );
+
+ALTER TABLE tbl_escritores
+    ADD CONSTRAINT tbl_escritores_tbl_creditos_fk FOREIGN KEY ( id_credito )
+        REFERENCES tbl_creditos ( id_credito );
 
 ALTER TABLE tbl_eventos
     ADD CONSTRAINT tbl_eventos_tbl_artistas_fk FOREIGN KEY ( id_usuario )
@@ -537,6 +544,10 @@ ALTER TABLE tbl_pago_planes
     ADD CONSTRAINT tbl_pap_tbl_tar_fk FOREIGN KEY ( id_tarjeta )
         REFERENCES tbl_tarjetas ( id_tarjeta );
 
+ALTER TABLE tbl_productores
+    ADD CONSTRAINT tbl_pro_tbl_creditos_fk FOREIGN KEY ( id_credito )
+        REFERENCES tbl_creditos ( id_credito );
+
 ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
@@ -583,7 +594,7 @@ ALTER TABLE tbl_seguidores
 -- 
 -- CREATE TABLE                            40
 -- CREATE INDEX                             4
--- ALTER TABLE                             84
+-- ALTER TABLE                             88
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

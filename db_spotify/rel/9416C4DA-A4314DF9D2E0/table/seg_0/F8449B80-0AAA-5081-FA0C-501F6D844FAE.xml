@@ -49,6 +49,18 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA6FFE31-2385-491F-0A44-97E8A8C841DD" name="TBL_SEGUIDORES_PK">
+<createdBy>danyo</createdBy>
+<createdTime>2024-04-27 20:48:47 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BB6372A-178E-91E0-C3FF-41DF5D70B599"/>
+<colUsage columnID="B4C7545A-5296-117B-EDE7-58A832EC4E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="1F4584E2-4081-FAD1-F1C2-C946CFFA5784" name="USUARIOS_SEGUIDOR_FK">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-18 19:54:19 UTC</createdTime>
