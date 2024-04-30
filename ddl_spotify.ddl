@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-29 16:30:38 CST
+--   en:        2024-04-30 15:09:36 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -356,6 +356,11 @@ CREATE TABLE tbl_tipos_listas (
 
 ALTER TABLE tbl_tipos_listas ADD CONSTRAINT tbl_tipos_listas_pk PRIMARY KEY ( id_tipo_lista );
 
+CREATE TABLE tbl_tops (
+    id_pais               INTEGER NOT NULL,
+    id_lista_reproduccion INTEGER NOT NULL
+);
+
 CREATE TABLE tbl_usuario_estandar (
     id_usuario                   INTEGER NOT NULL,
     id_historial_de_reproduccion INTEGER NOT NULL
@@ -571,6 +576,15 @@ ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
 
+--  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE tbl_tops
+    ADD CONSTRAINT tbl_tops_tbl_listas_reproduccion_fk FOREIGN KEY ( id_lista_reproduccion )
+        REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
+
+ALTER TABLE tbl_tops
+    ADD CONSTRAINT tbl_tops_tbl_paises_fk FOREIGN KEY ( id_pais )
+        REFERENCES tbl_paises ( id_pais );
+
 ALTER TABLE tbl_usuario_estandar
     ADD CONSTRAINT tbl_ue_tbl_hc_fk FOREIGN KEY ( id_historial_de_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
@@ -611,9 +625,9 @@ ALTER TABLE tbl_seguidores
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            41
+-- CREATE TABLE                            42
 -- CREATE INDEX                             4
--- ALTER TABLE                             92
+-- ALTER TABLE                             94
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
@@ -649,5 +663,5 @@ ALTER TABLE tbl_seguidores
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   0
+-- ERRORS                                   1
 -- WARNINGS                                 0

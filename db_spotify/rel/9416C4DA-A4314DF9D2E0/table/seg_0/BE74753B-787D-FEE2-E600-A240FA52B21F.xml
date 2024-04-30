@@ -83,17 +83,20 @@
 <ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COLOR" id="701CB60C-FCB2-D2F4-480E-790099ED628F">
+<Column name="ID_COLOR" id="BF4ADAAB-ECD3-6383-F35A-AAB5FB06605B">
 <createdBy>casti</createdBy>
-<createdTime>2024-04-18 22:42:28 UTC</createdTime>
+<createdTime>2024-04-29 21:45:17 UTC</createdTime>
 <ownerDesignName>db_spotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AE5D377-BFCA-6DCD-C10F-891C8481B628" referredColumn="E7409357-66B6-EC8C-1D15-13F5E96FCD65"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -126,6 +129,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8DC0BE51-E32A-8489-70B0-F1B43E0F92F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB161A85-5011-3201-DA5F-5BD9761D7F98" name="TBL_PODCASTS_TBL_COLORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-29 21:45:16 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF4ADAAB-ECD3-6383-F35A-AAB5FB06605B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

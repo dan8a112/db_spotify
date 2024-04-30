@@ -764,7 +764,7 @@ INSERT INTO tbl_merch (id_merch, id_talla, id_artista, nombre_merch, descripcion
 
 -- Crear usuarios estándar
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
-(35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/usuario1.jpg', 'password', 1);
+(35, 1, 2, 'angelcastillo@example.com', 'Angel Castillo', TO_DATE('1990-05-15', 'YYYY-MM-DD'), SYSDATE, 'Usuarios/user1.jpg', 'password', 1);
 
 INSERT INTO tbl_usuarios (id_usuario, id_genero, id_tipo_usuario, correo, nombre_usuario, fecha_nacimiento, fecha_registro, url_foto_perfil, contrasenia, id_pais) VALUES
 (36, 1, 2, 'danielochoa@example.com', 'Daniel Ochoa', TO_DATE('1985-08-22', 'YYYY-MM-DD'), SYSDATE, 'danielochoa.jpg', 'password', 2);
@@ -2745,5 +2745,50 @@ INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_segui
 INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (72, 5, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
 INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (73, 6, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
 INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (35, 82, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+INSERT INTO tbl_seguidores (id_usuario_seguidor, id_usuario_seguido, fecha_seguimiento) VALUES (35, 81, TO_DATE('2024-04-19', 'YYYY-MM-DD'));
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (13, 100, 'Top 50 de Estados Unidos', 'Playlists/topusa.jpg', 1, 'Las 50 canciones más populares en Estados Unidos');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (14, 100, 'Top 50 de Canadá', 'canada.png', 1, 'Las 50 canciones más populares en Canadá');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (15, 100, 'Top 50 de México', 'mexico.png', 1, 'Las 50 canciones más populares en México');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (16, 100, 'Top 50 de Brasil', 'brasil.png', 1, 'Las 50 canciones más populares en Brasil');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (17, 100, 'Top 50 de Argentina', 'argentina.png', 1, 'Las 50 canciones más populares en Argentina');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (18, 100, 'Top 50 de Francia', 'francia.png', 1, 'Las 50 canciones más populares en Francia');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (19, 100, 'Top 50 de Alemania', 'alemania.png', 1, 'Las 50 canciones más populares en Alemania');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (20, 100, 'Top 50 de China', 'china.png', 1, 'Las 50 canciones más populares en China');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (21, 100, 'Top 50 de Japón', 'japon.png', 1, 'Las 50 canciones más populares en Japón');
+
+INSERT INTO tbl_listas_reproduccion (id_lista_reproduccion, id_usuario_propietario, nombre_lista_reproduccion, url_portada_lista, id_tipo_lista, descripcion)
+VALUES (22, 100, 'Top 50 de Uruguay', 'uruguay.png', 1, 'Las 50 canciones más populares en Uruguay');
+
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (1, 13);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (2, 14);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (3, 15);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (4, 16);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (5, 17);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (6, 18);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (7, 19);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (8, 20);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (9, 21);
+INSERT INTO tbl_tops (id_pais, id_lista_reproduccion) VALUES (10, 22);
+
+
+
 
 COMMIT;

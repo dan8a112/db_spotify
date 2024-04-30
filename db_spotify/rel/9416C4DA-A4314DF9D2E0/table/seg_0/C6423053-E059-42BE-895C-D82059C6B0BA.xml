@@ -67,18 +67,6 @@
 <colAssociation fkAssociation="2F89DA5B-395F-708F-EDF1-AD04F27FD2F0" referredColumn="70037A55-178C-A35E-9CC9-2A5714D9D7E1"/>
 </associations>
 </Column>
-<Column name="COLOR" id="CCBAA010-7551-7019-F26F-9E68DC6DD31C">
-<createdBy>casti</createdBy>
-<createdTime>2024-04-18 22:40:45 UTC</createdTime>
-<ownerDesignName>db_spotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ID_TIPO_LANZAMIENTO" id="5F8AB633-4713-F520-C51D-16AC1ACC4823">
 <createdBy>casti</createdBy>
 <createdTime>2024-04-19 06:31:29 UTC</createdTime>
@@ -91,6 +79,21 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="4CF7A970-3EE4-8081-556D-1CA93BCAED3B" referredColumn="493D27B5-E409-B20F-EDC4-72DED22DAD8A"/>
+</associations>
+</Column>
+<Column name="ID_COLOR" id="A56CFF2E-6B04-9329-B72D-664DDABFA801">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-29 21:43:48 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="780AE94C-6E19-2B20-2D12-C24F053C17EA" referredColumn="E7409357-66B6-EC8C-1D15-13F5E96FCD65"/>
 </associations>
 </Column>
 </columns>
@@ -124,6 +127,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5F8AB633-4713-F520-C51D-16AC1ACC4823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D97E93A-1626-DAD3-8516-5B484F7D9C29" name="TBL_ALBUMES_TBL_COLORES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-29 21:43:48 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A56CFF2E-6B04-9329-B72D-664DDABFA801"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
