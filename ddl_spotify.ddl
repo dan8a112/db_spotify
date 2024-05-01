@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-04-30 15:09:36 CST
+--   en:        2024-05-01 16:00:57 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -137,17 +137,17 @@ CREATE TABLE tbl_generos_musicales (
 
 ALTER TABLE tbl_generos_musicales ADD CONSTRAINT tbl_generos_musicales_pk PRIMARY KEY ( id_genero_musical );
 
-CREATE TABLE tbl_historial_canciones (
-    id_historial_reproduccion INTEGER NOT NULL,
-    id_media                  INTEGER NOT NULL,
-    fecha_reproduccion        DATE
-);
-
 CREATE TABLE tbl_historial_de_reproduccion (
     id_historial_reproduccion INTEGER NOT NULL
 );
 
 ALTER TABLE tbl_historial_de_reproduccion ADD CONSTRAINT tbl_hr_pk PRIMARY KEY ( id_historial_reproduccion );
+
+CREATE TABLE tbl_historial_media (
+    id_historial_reproduccion INTEGER NOT NULL,
+    id_media                  INTEGER NOT NULL,
+    fecha_reproduccion        DATE
+);
 
 CREATE TABLE tbl_idiomas (
     id_idioma     INTEGER NOT NULL,
@@ -404,6 +404,10 @@ ALTER TABLE tbl_albumes
     ADD CONSTRAINT lanzamiento_fk FOREIGN KEY ( id_tipo_lanzamiento )
         REFERENCES tbl_tipo_lanzamiento ( id_tipo_lanzamiento );
 
+ALTER TABLE tbl_tops
+    ADD CONSTRAINT listas_reproduccion_fk FOREIGN KEY ( id_lista_reproduccion )
+        REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
+
 ALTER TABLE tbl_podcast_x_generos
     ADD CONSTRAINT podcasts_fk FOREIGN KEY ( id_podcast )
         REFERENCES tbl_podcasts ( id_podcast );
@@ -500,11 +504,7 @@ ALTER TABLE tbl_facturas
     ADD CONSTRAINT tbl_facturas_tbl_ue_fk FOREIGN KEY ( id_usuario )
         REFERENCES tbl_usuario_estandar ( id_usuario );
 
-ALTER TABLE tbl_historial_canciones
-    ADD CONSTRAINT tbl_hc_tbl_canciones_fk FOREIGN KEY ( id_media )
-        REFERENCES tbl_canciones ( id_cancion );
-
-ALTER TABLE tbl_historial_canciones
+ALTER TABLE tbl_historial_media
     ADD CONSTRAINT tbl_hc_tbl_hr_fk FOREIGN KEY ( id_historial_reproduccion )
         REFERENCES tbl_historial_de_reproduccion ( id_historial_reproduccion );
 
@@ -539,6 +539,10 @@ ALTER TABLE tbl_listas_y_canciones
 ALTER TABLE tbl_listas_y_canciones
     ADD CONSTRAINT tbl_lyc_tbl_lr_fk FOREIGN KEY ( id_lista_reproduccion )
         REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
+
+ALTER TABLE tbl_historial_media
+    ADD CONSTRAINT tbl_media_fk FOREIGN KEY ( id_media )
+        REFERENCES tbl_media ( id_media );
 
 ALTER TABLE tbl_media
     ADD CONSTRAINT tbl_media_tbl_tipo_media_fk FOREIGN KEY ( id_tipo_media )
@@ -575,11 +579,6 @@ ALTER TABLE tbl_productores
 ALTER TABLE tbl_seguidores
     ADD CONSTRAINT tbl_seguidores_fkv2 FOREIGN KEY ( id_usuario_seguido )
         REFERENCES tbl_usuarios ( id_usuario );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE tbl_tops
-    ADD CONSTRAINT tbl_tops_tbl_listas_reproduccion_fk FOREIGN KEY ( id_lista_reproduccion )
-        REFERENCES tbl_listas_reproduccion ( id_lista_reproduccion );
 
 ALTER TABLE tbl_tops
     ADD CONSTRAINT tbl_tops_tbl_paises_fk FOREIGN KEY ( id_pais )
@@ -663,5 +662,5 @@ ALTER TABLE tbl_seguidores
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   1
+-- ERRORS                                   0
 -- WARNINGS                                 0
