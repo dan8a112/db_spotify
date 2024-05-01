@@ -2506,6 +2506,12 @@ INSERT INTO tbl_rol_lista_r (id_rol, nombre_rol) VALUES
 
 -- Insertar registros en tbl_listas_seguidas
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+(TO_DATE('2024-01-01', 'YYYY-MM-DD'), 35, 2, 5);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
+(TO_DATE('2024-01-01', 'YYYY-MM-DD'), 35, 2, 6);
+
+INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES
 (TO_DATE('2024-01-01', 'YYYY-MM-DD'), 36, 2, 8);
 
 INSERT INTO tbl_listas_seguidas (fecha_seguimiento, id_usuario, id_rol, id_lista_reproduccion) VALUES

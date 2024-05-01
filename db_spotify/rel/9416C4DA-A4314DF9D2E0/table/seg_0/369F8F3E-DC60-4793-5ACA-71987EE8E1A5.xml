@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="369F8F3E-DC60-4793-5ACA-71987EE8E1A5" name="TBL_TOPS">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-30 21:08:24 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<ordsAlias>table_42</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PAIS" id="32B4BD0E-A849-70E2-BB2B-9805DB680594">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-30 21:08:39 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8ED27C3C-E9C2-A576-FA2C-32871E0B2AF6" referredColumn="BF93C9D7-E6A1-F992-2CB5-944CA01E5BB8"/>
+</associations>
+</Column>
+<Column name="ID_LISTA_REPRODUCCION" id="86711CC7-00FE-4FA3-5D73-4D08ECC4F751">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-30 21:08:45 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4613663B-F87E-F6E3-2940-FCA259BEEEA7" referredColumn="54AA38E8-AC00-85C6-4071-694B520F586B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8AC6BB0-5712-BC39-2B6B-A9BDEA84A150" name="TBL_TOPS_TBL_PAISES_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-30 21:08:39 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32B4BD0E-A849-70E2-BB2B-9805DB680594"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EBA3EF9-EB4A-97E4-13DD-EBE95FF0DB76" name="TBL_TOPS_TBL_LISTAS_REPRODUCCION_FK">
+<createdBy>casti</createdBy>
+<createdTime>2024-04-30 21:08:45 UTC</createdTime>
+<ownerDesignName>db_spotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86711CC7-00FE-4FA3-5D73-4D08ECC4F751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
